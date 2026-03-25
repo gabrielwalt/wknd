@@ -99,14 +99,14 @@ The base grid is 2 columns. Use modifier classes to change column count.
 
 ## Button Styles (`css/button.css`)
 
-All buttons and `.text-button`: uppercase, `font-heading` (Syncopate), pill shape (`--radius-full`) where applicable; solid/ghost buttons use offset drop shadow that shifts on hover/active.
+All buttons and `.text-button`: `font-heading` (Syncopate; caps are from the typeface, not `text-transform`), pill shape (`--radius-full`) where applicable; solid/ghost buttons use offset drop shadow that shifts on hover/active.
 
 | Class | Fill | Shadow | Use |
 |---|---|---|---|
 | `.button` | `--color-black` | amber | Primary CTA on white/gray sections |
 | `.accent-button` | `--color-amber` | black | Hero primary CTA; the single most important action |
 | `.button--ghost` | transparent | amber | Secondary action alongside a primary button |
-| `.text-button` | — | — | Inline text link (underlined, uppercase, fades on hover) |
+| `.text-button` | — | — | Inline text link (underlined, Syncopate, fades on hover) |
 
 **Wrapper**: `.button-group` — flex row, collapses to column on mobile. `.button-group--centered` centers it.
 
@@ -125,17 +125,17 @@ All buttons and `.text-button`: uppercase, `font-heading` (Syncopate), pill shap
 
 | Class | Size | Font | Use |
 |---|---|---|---|
-| `h1-heading` / `h1` | `--text-5xl` | Syncopate 700, uppercase | Page titles (hero only) |
-| `h2-heading` / `h2` | `--text-4xl` | Syncopate 700, uppercase | Section headings |
-| `h3-heading` / `h3` | `--text-3xl` | Syncopate 700, uppercase | Sub-section headings |
-| `h4-heading` / `h4` | `--text-2xl` | Syncopate 700, uppercase | Card headings |
-| `h5-heading` / `h5` | `--text-xl` | Syncopate 700, uppercase | Small card titles |
-| `h6-heading` / `h6` | `--text-sm` | Syncopate 700, uppercase, +letter-spacing | Labels (footer col headings) |
+| `h1-heading` / `h1` | `--text-5xl` | Syncopate 700 | Page titles (hero only) |
+| `h2-heading` / `h2` | `--text-4xl` | Syncopate 700 | Section headings |
+| `h3-heading` / `h3` | `--text-3xl` | Syncopate 700 | Sub-section headings |
+| `h4-heading` / `h4` | `--text-2xl` | Syncopate 700 | Card headings |
+| `h5-heading` / `h5` | `--text-xl` | Syncopate 700 | Small card titles |
+| `h6-heading` / `h6` | `--text-sm` | Syncopate 700, +letter-spacing | Labels (footer col headings) |
 | `paragraph-xl` | `--text-xl` | Instrument Sans | Hero lead text |
 | `paragraph-lg` | `--text-lg` | Instrument Sans | Section body text |
 | `paragraph-sm` | `--text-sm` | Instrument Sans | Card excerpts, meta |
-| `hero-eyebrow` | `--text-sm` | Syncopate 700, amber, uppercase, +letter-spacing | Category label above hero H1 |
-| `.tag` | `--text-xs` | Syncopate 600, uppercase | Amber badge on article cards |
+| `hero-eyebrow` | `--text-sm` | Syncopate 700, amber, +letter-spacing | Category label above hero H1 |
+| `.tag` | `--text-xs` | Syncopate 600 | Amber badge on article cards |
 | `.utility-text-secondary` | — | — | `--color-gray-500` muted text |
 | `.utility-overflow-x-clip` | — | — | `overflow-x: clip` — e.g. full-bleed figures inside `.blog-content` without horizontal scroll |
 

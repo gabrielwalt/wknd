@@ -81,7 +81,6 @@ Blog articles follow a shared template (hero, body, gallery, gear + pull quote, 
    - `<meta name="description">` — article-specific description
    - `<title>` — "Article Title — WKND Adventures"
    - CSS path stays `../css/styles.css` (one level up)
-   - Font preload paths stay `../` relative
 
 3. **Section 1 — Hero** (`hero-section`, bottom overlay `.overlay`):
    - Update breadcrumbs: `Home › [Parent] › [Article Title]`
