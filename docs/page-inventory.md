@@ -71,11 +71,11 @@ Buttons used: `.button` · `.accent-button` · `.button--ghost`
 |---|---|---|
 | 1 | `hero-section` | Eyebrow, H1, lead, `.accent-button` |
 | 2 | `section inverse-section` | Intro prose |
-| 3 | `section secondary-section` | `featured-article` (community story) |
-| 4 | `section` | `article-card` grid (`desktop-3-column`) |
-| 5 | `section secondary-section` | `editorial-index` (submission steps 01–03) |
-| 6 | `section inverse-section` | `card` grid — editorial standards |
-| 7 | `section accent-section` | Submit form / CTA with `faq-item` |
+| 3 | `section secondary-section` | `editorial-index` (How to Submit — steps 01–03) |
+| 4 | `section` | `data-fragment` → `expeditions-grid.html` (article-card grid) |
+| 5 | `section secondary-section` | "Reader Dispatches" — `article-card` grid (`desktop-3-column`) + `featured-article` (second container) |
+| 6 | `section inverse-section` | Community Guidelines prose — `container--narrow` |
+| 7 | `section accent-section` id="submit" | 2 × `.card` CTA boxes + `faq-item` list |
 | 8 | `section` | `article-card` grid (`desktop-4-column`) |
 | 9 | `section inverse-section` | Final CTA |
 
@@ -89,15 +89,15 @@ Buttons used: `.button` · `.accent-button` · `.button--ghost`
 | # | Section | Content / blocks |
 |---|---|---|
 | 1 | `hero-section` | Eyebrow, H1 "Destinations", lead |
-| 2 | `section secondary-section` | `featured-article` (lead destination story) |
-| 3 | `section inverse-section` | Intro prose |
-| 4 | `section accent-section` | Highlight stat/promo |
-| 5 | `section` | `editorial-index` (Americas · Europe · Asia-Pacific) |
-| 6 | `section secondary-section` | `article-card` grid (`desktop-3-column`) |
-| 7 | `section inverse-section` | Text block |
-| 8 | `section` | `card` grid (`grid-layout--2col`) — two destination promo cards |
-| 9 | `section secondary-section` | `article-card` grid (`desktop-4-column`) |
-| 10 | `section accent-section` | CTA |
+| 2 | `section accent-section` | `article-card` grid (3 region anchor links: Americas, Europe, Asia-Pacific) |
+| 3 | `section secondary-section` | `featured-article` (lead destination story) |
+| 4 | `section` id="americas" | `data-fragment` → `field-notes-grid.html` (Americas article grid) |
+| 5 | `section secondary-section` id="europe" | `data-fragment` → `expeditions-grid.html` + `editorial-index` (4 Europe route items) |
+| 6 | `section` | "High Altitude" — `data-fragment` → `expeditions-grid.html` |
+| 7 | `section` | "Essential Route Reports" — `data-fragment` → `expeditions-grid.html` |
+| 8 | `section inverse-section` | Permits & Logistics — `container--narrow` prose |
+| 9 | `section secondary-section` | Regional Editors — `card` grid (`desktop-3-column`) + `card` grid (`grid-layout--2col`) second container |
+| 10 | `section inverse-section` | Final CTA |
 
 Buttons used: `.button` · `.accent-button` · `.button--ghost` · `.text-button`
 
@@ -112,7 +112,7 @@ Buttons used: `.button` · `.accent-button` · `.button--ghost` · `.text-button
 | 2 | `section accent-section` | Featured expedition teaser |
 | 3 | `section` | `article-card` grid (`desktop-3-column`) — expedition index |
 | 4 | `section secondary-section` | `editorial-index` (expedition demands / checklist) |
-| 5 | `section` | `article-card` grid (`desktop-3-column`) — full accounts |
+| 5 | `section` | `data-fragment` → `activity-tabs.html` (tab-menu + `article-card` grids per activity) |
 | 6 | `section secondary-section` | `card` grid (`grid-layout--2col`) — gear/logistics promo |
 | 7 | `section accent-section` | Pre-departure checklist highlight |
 | 8 | `section inverse-section` | Text block |
@@ -183,15 +183,15 @@ Buttons used: `.button` · `.accent-button` · `.text-button`
 | # | Section | Content / blocks |
 |---|---|---|
 | 1 | `hero-section` | Eyebrow, H1, lead |
-| 2 | `section secondary-section` | Intro prose |
-| 3 | `section` | `featured-article` (Wild Swimming Guide) |
-| 4 | `section` | `pull-quote` — WKND ethos ("The mountain doesn't owe you a summit…") |
-| 5 | `section secondary-section` | `feature-card` ×3 (`desktop-3-column`) — principles |
-| 6 | `section` `data-tabs` | `tab-menu` (Trail Impact · Water Access · Wildlife · Winter) |
-| 7 | `section` | `editorial-index` (sustainability commitments) |
-| 8 | `section secondary-section` | `article-card` grid (`desktop-3-column`) |
-| 9 | `section accent-section` | CTA |
-| 10 | `section inverse-section` | Final statement |
+| 2 | `section secondary-section` | `editorial-index` (Sustainability Commitments 01–03) |
+| 3 | `section secondary-section` | `featured-article` (Wild Swimming Guide) |
+| 4 | `section` `data-tabs` | `tab-menu` (Trail Impact · Water Access · Wildlife · Winter) + `article-card` grids per tab |
+| 5 | `section` | The Adventurer's Responsibility — `container--narrow` prose |
+| 6 | `section secondary-section` | `feature-card` ×3 (`desktop-3-column`) — The WKND Wild Ethics |
+| 7 | `section secondary-section` | `data-fragment` → `expeditions-grid.html` (article-card grid) |
+| 8 | `section accent-section` | CTA |
+| 9 | `section inverse-section` id="pledge" | `pull-quote` ("The mountain doesn't owe you a summit…") + pledge prose |
+| 10 | `section accent-section` | Final CTA |
 
 Buttons used: `.button` · `.accent-button` · `.button--ghost`
 
@@ -240,16 +240,16 @@ Overlay: `.overlay` (bottom gradient)
 | **field-notes.html** | ● |   | ● | ● |   | ● | ● | ● |   |   |   |   |   |   |   |   |   |   |
 | **gear.html** | ● |   | ● | ● | ● | ● | ● | ● | ● |   | ● | ● |   |   |   |   |   |   |
 | **sustainability.html** | ● |   | ● | ● | ● | ● | ● | ● | ● |   | ● | ● |   |   | ● |   |   |   |
-| **blog/alpine-cycling** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/desert-survival** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/kayaking-norway** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/mountain-photo** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/patagonia-trek** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/surfing-costa-rica** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/ultralight-bp** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/wild-swimming** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/winter-mountain** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
-| **blog/yosemite-climb** | ● |   | ● |   | ● |   | ● | ● |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/alpine-cycling** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/desert-survival** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/kayaking-norway** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/mountain-photo** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/patagonia-trek** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/surfing-costa-rica** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/ultralight-bp** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/wild-swimming** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/winter-mountain** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
+| **blog/yosemite-climb** | ● |   | ● | ● |   |   | ● |   |   |   |   |   | ● |   | ● | ● |   | ● |
 
 ### Coverage summary
 
@@ -258,16 +258,16 @@ Overlay: `.overlay` (bottom gradient)
 | hero-section | 20 / 20 | Universal |
 | secondary-section | 20 / 20 | Universal |
 | article-card | 20 / 20 | Universal |
-| card | 20 / 20 | Universal |
-| accent-section | 19 / 20 | Not on field-notes |
-| inverse-section | 16 / 20 | Not on blog articles |
+| inverse-section | 20 / 20 | Universal (blog articles via gallery section) |
+| accent-section | 9 / 20 | Root pages only (not field-notes); no blog articles |
+| card | 10 / 20 | Root pages only; no `.card` elements in blog articles |
 | pull-quote | 11 / 20 | sustainability + all 10 blog |
 | gallery-img | 11 / 20 | index + all 10 blog |
-| featured-article | 7 / 20 | Root pages only (not about, expeditions, faq) |
-| editorial-index | 7 / 20 | Root pages only |
+| featured-article | 8 / 20 | Root pages only (not expeditions or faq); community has FA in section 5 |
+| editorial-index | 8 / 20 | index, adventures, community, destinations, expeditions, gear, sustainability (×2 sections between destinations europe and sustainability section 2) |
 | blog-layout | 10 / 20 | Blog only |
 | breadcrumbs | 10 / 20 | Blog only |
-| tab-menu | 5 / 20 | index, about, adventures, gear, sustainability |
+| tab-menu | 6 / 20 | index (via fragment), about, adventures (via fragment), expeditions (via fragment), gear, sustainability |
 | faq-item | 3 / 20 | index, community, faq |
 | feature-card | 3 / 20 | about, gear, sustainability |
 | hero--full | 2 / 20 | index, adventures |

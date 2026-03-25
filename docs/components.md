@@ -394,11 +394,11 @@ Infinite-scrolling horizontal text band. The track contains the items duplicated
 ```html
 <div class="ticker-strip">
   <div class="ticker-track">
-    Text Item <span class="ticker-sep">✦</span>
-    Text Item <span class="ticker-sep">✦</span>
+    Text Item <span class="ticker-sep">·</span>
+    Text Item <span class="ticker-sep">·</span>
     <!-- duplicate all items a second time for seamless loop -->
-    Text Item <span class="ticker-sep">✦</span>
-    Text Item <span class="ticker-sep">✦</span>
+    Text Item <span class="ticker-sep">·</span>
+    Text Item <span class="ticker-sep">·</span>
   </div>
 </div>
 ```
