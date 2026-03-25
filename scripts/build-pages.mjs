@@ -81,7 +81,34 @@ const htmlOpts = {
   minifyJS: false,
 };
 
+/** GitHub project Pages live under /repo-name/; root-absolute URLs must include that segment. */
+function normalizeSiteBasePath(raw) {
+  if (raw === undefined || raw === null) return '';
+  const s = String(raw).trim();
+  if (s === '' || s === '/') return '';
+  const withSlash = s.startsWith('/') ? s : `/${s}`;
+  return withSlash.replace(/\/+$/, '');
+}
+
+function applySiteBaseToHtml(html, basePath) {
+  if (!basePath) return html;
+  const prefix = `${basePath}/`;
+  return html
+    .replace(/href="\//g, `href="${prefix}`)
+    .replace(/src="\//g, `src="${prefix}`);
+}
+
+function applySiteBaseToCss(css, basePath) {
+  if (!basePath) return css;
+  return css.replace(/url\(\s*\//g, `url(${basePath}/`);
+}
+
 async function main() {
+  const siteBasePath = normalizeSiteBasePath(process.env.SITE_BASE_PATH);
+  if (siteBasePath) {
+    console.log('Applying SITE_BASE_PATH for GitHub project Pages:', siteBasePath);
+  }
+
   await rmrf(DIST);
   await mkdirp(path.join(DIST, 'css'));
   await mkdirp(path.join(DIST, 'js'));
@@ -94,7 +121,8 @@ async function main() {
   const cssIn = await fs.readFile(cssEntry, 'utf8');
   const cssResult = await postcss([postcssImport(), cssnano()])
     .process(cssIn, { from: cssEntry, to: path.join(DIST, 'css', 'styles.css') });
-  await fs.writeFile(path.join(DIST, 'css', 'styles.css'), cssResult.css);
+  const cssOut = applySiteBaseToCss(cssResult.css, siteBasePath);
+  await fs.writeFile(path.join(DIST, 'css', 'styles.css'), cssOut);
 
   const jsIn = await fs.readFile(path.join(ROOT, 'js', 'site.js'), 'utf8');
   const jsOut = await terserMinify(jsIn, {
@@ -108,7 +136,8 @@ async function main() {
   for await (const abs of walkHtml(ROOT)) {
     const rel = path.relative(ROOT, abs);
     const raw = await fs.readFile(abs, 'utf8');
-    const min = await htmlMinify(raw, htmlOpts);
+    let min = await htmlMinify(raw, htmlOpts);
+    min = applySiteBaseToHtml(min, siteBasePath);
     const out = path.join(DIST, rel);
     await mkdirp(path.dirname(out));
     await fs.writeFile(out, min);
