@@ -1,6 +1,9 @@
 {
   "name": "wknd",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build:pages": "node scripts/build-pages.mjs",
     "deploy:pages": "npm run build:pages && gh-pages -d dist"
