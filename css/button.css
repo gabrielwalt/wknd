@@ -1,0 +1,163 @@
+/* ─────────────────────────────────────────
+   Shared base — applied to all solid/outline buttons
+───────────────────────────────────────── */
+
+.button,
+.accent-button,
+.button--ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-xl);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+/* ─────────────────────────────────────────
+   Primary — dark, authoritative
+   Use for: main section CTAs, standalone actions
+───────────────────────────────────────── */
+
+.button {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-white);
+  box-shadow: 3px 3px 0 0 var(--color-amber);
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--color-amber);
+}
+
+.button:active {
+  transform: translate(0, 0);
+  box-shadow: 1px 1px 0 0 var(--color-amber);
+}
+
+/* ─────────────────────────────────────────
+   Accent — amber, high energy
+   Use for: hero primary CTAs, newsletter signups,
+            the single most important action on a page
+───────────────────────────────────────── */
+
+.accent-button {
+  background: var(--color-amber);
+  border-color: var(--color-amber);
+  color: var(--color-black);
+  box-shadow: 3px 3px 0 0 var(--color-black);
+}
+
+.accent-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--color-black);
+}
+
+.accent-button:active {
+  transform: translate(0, 0);
+  box-shadow: 1px 1px 0 0 var(--color-black);
+}
+
+/* ─────────────────────────────────────────
+   Ghost / Secondary — outline, fills on hover
+   Use for: secondary actions alongside a primary/accent,
+            buttons in inverse/hero dark contexts
+───────────────────────────────────────── */
+
+.button--ghost {
+  background: transparent;
+  border-color: var(--color-black);
+  color: var(--color-black);
+  box-shadow: 3px 3px 0 0 var(--color-amber);
+}
+
+.button--ghost:hover {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-white);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--color-amber);
+}
+
+.button--ghost:active {
+  transform: translate(0, 0);
+  box-shadow: 1px 1px 0 0 var(--color-amber);
+}
+
+/* ─────────────────────────────────────────
+   Button group
+───────────────────────────────────────── */
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.button-group--centered {
+  justify-content: center;
+}
+
+/* ─────────────────────────────────────────
+   Text button — inline CTA, card links
+   Use for: "Read more", "View trip", inline continuations
+───────────────────────────────────────── */
+
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  color: inherit;
+  transition: opacity var(--transition-fast);
+}
+
+.text-button:hover {
+  opacity: 0.65;
+}
+
+/* ─────────────────────────────────────────
+   Responsive
+───────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .button-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-group--centered {
+    align-items: center;
+  }
+
+  .button,
+  .accent-button,
+  .button--ghost {
+    width: 100%;
+    justify-content: center;
+  }
+}

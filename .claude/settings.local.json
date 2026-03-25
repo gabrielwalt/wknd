@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.wknd-trendsetters.site)",
+      "mcp__plugin_excat_playwright__browser_resize"
+    ]
+  }
+}

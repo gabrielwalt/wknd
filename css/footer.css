@@ -1,0 +1,102 @@
+/* ─────────────────────────────────────────
+   Footer
+───────────────────────────────────────── */
+
+.footer {
+  padding-block: var(--space-3xl);
+}
+
+.inverse-footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  --color-gray-500: #999999;
+  border-top: 4px solid var(--color-amber);
+}
+
+/* ─────────────────────────────────────────
+   Footer links
+───────────────────────────────────────── */
+
+.footer-link {
+  display: block;
+  padding-block: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover,
+.footer-link-on-inverse:hover {
+  color: var(--color-white);
+}
+
+/* ─────────────────────────────────────────
+   Footer structure
+───────────────────────────────────────── */
+
+.footer-top {
+  margin-bottom: var(--space-2xl);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-gray-700);
+  padding-top: var(--space-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.footer-logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-white);
+}
+
+.footer-col-heading {
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-md);
+}
+
+.footer-tagline {
+  color: var(--color-gray-500);
+}
+
+/* ─────────────────────────────────────────
+   Social icons
+───────────────────────────────────────── */
+
+.footer-icons-group {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-gray-700);
+  color: var(--color-white);
+  transition: background-color var(--transition-fast);
+}
+
+.footer-icon-link:hover {
+  background-color: var(--color-gray-500);
+}
+
+@media (max-width: 767px) {
+  .footer-link {
+    padding-block: var(--space-sm);
+  }
+}

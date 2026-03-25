@@ -1,0 +1,89 @@
+/* ─────────────────────────────────────────
+   Tab menu — editorial index style
+───────────────────────────────────────── */
+
+.tab-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-top: 2px solid var(--color-black);
+  padding-top: var(--space-sm);
+}
+
+.tab-menu-link {
+  padding: var(--space-xs) var(--space-xl) var(--space-xs) 0;
+  border: none;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+  background: none;
+  white-space: nowrap;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  border-radius: 0;
+  line-height: 1.1;
+}
+
+.tab-menu-link:hover {
+  color: var(--color-gray-500);
+}
+
+.tab-menu-link.is-active {
+  color: var(--color-black);
+  border-bottom-color: var(--color-amber);
+}
+
+/* ─────────────────────────────────────────
+   Tab pane
+───────────────────────────────────────── */
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.is-active {
+  display: block;
+}
+
+/* ─────────────────────────────────────────
+   Content area below tab menu
+───────────────────────────────────────── */
+
+.tab-container > div:last-child {
+  margin-top: var(--space-2xl);
+}
+
+/* ─────────────────────────────────────────
+   Tab pane top margin (explicit variant)
+───────────────────────────────────────── */
+
+.tab-pane--padded {
+  margin-top: var(--space-xl);
+}
+
+/* ─────────────────────────────────────────
+   Responsive
+───────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .tab-menu {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tab-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-menu-link {
+    font-size: var(--text-lg);
+    padding-right: var(--space-lg);
+    flex-shrink: 0;
+  }
+}

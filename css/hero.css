@@ -1,0 +1,116 @@
+/* ─────────────────────────────────────────
+   Hero section
+───────────────────────────────────────── */
+
+.hero-section {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-block: var(--space-3xl);
+  color: var(--color-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* ─────────────────────────────────────────
+   Blog hero: larger author image + white name
+───────────────────────────────────────── */
+
+.hero-section .article-byline .avatar {
+  width: 5rem;
+  height: 5rem;
+}
+
+.hero-section .article-byline-name {
+  color: var(--color-white);
+}
+
+.hero-section .article-byline-meta {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-eyebrow {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  margin-bottom: var(--space-md);
+}
+
+/* ─────────────────────────────────────────
+   Hero height variant: full-height landing
+───────────────────────────────────────── */
+
+.hero-section--full {
+  min-height: 65vh;
+}
+
+/* ─────────────────────────────────────────
+   Hero content width constraint
+───────────────────────────────────────── */
+
+.hero-content-inner {
+  max-width: 52rem;
+}
+
+/* ─────────────────────────────────────────
+   Hero lead paragraph
+───────────────────────────────────────── */
+
+.hero-lead {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--space-lg);
+  max-width: 38rem;
+}
+
+/* ─────────────────────────────────────────
+   Overlays
+───────────────────────────────────────── */
+
+.overlay-side {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(15, 26, 20, 0.88) 0%,
+    rgba(15, 26, 20, 0.65) 40%,
+    rgba(15, 26, 20, 0.15) 100%
+  );
+}
+
+/* ─────────────────────────────────────────
+   Responsive
+───────────────────────────────────────── */
+
+@media (max-width: 991px) {
+  .hero-content {
+    padding-block: var(--space-2xl);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    padding-block: var(--space-xl);
+  }
+}

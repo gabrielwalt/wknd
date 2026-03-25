@@ -1,0 +1,237 @@
+/* ─────────────────────────────────────────
+   Section wrappers
+───────────────────────────────────────── */
+
+.section {
+  padding-block: var(--space-3xl);
+}
+
+.secondary-section {
+  background-color: var(--color-gray-100);
+}
+
+.inverse-section {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.accent-section {
+  background-color: var(--color-amber);
+}
+
+/* ─────────────────────────────────────────
+   Section heading
+───────────────────────────────────────── */
+
+.section-heading {
+  margin-bottom: var(--space-xl);
+}
+
+/* Title + trailing CTA (e.g. Field Notes): one row, baseline-aligned, link flush right */
+.section-heading:has(> .text-button) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-md) var(--space-lg);
+}
+
+.section-heading:has(> .text-button) > h1,
+.section-heading:has(> .text-button) > h2,
+.section-heading:has(> .text-button) > h3,
+.section-heading:has(> .text-button) > .h1-heading,
+.section-heading:has(> .text-button) > .h2-heading,
+.section-heading:has(> .text-button) > .h3-heading {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.section-heading:has(> .text-button) > .text-button {
+  flex-shrink: 0;
+  margin-inline-start: auto;
+}
+
+/* ─────────────────────────────────────────
+   Multiple containers within one section
+───────────────────────────────────────── */
+
+.section > .container + .container {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-3xl);
+}
+
+/* ─────────────────────────────────────────
+   Responsive
+───────────────────────────────────────── */
+
+@media (max-width: 991px) {
+  .section {
+    padding-block: var(--space-2xl);
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-block: var(--space-xl);
+  }
+}
+
+/* ─────────────────────────────────────────
+   Inverse section: auto-style children
+───────────────────────────────────────── */
+
+.inverse-section h1, .inverse-section h2, .inverse-section h3,
+.inverse-section h4, .inverse-section h5, .inverse-section h6,
+.inverse-section .h1-heading, .inverse-section .h2-heading,
+.inverse-section .h3-heading, .inverse-section .h4-heading,
+.inverse-section .h5-heading, .inverse-section .h6-heading {
+  color: var(--color-white);
+}
+
+.inverse-section p,
+.inverse-section .paragraph-xl,
+.inverse-section .paragraph-lg,
+.inverse-section .paragraph-sm {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.inverse-section .utility-text-secondary {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.inverse-section .article-byline {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.inverse-section .article-byline-name {
+  color: var(--color-white);
+}
+
+.inverse-section .article-byline-meta,
+.inverse-section .article-card-byline,
+.inverse-section .article-card-location {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.inverse-section .card,
+.inverse-section .article-card,
+.inverse-section .feature-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--color-white);
+}
+
+/* On hover, card bg lightens to cream — flip all text to black */
+.inverse-section a.article-card:hover,
+.inverse-section a.card:hover {
+  color: var(--color-black);
+}
+
+.inverse-section a.article-card:hover h1,
+.inverse-section a.article-card:hover h2,
+.inverse-section a.article-card:hover h3,
+.inverse-section a.article-card:hover h4,
+.inverse-section a.article-card:hover h5,
+.inverse-section a.article-card:hover h6,
+.inverse-section a.card:hover h1,
+.inverse-section a.card:hover h2,
+.inverse-section a.card:hover h3,
+.inverse-section a.card:hover h4,
+.inverse-section a.card:hover h5,
+.inverse-section a.card:hover h6 {
+  color: var(--color-black);
+}
+
+.inverse-section a.article-card:hover p,
+.inverse-section a.card:hover p {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.inverse-section a.article-card:hover .utility-text-secondary,
+.inverse-section a.card:hover .utility-text-secondary {
+  color: var(--color-gray-500);
+}
+
+.inverse-section .section-heading {
+  color: var(--color-white);
+}
+
+/* ─────────────────────────────────────────
+   Hero / Inverse: invert primary button to white
+───────────────────────────────────────── */
+
+.hero-section .button,
+.inverse-section .button {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-black);
+  box-shadow: 3px 3px 0 0 var(--color-amber);
+}
+
+.hero-section .button:hover,
+.inverse-section .button:hover {
+  box-shadow: 5px 5px 0 0 var(--color-amber);
+}
+
+.hero-section .button:active,
+.inverse-section .button:active {
+  box-shadow: 1px 1px 0 0 var(--color-amber);
+}
+
+/* Hero ghost: transparent with black shadow, hover → amber fill, shadow stays black */
+.hero-section .button--ghost {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+  box-shadow: 3px 3px 0 0 var(--color-black);
+}
+
+.hero-section .button--ghost:hover {
+  background: var(--color-amber);
+  border-color: var(--color-amber);
+  color: var(--color-black);
+  box-shadow: 5px 5px 0 0 var(--color-black);
+}
+
+.hero-section .button--ghost:active {
+  box-shadow: 1px 1px 0 0 var(--color-black);
+}
+
+/* Inverse ghost: white outline, hover → white fill */
+.inverse-section .button--ghost {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+  box-shadow: 3px 3px 0 0 var(--color-amber);
+}
+
+.inverse-section .button--ghost:hover {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-black);
+  box-shadow: 5px 5px 0 0 var(--color-amber);
+}
+
+/* Accent section: black button with white shadow on amber background */
+.accent-section .button {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  box-shadow: 3px 3px 0 0 var(--color-white);
+}
+
+.accent-section .button:hover {
+  box-shadow: 5px 5px 0 0 var(--color-white);
+}
+
+.accent-section .button:active {
+  box-shadow: 1px 1px 0 0 var(--color-white);
+}
+
+/* Accent section: ghost button with white shadow on amber background */
+.accent-section .button--ghost {
+  border-color: var(--color-black);
+  color: var(--color-black);
+  box-shadow: 3px 3px 0 0 var(--color-white);
+}
+
+.accent-section .button--ghost:hover {
+  box-shadow: 5px 5px 0 0 var(--color-white);
+}
