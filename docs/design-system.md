@@ -99,7 +99,7 @@ The base grid is 2 columns. Use modifier classes to change column count.
 
 ## Button Styles (`css/button.css`)
 
-All buttons: uppercase, `font-body`, pill shape (`--radius-full`), offset drop shadow that shifts on hover/active.
+All buttons and `.text-button`: uppercase, `font-heading` (Syncopate), pill shape (`--radius-full`) where applicable; solid/ghost buttons use offset drop shadow that shifts on hover/active.
 
 | Class | Fill | Shadow | Use |
 |---|---|---|---|
@@ -135,7 +135,7 @@ All buttons: uppercase, `font-body`, pill shape (`--radius-full`), offset drop s
 | `paragraph-lg` | `--text-lg` | Instrument Sans | Section body text |
 | `paragraph-sm` | `--text-sm` | Instrument Sans | Card excerpts, meta |
 | `hero-eyebrow` | `--text-sm` | Syncopate 700, amber, uppercase, +letter-spacing | Category label above hero H1 |
-| `.tag` | `--text-xs` | Instrument Sans 600, uppercase | Amber badge on article cards |
+| `.tag` | `--text-xs` | Syncopate 600, uppercase | Amber badge on article cards |
 | `.utility-text-secondary` | — | — | `--color-gray-500` muted text |
 | `.utility-overflow-x-clip` | — | — | `overflow-x: clip` — e.g. full-bleed figures inside `.blog-content` without horizontal scroll |
 
