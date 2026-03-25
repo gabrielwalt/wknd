@@ -127,6 +127,8 @@ async function main() {
         {
           /* Avoid rewriting unicode-range (e.g. U+0000-00FF → u+00??), which can drop @font-face */
           normalizeUnicode: false,
+          /* Keep quoted font-family in @font-face (unquoted "Instrument Sans" breaks matching in some engines) */
+          minifyFontValues: false,
         },
       ],
     }),
