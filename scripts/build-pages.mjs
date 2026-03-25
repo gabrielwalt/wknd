@@ -119,8 +119,18 @@ async function main() {
 
   const cssEntry = path.join(ROOT, 'css', 'styles.css');
   const cssIn = await fs.readFile(cssEntry, 'utf8');
-  const cssResult = await postcss([postcssImport(), cssnano()])
-    .process(cssIn, { from: cssEntry, to: path.join(DIST, 'css', 'styles.css') });
+  const cssResult = await postcss([
+    postcssImport(),
+    cssnano({
+      preset: [
+        'default',
+        {
+          /* Avoid rewriting unicode-range (e.g. U+0000-00FF → u+00??), which can drop @font-face */
+          normalizeUnicode: false,
+        },
+      ],
+    }),
+  ]).process(cssIn, { from: cssEntry, to: path.join(DIST, 'css', 'styles.css') });
   const cssOut = applySiteBaseToCss(cssResult.css, siteBasePath);
   await fs.writeFile(path.join(DIST, 'css', 'styles.css'), cssOut);
 
