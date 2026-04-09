@@ -12,8 +12,8 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     env:
-      # Project site: /repo/ on pages.github.io. User site (octocat.github.io repo): no prefix.
-      SITE_BASE_PATH: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) && '' || format('/{0}', github.event.repository.name) }}
+      # Custom domain (wknd-adventures.com): no path prefix
+      SITE_BASE_PATH: ''
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
