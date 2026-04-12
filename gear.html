@@ -1,473 +1,267 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="What goes in the pack matters. Curated gear guides by activity — no affiliate links, just honest takes." />
-    <title>Gear — WKND Adventures</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="What goes in the pack matters. Curated gear guides by activity — no affiliate links, just honest takes." />
+  <title>Gear — WKND Adventures</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- NAVBAR -->
     <div class="navbar">
-      <div class="container">
-        <div class="nav-inner">
-          <a href="index.html" class="logo">
-            <div class="nav-logo-icon"><svg width="100%" height="100%" viewBox="0 0 33 33" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg></div>
-            <span class="logo-text">WKND<br/>Adventures</span>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="nav-logo-icon"><svg width="100%" height="100%" viewBox="0 0 33 33" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg></div>
+        <span class="logo-text">WKND<br/>Adventures</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <ul class="nav-menu-list">
+            <li class="nav-menu-list-item nav-megamenu-item">
+        <button class="nav-link nav-megamenu-trigger" aria-expanded="false" aria-haspopup="true">
+          <span>Explore</span><span class="nav-caret" aria-hidden="true"></span>
+        </button>
+        <div class="nav-megamenu">
+          <div class="container">
+            <div class="nav-megamenu-grid nav-megamenu-grid--3">
+          <a href="adventures.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">Adventures</span>
+            <span class="nav-megamenu-link-desc">Hiking, climbing, surfing, cycling. Browse all activities and find your next route.</span>
           </a>
-                    <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
-            <ul class="nav-menu-list">
-
-              <!-- EXPLORE -->
-              <li class="nav-menu-list-item nav-megamenu-item">
-                <button class="nav-link nav-megamenu-trigger" aria-expanded="false" aria-haspopup="true">
-                  <span>Explore</span><span class="nav-caret" aria-hidden="true"></span>
-                </button>
-                <div class="nav-megamenu">
-                  <div class="container">
-                    <div class="nav-megamenu-grid nav-megamenu-grid--3">
-                      <a href="adventures.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">Adventures</span>
-                        <span class="nav-megamenu-link-desc">Hiking, climbing, surfing, cycling. Browse all activities and find your next route.</span>
-                      </a>
-                      <a href="expeditions.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">Expeditions</span>
-                        <span class="nav-megamenu-link-desc">Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands.</span>
-                      </a>
-                      <a href="destinations.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">Destinations</span>
-                        <span class="nav-megamenu-link-desc">Wild places worth going to. Permit details, conditions, and what to expect on the ground.</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <!-- STORIES -->
-              <li class="nav-menu-list-item nav-megamenu-item">
-                <button class="nav-link nav-megamenu-trigger" aria-expanded="false" aria-haspopup="true">
-                  <span>Stories</span><span class="nav-caret" aria-hidden="true"></span>
-                </button>
-                <div class="nav-megamenu">
-                  <div class="container">
-                    <div class="nav-megamenu-stories">
-                      <div class="nav-megamenu-stories-pages">
-                        <a href="field-notes.html" class="nav-megamenu-link">
-                          <span class="nav-megamenu-link-title">Field Notes</span>
-                          <span class="nav-megamenu-link-desc">Essays, photographs, and dispatches from the wild. Slower stories for people who go further.</span>
-                        </a>
-                        <a href="community.html" class="nav-megamenu-link">
-                          <span class="nav-megamenu-link-title">Community</span>
-                          <span class="nav-megamenu-link-desc">Reader submissions, contributor dispatches, and the people behind the routes.</span>
-                        </a>
-                      </div>
-                      <div class="nav-megamenu-stories-articles">
-                        <p class="nav-megamenu-section-label">Recent from the Field</p>
-                        <div class="nav-megamenu-articles-grid">
-                          <a href="blog/patagonia-trek.html" class="nav-megamenu-article">
-                            <span class="nav-megamenu-article-title">W Circuit: 9 Days, 115 km</span>
-                            <span class="nav-megamenu-article-desc">A full account of Torres del Paine — permits, camps, and the weather that shaped every decision.</span>
-                          </a>
-                          <a href="blog/kayaking-norway.html" class="nav-megamenu-article">
-                            <span class="nav-megamenu-article-title">Lofoten Islands: Arctic Surfing</span>
-                            <span class="nav-megamenu-article-desc">Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad.</span>
-                          </a>
-                          <a href="blog/alpine-cycling.html" class="nav-megamenu-article">
-                            <span class="nav-megamenu-article-title">Six Days Through the High Alps by Bike</span>
-                            <span class="nav-megamenu-article-desc">Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes.</span>
-                          </a>
-                          <a href="blog/mountain-photography.html" class="nav-megamenu-article">
-                            <span class="nav-megamenu-article-title">The Camera on Your Back</span>
-                            <span class="nav-megamenu-article-desc">Practical and philosophical. How to shoot in the mountains without compromising your movement.</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <!-- INFO -->
-              <li class="nav-menu-list-item nav-megamenu-item">
-                <button class="nav-link nav-megamenu-trigger" aria-expanded="false" aria-haspopup="true">
-                  <span>Info</span><span class="nav-caret" aria-hidden="true"></span>
-                </button>
-                <div class="nav-megamenu">
-                  <div class="container">
-                    <div class="nav-megamenu-grid nav-megamenu-grid--4">
-                      <a href="gear.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">Gear</span>
-                        <span class="nav-megamenu-link-desc">What to carry and why. Equipment reviews from the people who actually use it in the field.</span>
-                      </a>
-                      <a href="sustainability.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">Sustainability</span>
-                        <span class="nav-megamenu-link-desc">Our wild ethics. How we think about adventure, access, and the land it happens on.</span>
-                      </a>
-                      <a href="about.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">About</span>
-                        <span class="nav-megamenu-link-desc">Who we are, how we work, and what we believe about adventure writing.</span>
-                      </a>
-                      <a href="faq.html" class="nav-megamenu-link">
-                        <span class="nav-megamenu-link-title">FAQ</span>
-                        <span class="nav-megamenu-link-desc">Permits, access, conditions, and common practical questions, answered in full.</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-          </nav>
-          <div class="nav-right">
-            <a href="community.html" class="button"><div class="button-label">Subscribe</div></a>
-            <button class="nav-mobile-menu-button" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-              <span>Menu</span>
-            </button>
+          <a href="expeditions.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">Expeditions</span>
+            <span class="nav-megamenu-link-desc">Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands.</span>
+          </a>
+          <a href="destinations.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">Destinations</span>
+            <span class="nav-megamenu-link-desc">Wild places worth going to. Permit details, conditions, and what to expect on the ground.</span>
+          </a>
+            </div>
           </div>
+        </div>
+      </li>
+            <li class="nav-menu-list-item nav-megamenu-item">
+        <button class="nav-link nav-megamenu-trigger" aria-expanded="false" aria-haspopup="true">
+          <span>Stories</span><span class="nav-caret" aria-hidden="true"></span>
+        </button>
+        <div class="nav-megamenu">
+          <div class="container">
+            <div class="nav-megamenu-stories">
+              <div class="nav-megamenu-stories-pages">
+        <a href="field-notes.html" class="nav-megamenu-link">
+          <span class="nav-megamenu-link-title">Field Notes</span>
+          <span class="nav-megamenu-link-desc">Essays, photographs, and dispatches from the wild. Slower stories for people who go further.</span>
+        </a>
+        <a href="community.html" class="nav-megamenu-link">
+          <span class="nav-megamenu-link-title">Community</span>
+          <span class="nav-megamenu-link-desc">Reader submissions, contributor dispatches, and the people behind the routes.</span>
+        </a>
+              </div>
+              <div class="nav-megamenu-stories-articles">
+                <p class="nav-megamenu-section-label">Recent from the Field</p>
+                <div class="nav-megamenu-articles-grid">
+          <a href="blog/patagonia-trek.html" class="nav-megamenu-article">
+            <span class="nav-megamenu-article-title">W Circuit: 9 Days, 115 km</span>
+            <span class="nav-megamenu-article-desc">A full account of Torres del Paine — permits, camps, and the weather that shaped every decision.</span>
+          </a>
+          <a href="blog/kayaking-norway.html" class="nav-megamenu-article">
+            <span class="nav-megamenu-article-title">Lofoten Islands: Arctic Surfing</span>
+            <span class="nav-megamenu-article-desc">Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad.</span>
+          </a>
+          <a href="blog/alpine-cycling.html" class="nav-megamenu-article">
+            <span class="nav-megamenu-article-title">Six Days Through the High Alps by Bike</span>
+            <span class="nav-megamenu-article-desc">Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes.</span>
+          </a>
+          <a href="blog/mountain-photography.html" class="nav-megamenu-article">
+            <span class="nav-megamenu-article-title">The Camera on Your Back</span>
+            <span class="nav-megamenu-article-desc">Practical and philosophical. How to shoot in the mountains without compromising your movement.</span>
+          </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li class="nav-menu-list-item nav-megamenu-item">
+        <button class="nav-link nav-megamenu-trigger" aria-expanded="false" aria-haspopup="true">
+          <span>Info</span><span class="nav-caret" aria-hidden="true"></span>
+        </button>
+        <div class="nav-megamenu">
+          <div class="container">
+            <div class="nav-megamenu-grid nav-megamenu-grid--4">
+          <a href="gear.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">Gear</span>
+            <span class="nav-megamenu-link-desc">What to carry and why. Equipment reviews from the people who actually use it in the field.</span>
+          </a>
+          <a href="sustainability.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">Sustainability</span>
+            <span class="nav-megamenu-link-desc">Our wild ethics. How we think about adventure, access, and the land it happens on.</span>
+          </a>
+          <a href="about.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">About</span>
+            <span class="nav-megamenu-link-desc">Who we are, how we work, and what we believe about adventure writing.</span>
+          </a>
+          <a href="faq.html" class="nav-megamenu-link">
+            <span class="nav-megamenu-link-title">FAQ</span>
+            <span class="nav-megamenu-link-desc">Permits, access, conditions, and common practical questions, answered in full.</span>
+          </a>
+            </div>
+          </div>
+        </div>
+      </li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="community.html" class="button"><span class="button-label">Subscribe</span></a>
+        <button class="nav-mobile-menu-button" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main id="main-content">
+      <section class="hero-section hero-section--full">
+  <div class="hero-bg">
+    <img src="images/activities/skitouring.jpg" alt="Gear laid out for a backcountry trip" fetchpriority="high" />
+    <div class="overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-content-inner">
+      <p class="hero-eyebrow">Gear</p>
+      <h1 class="h1-heading utility-margin-bottom-lg">Gear</h1>
+      <p class="paragraph-xl hero-lead">What goes in the pack matters. No affiliate links, no brand deals. Just what we actually use.</p>
+      <div class="button-group">
+        <a href="#gear-by-activity" class="button"><span class="button-label">By Activity</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section secondary-section">
+  <div class="container">
+    <div class="featured-article">
+      <div class="featured-article-image">
+        <img src="images/adventures/adobestock-257541512.jpeg" alt="Ultralight backpacking kit laid out on a tarp" loading="lazy" />
+      </div>
+      <div>
+        <div class="tag">Gear Guide</div>
+        <h2 class="h2-heading">Sub-10 lb: What to Cut, What to Keep</h2>
+        <p class="paragraph-lg utility-text-secondary utility-margin-bottom-lg">Taylor spent three years cutting weight from a 22 lb base down to 9.4. The answer wasn't expensive gear — it was hard questions. What do you actually need? What are you carrying out of habit? This guide is the honest breakdown of every decision.</p>
+        
+        <div class="featured-article-footer">
+          <a href="blog/ultralight-backpacking.html" class="button"><span class="button-label">Read Guide</span></a>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <main id="main-content">
+<section class="section">
+  <div class="container">
+    
+    <div data-fragment="fragments/activity-tabs.html"></div>
+  </div>
+</section>
 
-      <!-- 1. HERO -->
-      <section class="hero-section">
-        <div class="hero-bg">
-          <img src="images/activities/skitouring.jpg" alt="Gear laid out for a backcountry trip" fetchpriority="high" />
-          <div class="overlay"></div>
-        </div>
-        <div class="container hero-content">
-          <div class="hero-content-inner">
-            <p class="hero-eyebrow">Gear</p>
-            <h1 class="h1-heading utility-margin-bottom-lg">Gear</h1>
-            <p class="paragraph-xl hero-lead">What goes in the pack matters. No affiliate links, no brand deals. Just what we actually use.</p>
-            <a href="#gear-by-activity" class="accent-button"><div class="button-label">By Activity</div></a>
-          </div>
-        </div>
-      </section>
+<section class="section accent-section">
+  <div class="container container--narrow container--centered">
+    <h2 class="h2-heading utility-margin-bottom-lg">Buy once. Pack light. Leave nothing.</h2>
+    <p class="paragraph-xl">Three rules. Every guide, every review, every gear list on this site follows them without exception.</p>
+  </div>
+</section>
 
-      <!-- ── INTRO ── -->
-      <section class="section accent-section">
-        <div class="container container--narrow container--centered">
-          <h2 class="h2-heading utility-margin-bottom-lg">Buy once. Pack light. Leave nothing.</h2>
-          <p class="paragraph-xl">Three rules. Every guide, every review, every gear list on this site follows them without exception.</p>
-        </div>
-      </section>
+<section class="section accent-section">
+  <div class="container container--narrow container--centered">
+    <h2 class="h2-heading utility-margin-bottom-lg">Gear Features</h2>
+    <p class="paragraph-xl"><p>Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.</p><p>Manufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.</p><p>We don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.</p><p>We do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.</p></p>
+  </div>
+</section>
 
-      <!-- 2. FEATURED ARTICLE — Ultralight Backpacking -->
-      <section class="section secondary-section">
-        <div class="container">
-          <div class="featured-article">
-            <a href="blog/ultralight-backpacking.html" class="featured-article-image">
-              <img src="images/adventures/adobestock-257541512.jpeg" alt="Ultralight backpacking kit laid out on a tarp" loading="lazy" />
-            </a>
-            <div>
-              <div class="tag">Gear Guide</div>
-              <h2 class="h2-heading">Sub-10 lb: What to Cut, What to Keep</h2>
-              <p class="paragraph-lg utility-text-secondary utility-margin-bottom-lg">Taylor spent three years cutting weight from a 22 lb base down to 9.4. The answer wasn't expensive gear — it was hard questions. What do you actually need? What are you carrying out of habit? This guide is the honest breakdown of every decision.</p>
-              <div class="featured-article-footer">
-                <a href="blog/ultralight-backpacking.html" class="button"><div class="button-label">Read the Guide</div></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="section accent-section">
+  <div class="container container--narrow container--centered">
+    <h2 class="h2-heading utility-margin-bottom-lg">The Full Breakdown</h2>
+    <p class="paragraph-xl"><p>Boot selection is the most consequential single gear decision in alpine and mountain travel. For technical terrain — routes graded D or above, mixed ground, or approaches requiring crampon use — you need a boot with a full-length rand, a stiff sole rated for B2 or B3 crampons, and a heel and toe welt. The fit principle that most people get wrong: leave 10–12 mm of toe room on flat ground and the boot will be correct on a steep descent. If it feels comfortable in the shop, it is probably too large for technical downclimbing.</p><p>The three-layer system — base, mid, shell — is the correct framework for most mountain conditions, but the specific choices within that framework depend on activity intensity and weather. Base layers for high-output activities should be merino or a merino blend: it manages odour over multiple days and doesn't compress insulation the way synthetic fabrics do at rest. Mid-layer selection is where most people over-invest: a 100-weight fleece is sufficient for aerobic activity above a base layer; heavier insulation belongs in the belay jacket, not the hiking mid. Shell choice is straightforward — hardshell for sustained precipitation, softshell for dry cold and high output. The error is trying to find one shell that does both.</p><p>GPS devices have changed navigation in the backcountry, but they have not replaced the capacity to read a 1:25,000 map and set a bearing. The failure mode of GPS navigation — battery death, screen condensation, terrain that looks different at ground level than it does as a track line — happens at exactly the moment you need navigation most. WKND contributors use a mix of Garmin inReach, Suunto Ambit, and offline mapping on phones as primary or secondary tools, but every contributor carries a map and compass as absolute backup. For battery strategy on multi-day routes: a 10,000 mAh power bank adds 230g and extends GPS device use by 4–6 days depending on tracking frequency.</p></p>
+  </div>
+</section>
 
-      <!-- 3. TABS BY ACTIVITY -->
-      <section class="section" id="gear-by-activity" data-tabs>
-        <div class="container">
-          <div class="section-heading">
-            <h2 class="h2-heading">Gear by Activity</h2>
-          </div>
-          <div class="tab-menu" role="tablist">
-            <button class="tab-menu-link is-active" data-tab="tab-climbing" role="tab" aria-selected="true">Climbing</button>
-            <button class="tab-menu-link" data-tab="tab-water" role="tab" aria-selected="false">Water</button>
-            <button class="tab-menu-link" data-tab="tab-cycling" role="tab" aria-selected="false">Cycling</button>
-            <button class="tab-menu-link" data-tab="tab-desert" role="tab" aria-selected="false">Desert</button>
-            <button class="tab-menu-link" data-tab="tab-allseason" role="tab" aria-selected="false">All-Season</button>
-          </div>
+<section class="section">
+  <div class="container">
+    
+    <div class="editorial-index">
+    <div class="editorial-index-item">
+      <span class="editorial-index-number">01</span>
+      <div>
+        <h3 class="h4-heading utility-margin-bottom-md">Footwear for Technical Terrain</h3>
+        <p class="paragraph-lg utility-text-secondary">undefined</p>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 
-          <!-- Climbing -->
-          <div class="tab-pane is-active" id="tab-climbing" role="tabpanel">
-            <p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">Rock climbing kit is unforgiving. A harness that fits badly, shoes half a size off, or a belay device you haven't used in six months — these are not abstractions. We cover what works, what to size carefully, and what you can borrow vs. what you should own.</p>
-            <div class="grid-layout desktop-3-column grid-gap-lg">
-              <a href="blog/yosemite-rock-climbing.html" class="article-card">
-                <div class="article-card-image"><img src="images/activities/sport-climbing.jpg" alt="Rock climbing in Yosemite" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Climbing</div><span class="paragraph-sm utility-text-secondary">Mar 2026</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Yosemite Rock Climbing</h3>
-                  <p class="paragraph-sm utility-text-secondary">Jordan M. on the gear that held up and the stuff left behind after a full week on El Cap routes.</p>
-                </div>
-              </a>
-              <a href="blog/winter-mountaineering.html" class="article-card">
-                <div class="article-card-image"><img src="images/activities/ice-climbing.jpg" alt="Winter mountaineering on a snowy face" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Climbing</div><span class="paragraph-sm utility-text-secondary">Jun 2025</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Winter Mountaineering</h3>
-                  <p class="paragraph-sm utility-text-secondary">Crampons, ice axes, and layers. What Jordan M. carries when the temperature drops below zero and the route goes vertical.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Water -->
-          <div class="tab-pane" id="tab-water" role="tabpanel">
-            <p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">Water environments punish gear that isn't up to the job — fast, without warning. Wetsuit thickness, sealed seams, cold-water layering. Morgan has wiped out in Arctic swells and knows exactly what failed first.</p>
-            <div class="grid-layout desktop-3-column grid-gap-lg">
-              <a href="blog/kayaking-norway.html" class="article-card">
-                <div class="article-card-image"><img src="images/magazine/surfer-wave-02.jpg" alt="Cold Atlantic swell, Lofoten Islands coast, Norway" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Surf</div><span class="paragraph-sm utility-text-secondary">Nov 2025</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Surfing Lofoten</h3>
-                  <p class="paragraph-sm utility-text-secondary">Arctic surf kit: 6/5mm suits, cold-water boards, and the gear that made the Lofoten possible.</p>
-                </div>
-              </a>
-              <a href="blog/surfing-costa-rica.html" class="article-card">
-                <div class="article-card-image"><img src="images/adventures/adobestock-278302117.jpeg" alt="Surfing in Costa Rica" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Surf</div><span class="paragraph-sm utility-text-secondary">Jan 2026</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Surfing Costa Rica</h3>
-                  <p class="paragraph-sm utility-text-secondary">Travelling light with a board bag. Morgan L. on boards, fins, wax, and what to leave at home.</p>
-                </div>
-              </a>
-              <a href="blog/wild-swimming-guide.html" class="article-card">
-                <div class="article-card-image"><img src="images/magazine/beach-walking.jpg" alt="Wild swimming at dusk" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Water</div><span class="paragraph-sm utility-text-secondary">Jul 2025</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Wild Swimming Guide</h3>
-                  <p class="paragraph-sm utility-text-secondary">You need less than you think. Morgan L. on the three things you actually need for open-water swimming.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Cycling -->
-          <div class="tab-pane" id="tab-cycling" role="tabpanel">
-            <p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">Bikepacking and alpine cycling demand gear that multitasks. A good frame bag, a reliable drivetrain, layers that compress to nothing. Alex R. covers the kit behind the big climbs — what he swears by and what he'll never take again.</p>
-            <div class="grid-layout desktop-3-column grid-gap-lg">
-              <a href="blog/alpine-cycling.html" class="article-card">
-                <div class="article-card-image"><img src="images/adventures/adobestock-261097343.jpeg" alt="Cycling high in the Alps" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Expedition</div><span class="paragraph-sm utility-text-secondary">Dec 2025</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">High Alps by Bike</h3>
-                  <p class="paragraph-sm utility-text-secondary">Alex R. on the gear list for a 1,200 km alpine traverse — every gram justified, every decision road-tested.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Desert -->
-          <div class="tab-pane" id="tab-desert" role="tabpanel">
-            <p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">Desert kit is the opposite of mountain kit — you're managing heat, not cold, and water weight is your biggest variable. Sun protection, navigation, and knowing when to stop. Taylor B. has spent enough nights in a bivy in the sand to know exactly what belongs in the pack.</p>
-            <div class="grid-layout desktop-3-column grid-gap-lg">
-              <a href="blog/desert-survival-guide.html" class="article-card">
-                <div class="article-card-image"><img src="images/adventures/adobestock-185324648.jpg" alt="Desert survival in a remote landscape" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Desert</div><span class="paragraph-sm utility-text-secondary">Oct 2025</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Desert Survival Guide</h3>
-                  <p class="paragraph-sm utility-text-secondary">Taylor B. on the ten items that kept them alive in five days of unsupported desert travel — and the one thing almost left behind.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- All-Season -->
-          <div class="tab-pane" id="tab-allseason" role="tabpanel">
-            <p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">The ultralight philosophy applies everywhere: carry only what earns its weight, nothing that exists just in case. Every gram you cut is a decision you made before you needed to. Taylor B.'s approach to all-season kit starts with base weight and works outward.</p>
-            <div class="grid-layout desktop-3-column grid-gap-lg">
-              <a href="blog/ultralight-backpacking.html" class="article-card">
-                <div class="article-card-image"><img src="images/adventures/adobestock-257541512.jpeg" alt="Ultralight gear laid flat" loading="lazy" /></div>
-                <div class="article-card-body">
-                  <div class="article-card-meta"><div class="tag">Gear Guide</div><span class="paragraph-sm utility-text-secondary">Aug 2025</span></div>
-                  <h3 class="h5-heading utility-margin-bottom-sm">Ultralight Backpacking</h3>
-                  <p class="paragraph-sm utility-text-secondary">The system that works across seasons. Taylor B.'s complete sub-10 lb philosophy, piece by piece.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- 4. GEAR FEATURES -->
-      <section class="section secondary-section">
-        <div class="container">
-          <div class="section-heading">
-            <h2 class="h2-heading">Gear Features</h2>
-          </div>
-          <div data-fragment="fragments/activity-tabs.html"></div>
-        </div>
-
-        <div class="container container--narrow">
-          <h2 class="h2-heading utility-margin-bottom-xl">How We Test Gear</h2>
-          <p class="paragraph-lg utility-margin-bottom-md">Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.</p>
-          <p class="paragraph-lg utility-margin-bottom-md">Manufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.</p>
-          <p class="paragraph-lg utility-margin-bottom-md">We don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.</p>
-          <p class="paragraph-lg utility-margin-bottom-md">We do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.</p>
-        </div>
-      </section>
-
-      <!-- CATEGORY GUIDES -->
-      <section class="section">
-        <div class="container container--narrow">
-          <div class="section-heading">
-            <h2 class="h2-heading">The Full Breakdown</h2>
-          </div>
-          <div class="editorial-index">
-
-            <div class="editorial-index-item">
-              <span class="editorial-index-number">01</span>
-              <div>
-                <h3 class="h4-heading utility-margin-bottom-md">Footwear for Technical Terrain</h3>
-                <p class="paragraph-lg utility-text-secondary">Boot selection is the most consequential single gear decision in alpine and mountain travel. For technical terrain — routes graded D or above, mixed ground, or approaches requiring crampon use — you need a boot with a full-length rand, a stiff sole rated for B2 or B3 crampons, and a heel and toe welt. The fit principle that most people get wrong: leave 10–12 mm of toe room on flat ground and the boot will be correct on a steep descent. If it feels comfortable in the shop, it is probably too large for technical downclimbing.</p>
-              </div>
-            </div>
-
-            <div class="editorial-index-item">
-              <span class="editorial-index-number">02</span>
-              <div>
-                <h3 class="h4-heading utility-margin-bottom-md">Layering Systems Explained</h3>
-                <p class="paragraph-lg utility-text-secondary">The three-layer system — base, mid, shell — is the correct framework for most mountain conditions, but the specific choices within that framework depend on activity intensity and weather. Base layers for high-output activities should be merino or a merino blend: it manages odour over multiple days and doesn't compress insulation the way synthetic fabrics do at rest. Mid-layer selection is where most people over-invest: a 100-weight fleece is sufficient for aerobic activity above a base layer; heavier insulation belongs in the belay jacket, not the hiking mid. Shell choice is straightforward — hardshell for sustained precipitation, softshell for dry cold and high output. The error is trying to find one shell that does both.</p>
-              </div>
-            </div>
-
-            <div class="editorial-index-item">
-              <span class="editorial-index-number">03</span>
-              <div>
-                <h3 class="h4-heading utility-margin-bottom-md">Navigation: Map, Compass, GPS</h3>
-                <p class="paragraph-lg utility-text-secondary">GPS devices have changed navigation in the backcountry, but they have not replaced the capacity to read a 1:25,000 map and set a bearing. The failure mode of GPS navigation — battery death, screen condensation, terrain that looks different at ground level than it does as a track line — happens at exactly the moment you need navigation most. WKND contributors use a mix of Garmin inReach, Suunto Ambit, and offline mapping on phones as primary or secondary tools, but every contributor carries a map and compass as absolute backup. For battery strategy on multi-day routes: a 10,000 mAh power bank adds 230g and extends GPS device use by 4–6 days depending on tracking frequency.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- PACKING LISTS -->
-      <section class="section secondary-section">
-        <div class="container">
-          <div class="section-heading">
-            <h2 class="h2-heading">What Goes In</h2>
-          </div>
-          <div class="grid-layout desktop-2-column grid-gap-xl">
-
-            <div>
-              <h3 class="h3-heading utility-margin-bottom-md">3-Day Alpine Route</h3>
-              <p class="paragraph-sm utility-text-secondary utility-margin-bottom-lg">Tested across multiple summer alpine routes in the Mont Blanc Massif and Écrins. Assumes mountain hut accommodation is unavailable. Base weight: 9.2 kg.</p>
-              <ul class="blog-gear-list">
-                <li>Sleeping bag rated to −5°C synthetic fill, 650g — synthetic dries faster than down at altitude where condensation is constant</li>
-                <li>Ultralight bivy sack, silnylon, 180g — your second shelter if the weather closes in faster than expected</li>
-                <li>30L alpine pack with hip-transfer capacity — bigger is not better; every litre you leave empty is weight you're carrying</li>
-                <li>B2-compatible double boots — not single-layer; overnight temperatures at 3,000m regularly drop below −8°C even in July</li>
-                <li>C2 aluminium 12-point crampons — steel is heavier and unnecessary for hard ice that isn't vertical</li>
-                <li>70cm ice axe, T-rated — the classic length is fine; shorter axes are faster to swing but worse for self-arrest</li>
-                <li>Hardshell jacket and trousers, Gore-Tex Pro equivalent — not eVent or cheaper membranes; sustained precipitation requires the best breath­ability available</li>
-                <li>Merino base layer, 200-weight — two tops; one on, one drying under the lid of your pack</li>
-                <li>Down belay jacket, 800-fill, stuffable to 600ml — worn at rests and belays, not during movement</li>
-                <li>Helmet, UIAA-certified — borrow one that fits correctly rather than buying a bad fit</li>
-                <li>30m 7mm tag line — for rappels on descents; doubles as a haul line in an emergency</li>
-                <li>1.5L water capacity with a Sawyer Squeeze filter — snowmelt is not clean; glacier flour causes long-term kidney damage</li>
-                <li>Three days of food at 600 kcal/hour moving rate — 5,400 kcal minimum; nuts, hard cheese, bars with no chocolate coating (chocolate cracks at altitude temperatures)</li>
-                <li>First aid: SAM splint, blister kit, ibuprofen 400mg, altitude sickness protocol sheet — not a full kit; weight is the enemy</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="h3-heading utility-margin-bottom-md">5-Day Desert Trek</h3>
-              <p class="paragraph-sm utility-text-secondary utility-margin-bottom-lg">Tested in the Saharan margin of southern Morocco and the Wadi Rum, Jordan. Assumes no water resupply for 48-hour stretches. Base weight: 7.8 kg.</p>
-              <ul class="blog-gear-list">
-                <li>Sleeping bag rated to +8°C, 400g — desert nights drop sharply; +8°C is the correct temperature floor for most Saharan margins in spring</li>
-                <li>Freestanding single-skin tent, 1.2 kg — a tarp works but sandstorms require four solid walls and a working zip</li>
-                <li>40L pack with side-compression straps — water weight fluctuates by 2–4 kg; side straps let you rebalance as you drink</li>
-                <li>4L water capacity minimum — two 2L soft flasks, not bottles; soft flasks compress as they empty and don't rattle</li>
-                <li>Water purification tablets as backup — filter technology fails in high silt loads; chemical backup weighs 40g and has saved multiple contributors</li>
-                <li>Sun hoody, 50+ UPF, long sleeve — not a T-shirt; desert sun through a thin layer burns in under 20 minutes</li>
-                <li>Lightweight desert trousers, nylon, zip-off leg — full leg protection; shorts cause burns and abrasions on rocky descents</li>
-                <li>Trail runners with rock plate, not hiking boots — desert travel is flat to moderate gradient; rock plates prevent bruising from shale without the weight of a boot</li>
-                <li>Gaiters, low ankle — keeps sand out of shoes; the single most underrated piece of desert kit</li>
-                <li>Headtorch rated to 200 lumens with a red mode — desert navigation at night requires real light; red mode preserves night vision and extends battery</li>
-                <li>Emergency bivouac bag, reflective, 200g — not a sleeping bag; for unplanned nights and emergency signalling</li>
-                <li>Navigation: 1:50,000 map, compass, offline GPS — desert has few landmarks; grid navigation is more important here than anywhere</li>
-                <li>Electrolyte tablets, one per litre of water above 35°C — water without electrolytes at high sweat rates leads to hyponatraemia faster than dehydration</li>
-                <li>Blister prevention: wool socks, not synthetic; Leukotape pre-applied to known hotspots before day one — treating a blister on day three in 45°C heat is a serious problem</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. THREE RULES -->
-      <section class="section inverse-section">
-        <div class="container">
-          <div class="section-heading">
-            <h2 class="h2-heading">Three rules we live by</h2>
-          </div>
-          <div class="grid-layout desktop-3-column grid-gap-lg">
-            <div class="feature-card">
-              <h3 class="h4-heading utility-margin-bottom-sm">Buy once</h3>
-              <p class="paragraph-lg utility-text-secondary">Good gear outlasts trends. Choose carefully, use forever.</p>
-            </div>
-            <div class="feature-card">
-              <h3 class="h4-heading utility-margin-bottom-sm">Pack light</h3>
-              <p class="paragraph-lg utility-text-secondary">Every gram is a decision you'll revisit on mile 20.</p>
-            </div>
-            <div class="feature-card">
-              <h3 class="h4-heading utility-margin-bottom-sm">Leave nothing</h3>
-              <p class="paragraph-lg utility-text-secondary utility-margin-bottom-md">The trace you leave is part of your kit. Pack it out.</p>
-              <a href="sustainability.html" class="text-button">
-                <div>Our wild ethics</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. CTA -->
-      <section class="section accent-section">
-        <div class="container container--centered">
-          <h2 class="h2-heading utility-margin-bottom-md">Gear is only half the story.</h2>
-          <p class="paragraph-lg utility-margin-bottom-xl utility-max-width-sm utility-margin-inline-auto">Read the adventures where it gets used.</p>
-          <a href="adventures.html" class="button"><div class="button-label">Browse Adventures</div></a>
-        </div>
-      </section>
-
+<section class="">
+  <div class="container utility-text-align-center">
+    <h2 class="h2-heading utility-margin-bottom-lg">Buy once. Pack light. Leave nothing.</h2>
+    <p class="paragraph-lg utility-margin-bottom-xl">Three rules. Every guide, every review, every gear list on this site follows them without exception.</p>
+    
+  </div>
+</section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer inverse-footer">
-      <div class="container">
-        <div class="grid-layout desktop-4-column grid-gap-xl footer-top">
-          <div>
-            <div class="footer-logo">
-              <div class="footer-logo-icon"><svg width="100%" height="100%" viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg></div>
-              <span class="logo-text">WKND<br/>Adventures</span>
-            </div>
-            <p class="paragraph-sm footer-tagline">Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.</p>
-          </div>
-          <div>
-            <h4 class="h6-heading footer-col-heading">Explore</h4>
-            <ul><li><a href="adventures.html" class="footer-link">Adventures</a></li><li><a href="expeditions.html" class="footer-link">Expeditions</a></li><li><a href="field-notes.html" class="footer-link">Field Notes</a></li><li><a href="destinations.html" class="footer-link">Destinations</a></li></ul>
-          </div>
-          <div>
-            <h4 class="h6-heading footer-col-heading">Recent Stories</h4>
-            <ul><li><a href="blog/patagonia-trek.html" class="footer-link">W Circuit, Patagonia</a></li><li><a href="blog/kayaking-norway.html" class="footer-link">Lofoten Islands</a></li><li><a href="blog/alpine-cycling.html" class="footer-link">High Alps by Bike</a></li><li><a href="blog/yosemite-rock-climbing.html" class="footer-link">Yosemite Climbing</a></li><li><a href="blog/mountain-photography.html" class="footer-link">Mountain Photography</a></li></ul>
-          </div>
-          <div>
-            <h4 class="h6-heading footer-col-heading">Info</h4>
-            <ul><li><a href="gear.html" class="footer-link">Gear</a></li><li><a href="sustainability.html" class="footer-link">Sustainability</a></li><li><a href="about.html" class="footer-link">About</a></li><li><a href="community.html" class="footer-link">Community</a></li><li><a href="faq.html" class="footer-link">FAQ</a></li></ul>
-          </div>
+  <div class="container">
+    <div class="grid-layout desktop-4-column grid-gap-xl footer-top">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-icon"><svg width="100%" height="100%" viewBox="0 0 33 33" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg></div>
+          <span class="logo-text">WKND<br/>Adventures</span>
         </div>
-        <div class="footer-bottom">
-          <p class="paragraph-sm footer-tagline">© 2026 WKND Adventures. All rights reserved.</p>
-          <p class="paragraph-sm footer-tagline">Made for the people who go.</p>
-        </div>
+        <p class="paragraph-sm footer-tagline">Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.</p>
       </div>
-    </footer>
+      
+          <div>
+        <h4 class="h6-heading footer-col-heading">Explore</h4>
+        <ul>
+          <li><a href="adventures.html" class="footer-link">Adventures</a></li>
+          <li><a href="expeditions.html" class="footer-link">Expeditions</a></li>
+          <li><a href="field-notes.html" class="footer-link">Field Notes</a></li>
+          <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+        </ul>
+      </div>
+          <div>
+        <h4 class="h6-heading footer-col-heading">Recent Stories</h4>
+        <ul>
+          <li><a href="blog/patagonia-trek.html" class="footer-link">W Circuit, Patagonia</a></li>
+          <li><a href="blog/kayaking-norway.html" class="footer-link">Lofoten Islands</a></li>
+          <li><a href="blog/alpine-cycling.html" class="footer-link">High Alps by Bike</a></li>
+          <li><a href="blog/yosemite-rock-climbing.html" class="footer-link">Yosemite Climbing</a></li>
+          <li><a href="blog/mountain-photography.html" class="footer-link">Mountain Photography</a></li>
+        </ul>
+      </div>
+          <div>
+        <h4 class="h6-heading footer-col-heading">Info</h4>
+        <ul>
+          <li><a href="gear.html" class="footer-link">Gear</a></li>
+          <li><a href="sustainability.html" class="footer-link">Sustainability</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="community.html" class="footer-link">Community</a></li>
+          <li><a href="faq.html" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="paragraph-sm footer-tagline">© 2026 WKND Adventures. All rights reserved.</p>
+      <p class="paragraph-sm footer-tagline">Made for the people who go.</p>
+    </div>
+  </div>
+</footer>
 
     <script src="js/site.js" defer></script>
   </body>

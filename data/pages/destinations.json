@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Destinations — WKND Adventures",
+    "description": "From Patagonian valleys to Norwegian fjords. Where will you go next?",
+    "depth": 0
+  },
+  "hero": {
+    "variant": "full",
+    "image": {
+      "src": "images/adventures/adobestock-59459597.jpeg",
+      "alt": "Torres del Paine peaks and glacial plains, Patagonia"
+    },
+    "eyebrow": "WKND Adventures",
+    "heading": "Destinations",
+    "lead": "From Patagonian valleys to Norwegian fjords — where will you go next?",
+    "cta": [
+      {
+        "label": "Americas",
+        "href": "#americas"
+      },
+      {
+        "label": "Europe",
+        "href": "#europe"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "featured-article",
+      "image": {
+        "src": "images/adventures/adobestock-231698835.jpg",
+        "alt": "W Circuit, Torres del Paine, Patagonia"
+      },
+      "tag": "South America",
+      "eyebrow": "Featured Destination",
+      "heading": "W Circuit, Torres del Paine",
+      "body": "South America's defining long-distance trail — the W Circuit in Torres del Paine, Chile. Nine days across wind-scoured pampas, glacial moraine, and the surreal blue ice of the Grey Glacier. The granite towers that give the park its name come into view only at the end, after you've earned the approach.",
+      "button": {
+        "href": "blog/patagonia-trek.html",
+        "label": "Read Guide",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "fragment-include",
+      "fragmentSrc": "fragments/field-notes-grid.html"
+    },
+    {
+      "type": "intro",
+      "heading": "Permits &amp; Logistics",
+      "body": "<p>The permit systems at the world's most celebrated destinations have become genuinely complicated — and ignoring them doesn't make them go away. Torres del Paine operates a mandatory reservation system through CONAF, Chile's national parks service. Refugio and camping spots on the W Circuit sell out in peak season (December–February) up to six months in advance. The park limits daily entries to specific zones, so \"booking late and hoping\" is a strategy that ends in Puerto Natales, not on the trail. The WKND Patagonia report includes direct links to the CONAF system and a timeline for when each allocation typically opens.</p><p>Yosemite's wilderness permit system is different in structure but equally unforgiving. The Half Dome cables day-hike permit is a lottery drawn two days before the intended date — plus a daily walk-up quota that fills within minutes at the trailhead. Multi-day wilderness permits into the backcountry require advance reservation through Recreation.gov from late March. For El Capitan routes on the big walls, there's no permit required for climbing, but bivy sites on the wall are unregulated and specific approach trails have their own seasonal restrictions. The current rules change regularly — always check the NPS Yosemite site directly rather than relying on guidebook editions more than two years old.</p><p>In the Dolomites, the Alta Via networks are unregulated for hiking, but the network of private rifugios that makes multi-day traverses viable books up entirely in July and August. Most rifugios open bookings in March via their own systems — there's no central booking platform. Our Dolomites destination reports list each hut's booking contact individually, with notes on which ones have waiting list systems worth getting onto. The Italian alpine club (CAI) membership card earns a meaningful discount at affiliated rifugios and is worth the annual fee for anyone spending more than a week in the system.</p><p>Every WKND trip report includes a dedicated Logistics section covering: trailhead access and nearest public transport, permit requirements with direct links to the official booking system, typical booking lead times by season, and any recent changes to access rules we've been notified about. We update these sections when contributors file corrections. If you find the information has changed, use the report's feedback form — verified corrections are incorporated within 48 hours and credited to the submitter.</p>"
+    },
+    {
+      "type": "editorial-index",
+      "items": [
+        {
+          "number": "01",
+          "heading": "Winter in the Alps",
+          "text": "December through March locks in the ski touring calendar — high passes are buried under 2–4 metres of consolidated snow and access to summer routes closes completely. Hut-to-hut ski touring, ice climbing on frozen waterfalls, and winter mountaineering on the lower 4000ers are what winter in the Alps actually offers."
+        }
+      ]
+    },
+    {
+      "type": "cta-section",
+      "sectionClass": "",
+      "centered": true,
+      "heading": "Explore by Region",
+      "body": ""
+    }
+  ]
+}

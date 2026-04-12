@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Questions — WKND Adventures",
+    "description": "Everything you want to know before heading out — or before hitting send on a story.",
+    "depth": 0
+  },
+  "hero": {
+    "variant": "full",
+    "image": {
+      "src": "images/adventures/adobestock-257501643.jpeg",
+      "alt": "A trail disappearing into mountain mist"
+    },
+    "eyebrow": "Questions",
+    "heading": "Questions",
+    "lead": "Everything you want to know before heading out — or before hitting send on a story.",
+    "cta": [
+      {
+        "label": "Planning a Trip",
+        "href": "#planning"
+      },
+      {
+        "label": "Contributing a Story",
+        "href": "#stories"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "faq-list",
+      "sectionClass": "section",
+      "heading": "Planning &amp; Adventures",
+      "items": [
+        {
+          "question": "What fitness level do your adventures assume? (Be honest — I skip leg day.)",
+          "answer": "It varies wildly, and we refuse to pretend \"moderate\" means the same thing on a Patagonian haul as on a Sunday stroll with a latte. Each author says what the route actually felt like in their body — lungs, knees, ego, the whole package. Read the intro; if they mention \"we bonked at hour four,\" that's a feature, not a typo."
+        },
+        {
+          "question": "Can I do these routes alone, or will my mum worry?",
+          "answer": "Your mum will worry regardless — that's her job. Ours is to flag when solo is a genuinely bad idea (crevasses, tide races, things that go \"whoosh\" in the night). Many pieces are solo-friendly; others basically say \"bring a friend who knows what they're doing.\" We spell it out so you can text your mum something reassuring and still be honest with yourself."
+        },
+        {
+          "question": "How fresh is this intel? Snow melts, opinions don't.",
+          "answer": "Trip dates sit loud and proud in the byline. Nature, meanwhile, enjoys changing its mind without updating the website. For snow, surf, and anything involving the word \"alpine,\" double-check the official source before you pack the wrong jacket and blame us in a one-star review. We refresh pieces when readers send credible \"actually, the bridge is gone\" notes."
+        },
+        {
+          "question": "Where's the gear? I need an excuse to buy something orange.",
+          "answer": "The <a href=\"gear.html\" class=\"faq-link\">Gear section</a> is sorted by activity so you can justify that orange thing honestly. No affiliate links — we make zero cents when you click, which is either noble or foolish depending on your accountant. Articles usually tuck a kit list into the route notes for people who read the fine print."
+        },
+        {
+          "question": "Do you run guided trips? I'll bring snacks.",
+          "answer": "We love snacks; we still won't guide you. WKND is a magazine, not a tour company — no matching fleeces, no walkie-talkie choreography. Use <a href=\"expeditions.html\" class=\"faq-link\">Expeditions</a> for big-trip inspiration, then plan it yourself like the beautifully chaotic adult you are."
+        },
+        {
+          "question": "How do I find something close to my couch?",
+          "answer": "The <a href=\"destinations.html\" class=\"faq-link\">Destinations page</a> is your map of \"farther than the couch, but you choose how much.\" We've got depth in Patagonia, Scandinavia, the Alps, California, and Southeast Asia — and oddballs everywhere else. Don't see your backyard? Tell us. Worst case we daydream; best case we commission someone to go suffer for art."
+        }
+      ]
+    },
+    {
+      "type": "faq-list",
+      "sectionClass": "section secondary-section",
+      "heading": "Contributing Stories",
+      "items": [
+        {
+          "question": "How do I submit a reader story without summoning a PDF demon?",
+          "answer": "Email <a href=\"mailto:stories@wknd-adventures.com\" class=\"faq-link\">stories@wknd-adventures.com</a> with the subject <strong>Reader Submission: [route name]</strong>. Attach Word, Google Doc link, or plain text — we're not precious. Add at least one photo (blurry summit selfies welcome if the story slaps) and a one-line bio so we know you're human. That's the whole ritual."
+        },
+        {
+          "question": "What makes a story publishable vs. \"cool trip, bro\"?",
+          "answer": "We want the version you tell after the third coffee when your friend says \"wait, <em>then</em> what happened?\" A specific screw-up, a real decision, a detail that couldn't be invented in an office. Polished prose is optional; verifiable chaos is not. If you climbed Everest in perfect weather with zero feelings, we'll nap politely."
+        },
+        {
+          "question": "Do you pay contributors? (Asking for my landlord.)",
+          "answer": "Not yet — we're small, indie, and funded like a very committed hobby. You get credit, a bio, and us yelling about your piece on the internet. No free boots in exchange for your soul, either. When we can pay properly, we'll shout it from a mountain; until then, blame capitalism, not your editor."
+        },
+        {
+          "question": "Can I send only photos and vibes?",
+          "answer": "Vibes don't rasterize well. Send the images <em>plus</em> 300–400 words on what we're looking at and why it mattered. If the frames are absurdly good, we'll help you shape the words — we're editors, not monsters. Photo essays need ~6 bangers and one clear idea, not sixty near-duplicates of the same ridge."
+        },
+        {
+          "question": "How long until I hear back? I've refreshed my inbox 400 times.",
+          "answer": "We batch-read once a month; aim for an answer within six weeks — yes, no, or \"not quite, here's why.\" We don't ghost; we're just slow in a charming, artisanal way. Past eight weeks? Nudge us. We probably buried your email under a pile of \"RE: RE: tent warranty.\""
+        },
+        {
+          "question": "Can I repost my piece on my blog that three people read?",
+          "answer": "After six months, yes — anywhere you like, with a line that it ran here first. We keep it on our site because the internet is forever and we're sentimental. You still own your words; we just asked for a respectful head start, like letting someone finish their sandwich before you steal a fry."
+        }
+      ]
+    },
+    {
+      "type": "faq-list",
+      "sectionClass": "section",
+      "heading": "Planning Your Trip",
+      "items": [
+        {
+          "question": "Is this route \"within my ability\" or main-character syndrome?",
+          "answer": "Ignore the average daydream — find the <em>spiciest</em> bit of the route (one scary pitch, one whiteout nav leg, one \"why is this wet\") and ask if you've done that flavour of spicy before, for real, not on YouTube. Grades assume you already speak the language: Scottish winter III assumes crampons aren't a fashion statement. Read recent trip reports; trust the grumpy ones slightly more than the Instagram captions."
+        },
+        {
+          "question": "Solo overnight: what do I actually need besides optimism?",
+          "answer": "Shelter and sleep stuff rated for weather one notch worse than the forecast (forecasts lie; you knew that). Map, compass, offline map on something charged, water treatment, food plus an extra meal for when you miss the trail so hard you invent new swear words, basic first aid + foil blanket, and a PLB or satellite messenger — because \"I'll have signal\" is not a plan, it's a punchline. Optimism packs lighter than a tent; bring the tent anyway."
+        },
+        {
+          "question": "Hot-ticket permits: do I need five alarms and a spreadsheet?",
+          "answer": "Yes. Famous routes open bookings like concert tickets — set a calendar alert, caffeinate responsibly, and click at go-time. Lotteries: use every legal entry you're allowed. Missed the window? Shoulder season is often prettier, cheaper, and less crowded, and rangers sometimes have walk-up fairy dust. Your spreadsheet can be named \"Dreams.xlsx\" if it helps emotionally."
+        },
+        {
+          "question": "The weather turned. Do I push through like a movie montage?",
+          "answer": "Montages skip the boring part where someone gets hypothermia. Before you leave, pick concrete turn-around triggers — wind over X, snowfall rate Y, \"if we're not at the col by Z o'clock.\" Decisions made in a warm kitchen beat decisions made while hangry above the treeline. The mountain will still be there; your knees prefer you sensible."
+        },
+        {
+          "question": "Why hire a local guide when I watched a 12-minute tutorial?",
+          "answer": "Because the tutorial doesn't know today's serac mood, which bush the trail hides behind after the storm, or how to not be a jerk on someone else's land. Hiring locally isn't admitting defeat — it's buying decades of \"we don't talk about that gully\" knowledge. Look up IFMGA / AMGA / NZMGA (or your country's equivalent) and pick a human, not an algorithm."
+        }
+      ]
+    },
+    {
+      "type": "faq-list",
+      "sectionClass": "section secondary-section",
+      "heading": "About WKND Content",
+      "items": [
+        {
+          "question": "How do you pick difficulty — dartboard, vibes, or science?",
+          "answer": "We use real systems — UIAA, French grades, Scottish adjectives, ski-touring codes — because inventing \"WKND Level 7 spicy\" helps nobody. When guidebooks disagree (they love that), we say so and add what the grade <em>feels</em> like in human verbs: \"lots of front-pointing,\" \"runouts that encourage philosophy.\" A number without context is just typography."
+        },
+        {
+          "question": "How often do you update routes — every full moon?",
+          "answer": "We patch things when someone credible emails \"the bridge is now a concept\" or similar. Article headers show original date plus last refresh. Seasonal routes get a nudge toward official condition pages because we're writers, not wizards. If a piece is old enough to drive in some countries, verify the beta yourself before you blame us for your soggy socks."
+        },
+        {
+          "question": "Are these gear links secretly funding your espresso habit?",
+          "answer": "Nope — zero affiliate links, zero \"buy this and we get three cents.\" Espresso is funded the old-fashioned way: denial and hope. If we ever flipped that policy, we'd announce it loudly so you could throw popcorn. Recommendations come from use in the field, not from a brand deck."
+        },
+        {
+          "question": "What does \"contributor-verified\" mean — they pinky-swore?",
+          "answer": "It means a named human stood on the route within ~18 months and checked the boring stuff — huts, permits, \"is that trail still there\" — against reality, not a photocopied guide from 1997. It is not a guarantee the glacier didn't move overnight; it is a promise someone put their reputation on the line for that date stamp."
+        }
+      ]
+    },
+    {
+      "type": "faq-list",
+      "sectionClass": "section",
+      "heading": "Contributing &amp; Community",
+      "items": [
+        {
+          "question": "I write like a text message — is that disqualifying?",
+          "answer": "Most of us are route nerds first, comma negotiators second. If you were <em>there</em> and you're honest about the mud, we can help with the semicolons. We can't invent your experience from thin air; we can absolutely sand the rough edges off how you tell it. Send the messy draft — perfection is overrated and suspicious."
+        },
+        {
+          "question": "Paycheck or exposure bucks?",
+          "answer": "Right now: real bylines, real audience, imaginary dollars. No sneaky \"we'll pay you in headlamps\" deals either. When we can pay real money, we'll make noise about it — think less \"quiet policy update,\" more \"we bought cake.\" Until then, thanks for feeding the culture anyway."
+        },
+        {
+          "question": "My trip was a beautiful disaster — still a story?",
+          "answer": "That's the good stuff. Wrong valley, thunderstorm tantrum, summit that stayed hypothetical — readers learn more from your bad day than from another hero shot. Give us the moment you knew, what you knew (and didn't), and what you'd pack differently besides regret. Comedy optional; humility appreciated."
+        },
+        {
+          "question": "Pictures-only pitch — like a silent film but with JPEGs?",
+          "answer": "For <a href=\"field-notes.html\" class=\"faq-link\">Field Notes</a> photo essays we want eight+ frames that sequence like a story, plus 200–300 words so we're not guessing your plot. Send five samples and a teaser; if it's magic, we'll nag you gently for the rest. Random pretty clouds: lovely, not a narrative."
+        }
+      ]
+    },
+    {
+      "type": "fragment-include",
+      "fragmentSrc": "fragments/expeditions-grid.html"
+    }
+  ]
+}

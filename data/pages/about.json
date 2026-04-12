@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "About — WKND Adventures",
+    "description": "A small editorial team that goes to wild places and writes honestly about what we find.",
+    "depth": 0
+  },
+  "hero": {
+    "variant": "full",
+    "image": {
+      "src": "images/magazine/adobe-waadobe-wa-mg-3094.jpg",
+      "alt": "The WKND team gathered around a table in the field"
+    },
+    "eyebrow": "About",
+    "heading": "About WKND",
+    "lead": "We are a small editorial team that goes to wild places and writes honestly about what we find.",
+    "cta": [
+      {
+        "label": "Our Work",
+        "href": "#work"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "fragment-include",
+      "fragmentSrc": "fragments/field-notes-grid.html"
+    },
+    {
+      "type": "intro",
+      "heading": "No brand deals. No desk research. No shortcuts.",
+      "body": "Every route published here has been walked by someone on this team before a word was written for public consumption."
+    },
+    {
+      "type": "intro",
+      "heading": "The Editorial Standard",
+      "body": "<p>Every piece of content published on WKND Adventures passes through the same verification process, regardless of who wrote it or how experienced the contributor is. The standard is simple in principle and demanding in practice: if we cannot confirm it from the field, we don't publish it. This means contributors complete every route they cover. It means gear is tested over multiple trips in the conditions the review describes — not handed to us by a brand rep in an office, not evaluated on a single weekend outing. A jacket reviewed for alpine use has been worn in alpine conditions. A boot reviewed for winter mountaineering has been used on snow and ice, at altitude, over enough days to reveal its actual failure modes.</p><p>First-person fieldwork is not optional. We do not commission writers to synthesise other people's experiences into a polished summary. We send people into the field, or we don't cover the route. This creates constraints — we can't cover everything, and we publish slowly by the standards of digital media. That's a deliberate editorial choice. A smaller archive of verified, useful information is worth more than a large archive of aggregated content that may or may not be accurate in the conditions you encounter.</p><p>Our gear testing methodology is documented and consistent. We test each piece of equipment across a minimum of three separate outings before rating it. We note the specific conditions — temperature range, terrain type, duration of use, load carried. We include failure modes: what the gear didn't do well, where it underperformed against its specification, and what we'd use instead if we had to make the choice again. The question we always ask is: would I trust this review with my safety on an unfamiliar route? If the answer is no, it doesn't run.</p><p>On sponsored trips and commercial relationships: we have a categorical policy. We do not accept sponsored travel. Brands do not determine where we go, what we cover, or how we assess their products. If a contributor has received gear from a brand for testing purposes, that relationship is disclosed in the piece — clearly, at the top, not buried in a footer note. We have turned down significant sponsorship offers to maintain this standard. We will continue to do so. The alternative — editorial independence that bends when the money is large enough — is not editorial independence at all.</p>"
+    },
+    {
+      "type": "intro",
+      "heading": "How We Fund Our Work",
+      "body": "<p>WKND Adventures is independently funded through reader subscriptions and a small number of carefully vetted affiliate gear links. The subscription model is straightforward: readers who find the publication useful pay a modest annual fee that covers our operating costs and the real-world expenses of field work — travel, permits, accommodation, equipment. No investor capital, no advertising revenue, no brand deals. The financial model exists to serve the editorial model, not to override it.</p><p>The affiliate links require more explanation, because the outdoor media industry has a poor record on this. When a reader clicks a link to purchase gear we've reviewed and makes a purchase, we receive a small commission from the retailer. We want to be direct about how this works and where it does and doesn't influence our coverage. The commission structure is identical across all retailers we link to — we don't receive a higher rate for directing readers toward one brand over another. We don't have preferred partner arrangements. The gear we link to is the gear we actually used and assessed. If the best option in a category is from a brand that pays lower affiliate rates, we link to it anyway. Our reviews are written before we consider where the gear can be purchased. The purchase links are added at the end of the editorial process, not the beginning.</p><p>There is no advertorial content on WKND Adventures. No native advertising. No brand-produced content given an editorial wrapper to make it look like journalism. The distinction matters: advertorial content, however well-designed, is paid-for messaging that serves the brand's interests. It is not journalism, and we don't want readers to have to wonder which category any given piece falls into. Everything on this site was written by our editorial team or by community contributors under our editorial guidelines. Nothing was written by a brand or commissioned by a brand. If that ever changes — it won't, but if it does — we'll tell you first.</p>"
+    },
+    {
+      "type": "intro",
+      "heading": "Your adventure belongs here too.",
+      "body": "WKND Adventures publishes one reader story per month."
+    },
+    {
+      "type": "cta-section",
+      "sectionClass": "",
+      "centered": true,
+      "heading": "No brand deals. No desk research. No shortcuts.",
+      "body": "Every route published here has been walked by someone on this team before a word was written for public consumption."
+    }
+  ]
+}

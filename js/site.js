@@ -96,12 +96,21 @@
     });
   }
 
+  function initForms() {
+    document.querySelectorAll('form[data-subscribe]').forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+      });
+    });
+  }
+
   function init() {
     initMobileNav();
     initMegamenuMobile();
     initMegamenuDesktopHover();
     document.addEventListener('click', onDocumentClick);
     loadFragments();
+    initForms();
   }
 
   if (document.readyState === 'loading') {

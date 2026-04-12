@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+    "description": "Bold Stories. Real Life. Wild Places. WKND Adventures documents the people, routes, and moments that make the outdoors worth protecting.",
+    "depth": 0
+  },
+  "hero": {
+    "variant": "full",
+    "image": {
+      "src": "images/adventures/adobestock-140634652.jpeg",
+      "alt": "Wild mountain landscape at dawn"
+    },
+    "eyebrow": "WKND Adventures",
+    "heading": "Bold Stories.<br />Real Life.<br />Wild Places.",
+    "lead": "We document the people, routes, and moments that make the outdoors worth protecting.",
+    "cta": [
+      {
+        "label": "Explore Adventures",
+        "href": "adventures.html"
+      },
+      {
+        "label": "Read Field Notes",
+        "href": "field-notes.html"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "featured-article",
+      "image": {
+        "src": "images/adventures/adobestock-257541512.jpeg",
+        "alt": "Dawn sky from inside a tent pitched on Frenchman"
+      },
+      "tag": "Gear Guide · Hiking",
+      "eyebrow": "Featured Guide",
+      "heading": "Sub-10 lb: What to Cut, What to Keep",
+      "body": "An honest guide to ultralight backpacking — where the weight actually lives, what to cut, what to keep, and when to ignore all of it.",
+      "button": {
+        "href": "blog/ultralight-backpacking.html",
+        "label": "Read Guide",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "fragment-include",
+      "fragmentSrc": "fragments/activity-tabs.html"
+    },
+    {
+      "type": "ticker",
+      "items": [
+        "Climbing",
+        "Kayaking",
+        "Cycling",
+        "Desert",
+        "Photography",
+        "Hiking",
+        "Winter",
+        "Surfing",
+        "Expedition",
+        "Wild Swimming"
+      ]
+    },
+    {
+      "type": "intro",
+      "heading": "Not sure where to start?",
+      "body": "WKND Adventures is built for people who are serious about the outdoors — but it's not a gatekeeping exercise. If you're planning your first multi-day route, you belong here. If you're a seasoned alpinist looking for detailed beta on a route you haven't done, you belong here too. The depth of the archive is the point."
+    },
+    {
+      "type": "intro",
+      "heading": "How We Work",
+      "body": "<p>Every route published on WKND Adventures has been completed by a WKND contributor before a word is written for public consumption. No desk research. No secondhand accounts aggregated from trip reports on other platforms. If the trail doesn't go, or the permit system has changed, or the hut is closed for the winter — we find out in the field, not in the edit. It costs more time. It produces better information.</p><p>A WKND trip report is not a summary. It's a working document: full gear lists with weights and model numbers, weather windows with specific dates and conditions, permit processes with links and lead times, camp notes with coordinates, water sources, and honest assessments of ground quality. The kind of detail that actually changes how you plan. We write for the reader who is three weeks out and needs to know exactly what they're getting into.</p><p>Routes change. Bridges wash out. Access agreements expire. Fire closures redraw the map. Trail conditions that were accurate in September can be dangerous in April. Every report on WKND carries a last-verified date — and when conditions shift materially, we go back, revisit the route, and update the record. We consider outdated advice on active terrain a form of negligence. We take that seriously.</p>"
+    },
+    {
+      "type": "editorial-index",
+      "items": [
+        {
+          "number": "01",
+          "heading": "We go first",
+          "text": "Every route published on WKND Adventures has been completed by a WKND contributor before a word is written for public consumption. No desk research. No secondhand accounts aggregated from trip reports on other platforms. If the trail doesn't go, or the permit system has changed, or the hut is closed for the winter — we find out in the field, not in the edit. It costs more time. It produces better information."
+        }
+      ]
+    },
+    {
+      "type": "cta-section",
+      "sectionClass": "",
+      "centered": true,
+      "heading": "Ready to plan your next adventure?",
+      "body": "Gear up, read the briefing, then go. Every route you need is here.",
+      "button": {
+        "label": "Find a Destination",
+        "href": "destinations.html"
+      }
+    }
+  ]
+}

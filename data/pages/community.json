@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Community — WKND Adventures",
+    "description": "Real adventures from real readers. One story a month, chosen by the editors.",
+    "depth": 0
+  },
+  "hero": {
+    "variant": "full",
+    "image": {
+      "src": "images/adventures/adobestock-238491803.jpeg",
+      "alt": "Adventurers gathered around a campfire in the field"
+    },
+    "eyebrow": "Community",
+    "heading": "Community",
+    "lead": "Real adventures from real readers. One story a month — chosen by the editors.",
+    "cta": [
+      {
+        "label": "Submit Your Story",
+        "href": "#submit"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "featured-article",
+      "image": {
+        "src": "images/activities/ice-climbing.jpg",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France"
+      },
+      "tag": "Reader Story",
+      "eyebrow": "Featured Story",
+      "heading": "Traversing the Rochefort Ridge: Two Days on Skis Above Chamonix",
+      "body": "Alex C. from Brisbane had been planning the Rochefort Ridge for three seasons. A classic ski mountaineering traverse in the Mont Blanc massif — approached from the Helbronner cable car on the Italian side, moving across the high ridge above the Mer de Glace with glacier travel, mixed terrain, and the kind of exposure that narrows the whole world to the next placement. He sent us his account two weeks after returning and we read it in one sitting.",
+      "button": {
+        "href": "blog/winter-mountaineering.html",
+        "label": "Read Story",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "fragment-include",
+      "fragmentSrc": "fragments/expeditions-grid.html"
+    },
+    {
+      "type": "intro",
+      "heading": "One story a month. Chosen by the editors. Written by you.",
+      "body": "Not polished. Not perfect. True — and specific enough that only someone who was there could have written it."
+    },
+    {
+      "type": "intro",
+      "heading": "From the Wild",
+      "body": "Selected field dispatches from WKND contributors — and the routes inspiring the next round of reports."
+    },
+    {
+      "type": "intro",
+      "heading": "What makes a great dispatch?",
+      "body": "<p>The dispatches we publish have one thing in common: they are specific. Not \"the mountain was beautiful and the experience changed me\" — but \"the wind on the col was south-southeast at around 40 knots and we had to cross it crawling on hands and knees to avoid being blown off the ridge.\" That level of specificity is not just more interesting to read; it is genuinely useful to the next person planning the same route. The test we apply to every submission is this: does the reader who is planning this trip now know something useful that they didn't know before? If the answer is no, the piece isn't working yet.</p><p>Honest reporting of difficulty and failure is not optional — it's the whole point. We are not interested in sanitised accounts that smooth over the moments when things went wrong, the decision to turn around, the gear failure, the navigational error that cost three hours. Those are the moments that teach the most, and the best dispatches we've published have all contained at least one honest account of a mistake or a setback. Writing about failure requires more craft than writing about success, and we consider it the mark of a writer who has something real to say. If your route went perfectly according to plan, ask yourself whether you're telling the whole story.</p><p>We ask all contributors to respect the communities and ecosystems they pass through. This means: don't identify precise camp locations in sensitive areas where impact is already concentrated. Don't name access routes through private land without the landowner's knowledge. Don't publish coordinates for spots that are currently under pressure from overuse. We will edit for this where necessary and flag it during review, but the responsibility starts with the writer. If a place is worth writing about, it's worth protecting — and those two obligations sometimes pull in opposite directions. When they do, protection wins.</p><p>Photographs should be honest before they are beautiful. We don't expect professional equipment or post-processing skills. We do expect that images represent conditions accurately: if it was raining, we want to see the rain. If the route was loose and exposed, the photographs should show that. Heavily filtered images that make harsh terrain look inviting create a false impression that can put inexperienced readers in situations they weren't prepared for. Phone cameras in honest conditions beat DSLRs with misleading processing. Shoot what's actually there.</p><p>No promotional content, in any form. Mentions of gear you used and assessed honestly are fine — we encourage them. Mentions of gear you used because a brand sent it to you must be disclosed. Do not include links to brand websites, tour operators, or guiding companies in your submission text. Do not mention commercial services unless they are directly relevant to the route and you're prepared to assess them critically. If a mountain hut was overpriced and under-maintained, say so. If a local guiding company was excellent, say so — but also say what it cost and what you got. We'll remove any content that reads as unpaid advertising, with or without your knowledge that it reads that way.</p><p>Finally: write like yourself. The dispatches that land hardest are the ones where the writer's voice is present and distinct. Don't sand off the edges trying to sound like a magazine. Don't over-explain the emotional significance of what happened. Trust the specific detail to carry the meaning — it almost always does. The mountain doesn't need editorialising. Tell us what it looked like, what it felt like underfoot, what decision you made and why, and what you'd do differently. That's the whole brief.</p>"
+    },
+    {
+      "type": "cta-section",
+      "sectionClass": "",
+      "centered": true,
+      "heading": "Join in",
+      "body": "",
+      "button": {
+        "label": "Submit via email",
+        "href": "mailto:stories@wknd-adventures.com"
+      }
+    }
+  ]
+}

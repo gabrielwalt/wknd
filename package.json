@@ -5,7 +5,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "build:pages": "node scripts/build-pages.mjs",
+    "generate": "node scripts/generate-html.mjs",
+    "build:pages": "npm run generate && node scripts/build-pages.mjs",
     "deploy:pages": "npm run build:pages && gh-pages -d dist"
   },
   "devDependencies": {

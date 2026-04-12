@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "logoHref": "index.html",
+    "subscribeHref": "community.html",
+    "megamenus": [
+      {
+        "label": "Explore",
+        "gridClass": "nav-megamenu-grid--3",
+        "links": [
+          {
+            "href": "adventures.html",
+            "title": "Adventures",
+            "desc": "Hiking, climbing, surfing, cycling. Browse all activities and find your next route."
+          },
+          {
+            "href": "expeditions.html",
+            "title": "Expeditions",
+            "desc": "Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands."
+          },
+          {
+            "href": "destinations.html",
+            "title": "Destinations",
+            "desc": "Wild places worth going to. Permit details, conditions, and what to expect on the ground."
+          }
+        ]
+      },
+      {
+        "label": "Stories",
+        "variant": "stories",
+        "pageLinks": [
+          {
+            "href": "field-notes.html",
+            "title": "Field Notes",
+            "desc": "Essays, photographs, and dispatches from the wild. Slower stories for people who go further."
+          },
+          {
+            "href": "community.html",
+            "title": "Community",
+            "desc": "Reader submissions, contributor dispatches, and the people behind the routes."
+          }
+        ],
+        "recentArticlesLabel": "Recent from the Field",
+        "recentArticles": [
+          {
+            "href": "blog/patagonia-trek.html",
+            "title": "W Circuit: 9 Days, 115 km",
+            "desc": "A full account of Torres del Paine — permits, camps, and the weather that shaped every decision."
+          },
+          {
+            "href": "blog/kayaking-norway.html",
+            "title": "Lofoten Islands: Arctic Surfing",
+            "desc": "Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad."
+          },
+          {
+            "href": "blog/alpine-cycling.html",
+            "title": "Six Days Through the High Alps by Bike",
+            "desc": "Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes."
+          },
+          {
+            "href": "blog/mountain-photography.html",
+            "title": "The Camera on Your Back",
+            "desc": "Practical and philosophical. How to shoot in the mountains without compromising your movement."
+          }
+        ]
+      },
+      {
+        "label": "Info",
+        "gridClass": "nav-megamenu-grid--4",
+        "links": [
+          {
+            "href": "gear.html",
+            "title": "Gear",
+            "desc": "What to carry and why. Equipment reviews from the people who actually use it in the field."
+          },
+          {
+            "href": "sustainability.html",
+            "title": "Sustainability",
+            "desc": "Our wild ethics. How we think about adventure, access, and the land it happens on."
+          },
+          {
+            "href": "about.html",
+            "title": "About",
+            "desc": "Who we are, how we work, and what we believe about adventure writing."
+          },
+          {
+            "href": "faq.html",
+            "title": "FAQ",
+            "desc": "Permits, access, conditions, and common practical questions, answered in full."
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.",
+    "copyrightYear": 2026,
+    "copyrightText": "© 2026 WKND Adventures. All rights reserved.",
+    "closingText": "Made for the people who go.",
+    "columns": [
+      {
+        "type": "logo",
+        "heading": "",
+        "content": ""
+      },
+      {
+        "heading": "Explore",
+        "links": [
+          { "href": "adventures.html", "label": "Adventures" },
+          { "href": "expeditions.html", "label": "Expeditions" },
+          { "href": "field-notes.html", "label": "Field Notes" },
+          { "href": "destinations.html", "label": "Destinations" }
+        ]
+      },
+      {
+        "heading": "Recent Stories",
+        "links": [
+          { "href": "blog/patagonia-trek.html", "label": "W Circuit, Patagonia" },
+          { "href": "blog/kayaking-norway.html", "label": "Lofoten Islands" },
+          { "href": "blog/alpine-cycling.html", "label": "High Alps by Bike" },
+          { "href": "blog/yosemite-rock-climbing.html", "label": "Yosemite Climbing" },
+          { "href": "blog/mountain-photography.html", "label": "Mountain Photography" }
+        ]
+      },
+      {
+        "heading": "Info",
+        "links": [
+          { "href": "gear.html", "label": "Gear" },
+          { "href": "sustainability.html", "label": "Sustainability" },
+          { "href": "about.html", "label": "About" },
+          { "href": "community.html", "label": "Community" },
+          { "href": "faq.html", "label": "FAQ" }
+        ]
+      }
+    ]
+  }
+}

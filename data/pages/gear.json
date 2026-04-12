@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Gear — WKND Adventures",
+    "description": "What goes in the pack matters. Curated gear guides by activity — no affiliate links, just honest takes.",
+    "depth": 0
+  },
+  "hero": {
+    "variant": "full",
+    "image": {
+      "src": "images/activities/skitouring.jpg",
+      "alt": "Gear laid out for a backcountry trip"
+    },
+    "eyebrow": "Gear",
+    "heading": "Gear",
+    "lead": "What goes in the pack matters. No affiliate links, no brand deals. Just what we actually use.",
+    "cta": [
+      {
+        "label": "By Activity",
+        "href": "#gear-by-activity"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "featured-article",
+      "image": {
+        "src": "images/adventures/adobestock-257541512.jpeg",
+        "alt": "Ultralight backpacking kit laid out on a tarp"
+      },
+      "tag": "Gear Guide",
+      "eyebrow": "Featured Guide",
+      "heading": "Sub-10 lb: What to Cut, What to Keep",
+      "body": "Taylor spent three years cutting weight from a 22 lb base down to 9.4. The answer wasn't expensive gear — it was hard questions. What do you actually need? What are you carrying out of habit? This guide is the honest breakdown of every decision.",
+      "button": {
+        "href": "blog/ultralight-backpacking.html",
+        "label": "Read Guide",
+        "variant": "primary"
+      }
+    },
+    {
+      "type": "fragment-include",
+      "fragmentSrc": "fragments/activity-tabs.html"
+    },
+    {
+      "type": "intro",
+      "heading": "Buy once. Pack light. Leave nothing.",
+      "body": "Three rules. Every guide, every review, every gear list on this site follows them without exception."
+    },
+    {
+      "type": "intro",
+      "heading": "Gear Features",
+      "body": "<p>Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.</p><p>Manufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.</p><p>We don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.</p><p>We do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.</p>"
+    },
+    {
+      "type": "intro",
+      "heading": "The Full Breakdown",
+      "body": "<p>Boot selection is the most consequential single gear decision in alpine and mountain travel. For technical terrain — routes graded D or above, mixed ground, or approaches requiring crampon use — you need a boot with a full-length rand, a stiff sole rated for B2 or B3 crampons, and a heel and toe welt. The fit principle that most people get wrong: leave 10–12 mm of toe room on flat ground and the boot will be correct on a steep descent. If it feels comfortable in the shop, it is probably too large for technical downclimbing.</p><p>The three-layer system — base, mid, shell — is the correct framework for most mountain conditions, but the specific choices within that framework depend on activity intensity and weather. Base layers for high-output activities should be merino or a merino blend: it manages odour over multiple days and doesn't compress insulation the way synthetic fabrics do at rest. Mid-layer selection is where most people over-invest: a 100-weight fleece is sufficient for aerobic activity above a base layer; heavier insulation belongs in the belay jacket, not the hiking mid. Shell choice is straightforward — hardshell for sustained precipitation, softshell for dry cold and high output. The error is trying to find one shell that does both.</p><p>GPS devices have changed navigation in the backcountry, but they have not replaced the capacity to read a 1:25,000 map and set a bearing. The failure mode of GPS navigation — battery death, screen condensation, terrain that looks different at ground level than it does as a track line — happens at exactly the moment you need navigation most. WKND contributors use a mix of Garmin inReach, Suunto Ambit, and offline mapping on phones as primary or secondary tools, but every contributor carries a map and compass as absolute backup. For battery strategy on multi-day routes: a 10,000 mAh power bank adds 230g and extends GPS device use by 4–6 days depending on tracking frequency.</p>"
+    },
+    {
+      "type": "editorial-index",
+      "items": [
+        {
+          "number": "01",
+          "heading": "Footwear for Technical Terrain",
+          "text": "Boot selection is the most consequential single gear decision in alpine and mountain travel. For technical terrain — routes graded D or above, mixed ground, or approaches requiring crampon use — you need a boot with a full-length rand, a stiff sole rated for B2 or B3 crampons, and a heel and toe welt. The fit principle that most people get wrong: leave 10–12 mm of toe room on flat ground and the boot will be correct on a steep descent. If it feels comfortable in the shop, it is probably too large for technical downclimbing."
+        }
+      ]
+    },
+    {
+      "type": "cta-section",
+      "sectionClass": "",
+      "centered": true,
+      "heading": "Buy once. Pack light. Leave nothing.",
+      "body": "Three rules. Every guide, every review, every gear list on this site follows them without exception."
+    }
+  ]
+}
