@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Expeditions — WKND Adventures",
-    "description": "Our signature multi-day documented journeys. Three continents, forty-three days on the trail.",
+    "description": "Multi-day journeys, big summits, and epic adventures.",
     "depth": 0
   },
   "hero": {
@@ -27,39 +27,44 @@
   "sections": [
     {
       "type": "fragment-include",
+      "heading": "",
       "fragmentSrc": "fragments/expeditions-grid.html"
     },
     {
-      "type": "intro",
+      "type": "cta-section",
       "heading": "W Circuit: 9 Days, 115 km, One Life-Changing Walk",
-      "body": "<p><strong>Flagship Expedition</strong></p><p>Torres del Paine is not a place you visit. It's a place that works on you — slowly, relentlessly, through wind and weather and the sheer scale of its granite towers. The W Circuit covers the park's most iconic terrain: Los Cuernos, the French Valley, the Mirador Las Torres. Over nine days and 115 kilometres, we documented every camp, every weather window, every lesson the trail had to teach.</p><p>Jordan M. and Morgan L. completed the route in late austral summer, carrying full packs and splitting the writing. This is the definitive WKND account of South America's greatest trail. Gear lists, daily breakdowns, honest assessments of what the guidebooks won't tell you.</p>"
+      "body": "Flagship Expedition Torres del Paine is not a place you visit. It's a place that works on you — slowly, relentlessly, through wind and weather and the sheer scale of its granite towers. The W Circuit covers the park's most iconic terrain: Los Cuernos, the French Valley, the Mirador Las Torres. Over nine days and 115 kilometres, we documented every camp, every weather window, every lesson the trail had to teach. Jordan M. and Morgan L. completed the route in late austral summer, carrying full packs and splitting the writing. This is the definitive WKND account of South America's greatest trail. Gear lists, daily breakdowns, honest assessments of what the guidebooks won't tell you.",
+      "centered": false,
+      "sectionClass": "section accent-section"
     },
     {
-      "type": "intro",
+      "type": "prose-narrow",
       "heading": "What an Expedition Demands",
-      "body": "<p>WKND uses the word expedition deliberately, because it has been emptied of meaning by the travel industry. For us, an expedition requires a minimum of three consecutive days in terrain where access to outside assistance is genuinely limited — not just inconvenient. It requires camp-to-camp movement under load, meaning you carry what you sleep in and what you eat, and the weight compounds the difficulty of the terrain in ways that a day hike never does. It requires the physical capacity to sustain output across multiple days of accumulated fatigue, which is a different kind of fitness than the kind that gets you up a steep hill on a single morning.</p><p>Base weight is a proxy for competence on a long route. Every extra kilogram you carry on day one is a kilogram you'll resent on day four, when your feet are already worn and the pass is still above you. WKND contributors typically carry between 12 and 18 kilograms fully loaded on multi-day expeditions, depending on the terrain and season. That number includes shelter, sleep system, food, water treatment, first aid, navigation equipment, emergency signalling, and clothing for expected and unexpected conditions. It does not include casual camera kits that photographers insist on carrying. The 18 kg figure includes those too.</p><p>There's a meaningful difference between a guided tour and a self-supported expedition — and both have genuine value. A guided tour provides professional risk management, local knowledge, logistical infrastructure, and the freedom to focus on the experience rather than the decision-making. A self-supported expedition transfers all of those responsibilities to the party. It demands stronger navigation, better judgment about weather and terrain, the ability to make sound decisions under fatigue, and the psychological resilience to sit with uncertainty. Neither is superior; they are different activities that share the same landscape.</p><p>WKND contributors prepare for major expeditions over a minimum of 12 weeks. That preparation includes loaded hiking at target pack weight, regular overnight and multi-day shakedown trips, gear testing in realistic conditions, and active work on the specific technical skills the route demands. It also includes honest conversation with expedition partners about each person's fitness, fears, and likely responses to hardship — because the party that talks before departure deals with far fewer problems on the trail than the one that doesn't.</p><p>WKND's expedition reports document failure as thoroughly as success. Weather retreats, navigational errors, gear failures, summit turns — they're all in the account because they're where the useful information lives. The expedition that turns around 400 metres below the summit because of deteriorating conditions is not a failed expedition. It's a well-executed one, and the detailed account of why the decision was made and what the descent looked like is exactly the kind of information that helps the next party make a better-informed call. We are not interested in accounts that edit out the hard days.</p><p>An expedition isn't a day hike with ambition. It demands consecutive days in terrain that punishes mistakes — and rewards genuine commitment. You sleep where you stop, and you carry what you need.</p><p>We don't edit out the hard days. The blisters, the navigational errors, the moment someone cried at camp — it's all in the story. The honest account is the useful one, and it's the only kind we publish.</p>"
+      "body": "WKND uses the word expedition deliberately, because it has been emptied of meaning by the travel industry. For us, an expedition requires a minimum of three consecutive days in terrain where access to outside assistance is genuinely limited — not just inconvenient. It requires camp-to-camp movement under load, meaning you carry what you sleep in and what you eat, and the weight compounds the difficulty of the terrain in ways that a day hike never does. It requires the physical capacity to sustain output across multiple days of accumulated fatigue, which is a different kind of fitness than the kind that gets you up a steep hill on a single morning. Base weight is a proxy for competence on a long route. Every extra kilogram you carry on day one is a kilogram you'll resent on day four, when your feet are already worn and the pass is still above you. WKND contributors typically carry between 12 and 18 kilograms fully loaded on multi-day expeditions, depending on the terrain and season. That number includes shelter, sleep system, food, water treatment, first aid, navigation equipment, emergency signalling, and clothing for expected and unexpected conditions. It does not include casual camera kits that photographers insist on carrying. The 18 kg figure includes those too. There's a meaningful difference between a guided tour and a self-supported expedition — and both have genuine value. A guided tour provides professional risk management, local knowledge, logistical infrastructure, and the freedom to focus on the experience rather than the decision-making. A self-supported expedition transfers all of those responsibilities to the party. It demands stronger navigation, better judgment about weather and terrain, the ability to make sound decisions under fatigue, and the psychological resilience to sit with uncertainty. Neither is superior; they are different activities that share the same landscape. WKND contributors prepare for major expeditions over a minimum of 12 weeks. That preparation includes loaded hiking at target pack weight, regular overnight and multi-day shakedown trips, gear testing in realistic conditions, and active work on the specific technical skills the route demands. It also includes honest conversation with expedition partners about each person's fitness, fears, and likely responses to hardship — because the party that talks before departure deals with far fewer problems on the trail than the one that doesn't. WKND's expedition reports document failure as thoroughly as success. Weather retreats, navigational errors, gear failures, summit turns — they're all in the account because they're where the useful information lives. The expedition that turns around 400 metres below the summit because of deteriorating conditions is not a failed expedition. It's a well-executed one, and the detailed account of why the decision was made and what the descent looked like is exactly the kind of information that helps the next party make a better-informed call. We are not interested in accounts that edit out the hard days. An expedition isn't a day hike with ambition. It demands consecutive days in terrain that punishes mistakes — and rewards genuine commitment. You sleep where you stop, and you carry what you need. We don't edit out the hard days. The blisters, the navigational errors, the moment someone cried at camp — it's all in the story. The honest account is the useful one, and it's the only kind we publish.",
+      "sectionClass": "section accent-section"
     },
     {
-      "type": "intro",
+      "type": "cta-section",
       "heading": "What's next",
-      "body": "<p><strong>In planning</strong></p><p>We're currently in the planning stages for two major new expeditions. The first: a traverse of the Montana Rockies — 28 days, remote resupply, no trail for long stretches. The second: Iceland's lava fields from Reykjavik to the Westfjords, timed for late summer midnight sun.</p><p>Both are planned for 2026–2027. Subscribe to get the full dispatches as they happen.</p>"
+      "body": "In planning We're currently in the planning stages for two major new expeditions. The first: a traverse of the Montana Rockies — 28 days, remote resupply, no trail for long stretches. The second: Iceland's lava fields from Reykjavik to the Westfjords, timed for late summer midnight sun. Both are planned for 2026–2027. Subscribe to get the full dispatches as they happen.",
+      "centered": false,
+      "sectionClass": "section accent-section"
     },
     {
       "type": "editorial-index",
+      "heading": "",
       "items": [
         {
-          "number": "01",
-          "heading": "Multi-day, remote",
-          "text": "An expedition isn't a day hike with ambition. It demands consecutive days in terrain that punishes mistakes — and rewards genuine commitment. You sleep where you stop, and you carry what you need."
+          "title": "Multi-day, remote",
+          "body": ""
         }
       ]
     },
     {
       "type": "cta-section",
-      "sectionClass": "",
-      "centered": true,
       "heading": "W Circuit: 9 Days, 115 km, One Life-Changing Walk",
-      "body": "",
+      "centered": true,
+      "sectionClass": "",
       "button": {
         "label": "Read the Full Story",
         "href": "blog/patagonia-trek.html"

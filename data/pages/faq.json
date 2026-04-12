@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Questions — WKND Adventures",
-    "description": "Everything you want to know before heading out — or before hitting send on a story.",
+    "title": "FAQ — WKND Adventures",
+    "description": "Questions about WKND Adventures, planning trips, submitting stories, and more.",
     "depth": 0
   },
   "hero": {
@@ -26,8 +26,12 @@
   },
   "sections": [
     {
+      "type": "cta-section",
+      "heading": "Planning &amp; Adventures",
+      "body": "Route conditions, fitness levels, solo travel, logistics. Submissions, rights, review timeline, what we look for."
+    },
+    {
       "type": "faq-list",
-      "sectionClass": "section",
       "heading": "Planning &amp; Adventures",
       "items": [
         {
@@ -44,30 +48,29 @@
         },
         {
           "question": "Where's the gear? I need an excuse to buy something orange.",
-          "answer": "The <a href=\"gear.html\" class=\"faq-link\">Gear section</a> is sorted by activity so you can justify that orange thing honestly. No affiliate links — we make zero cents when you click, which is either noble or foolish depending on your accountant. Articles usually tuck a kit list into the route notes for people who read the fine print."
+          "answer": "The Gear section is sorted by activity so you can justify that orange thing honestly. No affiliate links — we make zero cents when you click, which is either noble or foolish depending on your accountant. Articles usually tuck a kit list into the route notes for people who read the fine print."
         },
         {
           "question": "Do you run guided trips? I'll bring snacks.",
-          "answer": "We love snacks; we still won't guide you. WKND is a magazine, not a tour company — no matching fleeces, no walkie-talkie choreography. Use <a href=\"expeditions.html\" class=\"faq-link\">Expeditions</a> for big-trip inspiration, then plan it yourself like the beautifully chaotic adult you are."
+          "answer": "We love snacks; we still won't guide you. WKND is a magazine, not a tour company — no matching fleeces, no walkie-talkie choreography. Use Expeditions for big-trip inspiration, then plan it yourself like the beautifully chaotic adult you are."
         },
         {
           "question": "How do I find something close to my couch?",
-          "answer": "The <a href=\"destinations.html\" class=\"faq-link\">Destinations page</a> is your map of \"farther than the couch, but you choose how much.\" We've got depth in Patagonia, Scandinavia, the Alps, California, and Southeast Asia — and oddballs everywhere else. Don't see your backyard? Tell us. Worst case we daydream; best case we commission someone to go suffer for art."
+          "answer": "The Destinations page is your map of \"farther than the couch, but you choose how much.\" We've got depth in Patagonia, Scandinavia, the Alps, California, and Southeast Asia — and oddballs everywhere else. Don't see your backyard? Tell us. Worst case we daydream; best case we commission someone to go suffer for art."
         }
       ]
     },
     {
       "type": "faq-list",
-      "sectionClass": "section secondary-section",
       "heading": "Contributing Stories",
       "items": [
         {
           "question": "How do I submit a reader story without summoning a PDF demon?",
-          "answer": "Email <a href=\"mailto:stories@wknd-adventures.com\" class=\"faq-link\">stories@wknd-adventures.com</a> with the subject <strong>Reader Submission: [route name]</strong>. Attach Word, Google Doc link, or plain text — we're not precious. Add at least one photo (blurry summit selfies welcome if the story slaps) and a one-line bio so we know you're human. That's the whole ritual."
+          "answer": "Email stories@wknd-adventures.com with the subject Reader Submission: [route name]. Attach Word, Google Doc link, or plain text — we're not precious. Add at least one photo (blurry summit selfies welcome if the story slaps) and a one-line bio so we know you're human. That's the whole ritual."
         },
         {
           "question": "What makes a story publishable vs. \"cool trip, bro\"?",
-          "answer": "We want the version you tell after the third coffee when your friend says \"wait, <em>then</em> what happened?\" A specific screw-up, a real decision, a detail that couldn't be invented in an office. Polished prose is optional; verifiable chaos is not. If you climbed Everest in perfect weather with zero feelings, we'll nap politely."
+          "answer": "We want the version you tell after the third coffee when your friend says \"wait, then what happened?\" A specific screw-up, a real decision, a detail that couldn't be invented in an office. Polished prose is optional; verifiable chaos is not. If you climbed Everest in perfect weather with zero feelings, we'll nap politely."
         },
         {
           "question": "Do you pay contributors? (Asking for my landlord.)",
@@ -75,7 +78,7 @@
         },
         {
           "question": "Can I send only photos and vibes?",
-          "answer": "Vibes don't rasterize well. Send the images <em>plus</em> 300–400 words on what we're looking at and why it mattered. If the frames are absurdly good, we'll help you shape the words — we're editors, not monsters. Photo essays need ~6 bangers and one clear idea, not sixty near-duplicates of the same ridge."
+          "answer": "Vibes don't rasterize well. Send the images plus 300–400 words on what we're looking at and why it mattered. If the frames are absurdly good, we'll help you shape the words — we're editors, not monsters. Photo essays need ~6 bangers and one clear idea, not sixty near-duplicates of the same ridge."
         },
         {
           "question": "How long until I hear back? I've refreshed my inbox 400 times.",
@@ -89,12 +92,11 @@
     },
     {
       "type": "faq-list",
-      "sectionClass": "section",
       "heading": "Planning Your Trip",
       "items": [
         {
           "question": "Is this route \"within my ability\" or main-character syndrome?",
-          "answer": "Ignore the average daydream — find the <em>spiciest</em> bit of the route (one scary pitch, one whiteout nav leg, one \"why is this wet\") and ask if you've done that flavour of spicy before, for real, not on YouTube. Grades assume you already speak the language: Scottish winter III assumes crampons aren't a fashion statement. Read recent trip reports; trust the grumpy ones slightly more than the Instagram captions."
+          "answer": "Ignore the average daydream — find the spiciest bit of the route (one scary pitch, one whiteout nav leg, one \"why is this wet\") and ask if you've done that flavour of spicy before, for real, not on YouTube. Grades assume you already speak the language: Scottish winter III assumes crampons aren't a fashion statement. Read recent trip reports; trust the grumpy ones slightly more than the Instagram captions."
         },
         {
           "question": "Solo overnight: what do I actually need besides optimism?",
@@ -116,12 +118,11 @@
     },
     {
       "type": "faq-list",
-      "sectionClass": "section secondary-section",
       "heading": "About WKND Content",
       "items": [
         {
           "question": "How do you pick difficulty — dartboard, vibes, or science?",
-          "answer": "We use real systems — UIAA, French grades, Scottish adjectives, ski-touring codes — because inventing \"WKND Level 7 spicy\" helps nobody. When guidebooks disagree (they love that), we say so and add what the grade <em>feels</em> like in human verbs: \"lots of front-pointing,\" \"runouts that encourage philosophy.\" A number without context is just typography."
+          "answer": "We use real systems — UIAA, French grades, Scottish adjectives, ski-touring codes — because inventing \"WKND Level 7 spicy\" helps nobody. When guidebooks disagree (they love that), we say so and add what the grade feels like in human verbs: \"lots of front-pointing,\" \"runouts that encourage philosophy.\" A number without context is just typography."
         },
         {
           "question": "How often do you update routes — every full moon?",
@@ -139,12 +140,11 @@
     },
     {
       "type": "faq-list",
-      "sectionClass": "section",
       "heading": "Contributing &amp; Community",
       "items": [
         {
           "question": "I write like a text message — is that disqualifying?",
-          "answer": "Most of us are route nerds first, comma negotiators second. If you were <em>there</em> and you're honest about the mud, we can help with the semicolons. We can't invent your experience from thin air; we can absolutely sand the rough edges off how you tell it. Send the messy draft — perfection is overrated and suspicious."
+          "answer": "Most of us are route nerds first, comma negotiators second. If you were there and you're honest about the mud, we can help with the semicolons. We can't invent your experience from thin air; we can absolutely sand the rough edges off how you tell it. Send the messy draft — perfection is overrated and suspicious."
         },
         {
           "question": "Paycheck or exposure bucks?",
@@ -156,13 +156,19 @@
         },
         {
           "question": "Pictures-only pitch — like a silent film but with JPEGs?",
-          "answer": "For <a href=\"field-notes.html\" class=\"faq-link\">Field Notes</a> photo essays we want eight+ frames that sequence like a story, plus 200–300 words so we're not guessing your plot. Send five samples and a teaser; if it's magic, we'll nag you gently for the rest. Random pretty clouds: lovely, not a narrative."
+          "answer": "For Field Notes photo essays we want eight+ frames that sequence like a story, plus 200–300 words so we're not guessing your plot. Send five samples and a teaser; if it's magic, we'll nag you gently for the rest. Random pretty clouds: lovely, not a narrative."
         }
       ]
     },
     {
       "type": "fragment-include",
+      "heading": "Most popular starting points",
       "fragmentSrc": "fragments/expeditions-grid.html"
+    },
+    {
+      "type": "cta-section",
+      "heading": "Still stuck?",
+      "body": "Write to us. We read every message."
     }
   ]
 }

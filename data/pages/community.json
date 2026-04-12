@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Community — WKND Adventures",
-    "description": "Real adventures from real readers. One story a month, chosen by the editors.",
+    "description": "Join the WKND Adventures community and submit your own stories.",
     "depth": 0
   },
   "hero": {
@@ -22,50 +22,86 @@
   },
   "sections": [
     {
-      "type": "featured-article",
-      "image": {
-        "src": "images/activities/ice-climbing.jpg",
-        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France"
-      },
-      "tag": "Reader Story",
-      "eyebrow": "Featured Story",
-      "heading": "Traversing the Rochefort Ridge: Two Days on Skis Above Chamonix",
-      "body": "Alex C. from Brisbane had been planning the Rochefort Ridge for three seasons. A classic ski mountaineering traverse in the Mont Blanc massif — approached from the Helbronner cable car on the Italian side, moving across the high ridge above the Mer de Glace with glacier travel, mixed terrain, and the kind of exposure that narrows the whole world to the next placement. He sent us his account two weeks after returning and we read it in one sitting.",
-      "button": {
-        "href": "blog/winter-mountaineering.html",
-        "label": "Read Story",
-        "variant": "primary"
-      }
-    },
-    {
-      "type": "fragment-include",
-      "fragmentSrc": "fragments/expeditions-grid.html"
-    },
-    {
-      "type": "intro",
+      "type": "cta-section",
       "heading": "One story a month. Chosen by the editors. Written by you.",
       "body": "Not polished. Not perfect. True — and specific enough that only someone who was there could have written it."
     },
     {
-      "type": "intro",
-      "heading": "From the Wild",
-      "body": "Selected field dispatches from WKND contributors — and the routes inspiring the next round of reports."
+      "type": "featured-article",
+      "heading": "Traversing the Rochefort Ridge: Two Days on Skis Above Chamonix",
+      "description": "Alex C. from Brisbane had been planning the Rochefort Ridge for three seasons. A classic ski mountaineering traverse in the Mont Blanc massif — approached from the Helbronner cable car on the Italian side, moving across the high ridge above the Mer de Glace with glacier travel, mixed terrain, and the kind of exposure that narrows the whole world to the next placement. He sent us his account two weeks after returning and we read it in one sitting.",
+      "image": {
+        "src": "images/activities/ice-climbing.jpg",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France",
+        "href": "blog/winter-mountaineering.html"
+      },
+      "cta": {
+        "label": "Read more",
+        "href": "blog/winter-mountaineering.html"
+      }
     },
     {
-      "type": "intro",
-      "heading": "What makes a great dispatch?",
-      "body": "<p>The dispatches we publish have one thing in common: they are specific. Not \"the mountain was beautiful and the experience changed me\" — but \"the wind on the col was south-southeast at around 40 knots and we had to cross it crawling on hands and knees to avoid being blown off the ridge.\" That level of specificity is not just more interesting to read; it is genuinely useful to the next person planning the same route. The test we apply to every submission is this: does the reader who is planning this trip now know something useful that they didn't know before? If the answer is no, the piece isn't working yet.</p><p>Honest reporting of difficulty and failure is not optional — it's the whole point. We are not interested in sanitised accounts that smooth over the moments when things went wrong, the decision to turn around, the gear failure, the navigational error that cost three hours. Those are the moments that teach the most, and the best dispatches we've published have all contained at least one honest account of a mistake or a setback. Writing about failure requires more craft than writing about success, and we consider it the mark of a writer who has something real to say. If your route went perfectly according to plan, ask yourself whether you're telling the whole story.</p><p>We ask all contributors to respect the communities and ecosystems they pass through. This means: don't identify precise camp locations in sensitive areas where impact is already concentrated. Don't name access routes through private land without the landowner's knowledge. Don't publish coordinates for spots that are currently under pressure from overuse. We will edit for this where necessary and flag it during review, but the responsibility starts with the writer. If a place is worth writing about, it's worth protecting — and those two obligations sometimes pull in opposite directions. When they do, protection wins.</p><p>Photographs should be honest before they are beautiful. We don't expect professional equipment or post-processing skills. We do expect that images represent conditions accurately: if it was raining, we want to see the rain. If the route was loose and exposed, the photographs should show that. Heavily filtered images that make harsh terrain look inviting create a false impression that can put inexperienced readers in situations they weren't prepared for. Phone cameras in honest conditions beat DSLRs with misleading processing. Shoot what's actually there.</p><p>No promotional content, in any form. Mentions of gear you used and assessed honestly are fine — we encourage them. Mentions of gear you used because a brand sent it to you must be disclosed. Do not include links to brand websites, tour operators, or guiding companies in your submission text. Do not mention commercial services unless they are directly relevant to the route and you're prepared to assess them critically. If a mountain hut was overpriced and under-maintained, say so. If a local guiding company was excellent, say so — but also say what it cost and what you got. We'll remove any content that reads as unpaid advertising, with or without your knowledge that it reads that way.</p><p>Finally: write like yourself. The dispatches that land hardest are the ones where the writer's voice is present and distinct. Don't sand off the edges trying to sound like a magazine. Don't over-explain the emotional significance of what happened. Trust the specific detail to carry the meaning — it almost always does. The mountain doesn't need editorialising. Tell us what it looked like, what it felt like underfoot, what decision you made and why, and what you'd do differently. That's the whole brief.</p>"
+      "type": "fragment-include",
+      "heading": "From the Wild",
+      "fragmentSrc": "fragments/expeditions-grid.html"
+    },
+    {
+      "type": "featured-article",
+      "heading": "Reader Dispatches",
+      "description": "More from the community — routes completed, conditions encountered, lessons earned.",
+      "image": {
+        "src": "images/activities/ice-climbing.jpg",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France",
+        "href": "blog/kayaking-norway.html"
+      },
+      "cta": {
+        "label": "Read more",
+        "href": "blog/kayaking-norway.html"
+      }
     },
     {
       "type": "cta-section",
-      "sectionClass": "",
-      "centered": true,
+      "heading": "What makes a great dispatch?",
+      "body": "The dispatches we publish have one thing in common: they are specific. Not \"the mountain was beautiful and the experience changed me\" — but \"the wind on the col was south-southeast at around 40 knots and we had to cross it crawling on hands and knees to avoid being blown off the ridge.\" That level of specificity is not just more interesting to read; it is genuinely useful to the next person planning the same route. The test we apply to every submission is this: does the reader who is planning this trip now know something useful that they didn't know before? If the answer is no, the piece isn't working yet. Honest reporting of difficulty and failure is not optional — it's the whole point. We are not interested in sanitised accounts that smooth over the moments when things went wrong, the decision to turn around, the gear failure, the navigational error that cost three hours. Those are the moments that teach the most, and the best dispatches we've published have all contained at least one honest account of a mistake or a setback. Writing about failure requires more craft than writing about success, and we consider it the mark of a writer who has something real to say. If your route went perfectly according to plan, ask yourself whether you're telling the whole story. We ask all contributors to respect the communities and ecosystems they pass through. This means: don't identify precise camp locations in sensitive areas where impact is already concentrated. Don't name access routes through private land without the landowner's knowledge. Don't publish coordinates for spots that are currently under pressure from overuse. We will edit for this where necessary and flag it during review, but the responsibility starts with the writer. If a place is worth writing about, it's worth protecting — and those two obligations sometimes pull in opposite directions. When they do, protection wins. Photographs should be honest before they are beautiful. We don't expect professional equipment or post-processing skills. We do expect that images represent conditions accurately: if it was raining, we want to see the rain. If the route was loose and exposed, the photographs should show that. Heavily filtered images that make harsh terrain look inviting create a false impression that can put inexperienced readers in situations they weren't prepared for. Phone cameras in honest conditions beat DSLRs with misleading processing. Shoot what's actually there. No promotional content, in any form. Mentions of gear you used and assessed honestly are fine — we encourage them. Mentions of gear you used because a brand sent it to you must be disclosed. Do not include links to brand websites, tour operators, or guiding companies in your submission text. Do not mention commercial services unless they are directly relevant to the route and you're prepared to assess them critically. If a mountain hut was overpriced and under-maintained, say so. If a local guiding company was excellent, say so — but also say what it cost and what you got. We'll remove any content that reads as unpaid advertising, with or without your knowledge that it reads that way. Finally: write like yourself. The dispatches that land hardest are the ones where the writer's voice is present and distinct. Don't sand off the edges trying to sound like a magazine. Don't over-explain the emotional significance of what happened. Trust the specific detail to carry the meaning — it almost always does. The mountain doesn't need editorialising. Tell us what it looked like, what it felt like underfoot, what decision you made and why, and what you'd do differently. That's the whole brief."
+    },
+    {
+      "type": "cta-section",
       "heading": "Join in",
-      "body": "",
-      "button": {
-        "label": "Submit via email",
-        "href": "mailto:stories@wknd-adventures.com"
-      }
+      "body": "1,200 words max. One route, one honest account. No fluff. Weekly dispatches from the trail. New stories, route updates, gear notes — no spam, unsubscribe any time."
+    },
+    {
+      "type": "faq-list",
+      "heading": "Submission FAQ",
+      "items": [
+        {
+          "question": "How long should my story be?",
+          "answer": "1,000–1,500 words is the sweet spot. Long enough to tell the story properly; short enough to stay taut. We'll edit, but we won't rebuild."
+        },
+        {
+          "question": "Do I need professional photos?",
+          "answer": "No. Phone photos are fine if they're honest. A blurry shot in the right moment beats a sharp shot staged for the camera. We care about authenticity, not polish."
+        },
+        {
+          "question": "Do you pay contributors?",
+          "answer": "Not yet — we're small and independently funded. We promote your story across our channels, link back to any site or social you'd like credited, and treat your work with the care it deserves. We're working toward paid contributions as we grow."
+        },
+        {
+          "question": "Can I write about an adventure that didn't go to plan?",
+          "answer": "Especially yes. The stories that go sideways are often the ones worth telling. A summit you reached is fine. A summit you turned around from, and what made you do it — that's the story we want."
+        },
+        {
+          "question": "How long does review take?",
+          "answer": "We review submissions monthly. You'll hear from us within 6 weeks of sending, regardless of the outcome. If we're not going to publish, we'll tell you why — no form rejections."
+        },
+        {
+          "question": "Can I submit something I've already published?",
+          "answer": "Only if you own the rights and it hasn't appeared in a major publication. Your personal blog is fine. A piece you published in a print magazine is not. When in doubt, ask us first."
+        }
+      ]
+    },
+    {
+      "type": "cta-section",
+      "heading": "Start reading."
     }
   ]
 }
