@@ -117,6 +117,12 @@ async function main() {
   await copyDir(path.join(ROOT, 'fonts'), path.join(DIST, 'fonts'));
   await fs.copyFile(path.join(ROOT, 'favicon.svg'), path.join(DIST, 'favicon.svg'));
 
+  // Copy CNAME to preserve GitHub Pages domain across deployments
+  const cnameFile = path.join(ROOT, 'CNAME');
+  if (await exists(cnameFile)) {
+    await fs.copyFile(cnameFile, path.join(DIST, 'CNAME'));
+  }
+
   const cssEntry = path.join(ROOT, 'css', 'styles.css');
   const cssIn = await fs.readFile(cssEntry, 'utf8');
   const cssResult = await postcss([
