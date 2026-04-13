@@ -25,13 +25,10 @@ export function footer(siteData, depth, variant = 'root') {
   const { footer: footerData } = siteData;
   const hasPublishedWeeklyTagline = variant === 'root';
 
-  const columnsHtml = footerData.columns.map(col => {
-    if (col.type === 'logo') {
-      return renderLogoColumn(col, hasPublishedWeeklyTagline);
-    } else {
-      return renderLinksColumn(col, depth);
-    }
-  }).join('\n          ');
+  const columnsHtml = footerData.columns
+    .filter(col => col.type !== 'logo')
+    .map(col => renderLinksColumn(col, depth))
+    .join('\n          ');
 
   return `<footer class="footer inverse-footer">
   <div class="container">
@@ -53,10 +50,6 @@ export function footer(siteData, depth, variant = 'root') {
 </footer>`;
 }
 
-function renderLogoColumn(col, hasPublishedWeeklyTagline) {
-  // Logo column is already rendered in the main footer, skip it here
-  return '';
-}
 
 function renderLinksColumn(col, depth) {
   const linksHtml = col.links.map(link => `

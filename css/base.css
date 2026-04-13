@@ -312,10 +312,6 @@ h6 {
 ───────────────────────────────────────── */
 
 @media (max-width: 991px) {
-  .grid-layout {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .grid-layout.tablet-1-column {
     grid-template-columns: 1fr;
   }
@@ -335,18 +331,16 @@ h6 {
 }
 
 @media (max-width: 767px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
   .grid-layout.desktop-3-column {
     grid-template-columns: 1fr;
   }
 
   /* Image grids also collapse to single column at mobile */
   .grid-layout.desktop-3-column.grid-images {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .grid-layout {
     grid-template-columns: 1fr;
   }
 }
