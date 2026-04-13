@@ -80,10 +80,11 @@ function renderStandardHero(data) {
 
 function renderBlogHero(data) {
   const breadcrumbsHtml = (data.breadcrumbs || []).map((crumb, i, arr) => {
+    const label = crumb.label || crumb.text;
     if (i === arr.length - 1) {
-      return `<span>${crumb.label}</span>`;
+      return `<span>${label}</span>`;
     } else {
-      return `<a href="${crumb.href}">${crumb.label}</a> <span aria-hidden="true">›</span>`;
+      return `<a href="${crumb.href}">${label}</a> <span aria-hidden="true">›</span>`;
     }
   }).join('\n        ');
 
@@ -104,9 +105,7 @@ function renderBlogHero(data) {
   <div class="hero-content">
     <div class="container">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="${data.breadcrumbs[0].href}">${data.breadcrumbs[0].label}</a> <span aria-hidden="true">›</span>
-        <a href="${data.breadcrumbs[1].href}">${data.breadcrumbs[1].label}</a> <span aria-hidden="true">›</span>
-        <span>${data.breadcrumbs[2].label}</span>
+        ${breadcrumbsHtml}
       </nav>
       <span class="tag blog-hero-tag">${data.tag}</span>
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
