@@ -115,6 +115,7 @@
     },
     {
       "type": "cta-section",
+      "centered": false,
       "heading": "What's next",
       "body": "In planning We're currently in the planning stages for two major new expeditions. The first: a traverse of the Montana Rockies — 28 days, remote resupply, no trail for long stretches. The second: Iceland's lava fields from Reykjavik to the Westfjords, timed for late summer midnight sun. Both are planned for 2026–2027. Subscribe to get the full dispatches as they happen.",
       "sectionClass": "section inverse-section",
