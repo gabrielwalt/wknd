@@ -29,10 +29,6 @@
   },
   "sections": [
     {
-      "type": "ticker",
-      "items": ["Climbing", "Kayaking", "Cycling", "Desert", "Photography", "Hiking", "Winter", "Surfing", "Expedition", "Wild Swimming"]
-    },
-    {
       "type": "featured-article",
       "heading": "Sub-10 lb: What to Cut, What to Keep",
       "tag": "Gear Guide · Hiking",
@@ -50,6 +46,10 @@
       "type": "fragment-include",
       "heading": "Browse by Activity",
       "fragmentSrc": "fragments/activity-tabs.html"
+    },
+    {
+      "type": "ticker",
+      "items": ["Climbing", "Kayaking", "Cycling", "Desert", "Photography", "Hiking", "Winter", "Surfing", "Expedition", "Wild Swimming"]
     },
     {
       "type": "cta-section-inverse",
@@ -73,6 +73,7 @@
       "type": "faq-list",
       "heading": "Quick Answers",
       "sectionClass": "section",
+      "containerClass": "container--narrow",
       "items": [
         {
           "question": "Who is WKND Adventures for?",
@@ -92,6 +93,7 @@
       "type": "editorial-index",
       "heading": "How We Work",
       "sectionClass": "section secondary-section",
+      "containerClass": "container--narrow",
       "items": [
         {
           "number": "01",
@@ -150,7 +152,8 @@
         },
         {
           "label": "Browse Gear Guides",
-          "href": "gear.html"
+          "href": "gear.html",
+          "variant": "ghost"
         }
       ]
     }

@@ -16,6 +16,7 @@ import { ticker } from './blocks/ticker.mjs';
 import { cardGrid } from './blocks/card-grid.mjs';
 import { intro } from './blocks/intro.mjs';
 import { fragmentInclude } from './blocks/fragment-include.mjs';
+import { gearBreakdown } from './blocks/gear-breakdown.mjs';
 
 /**
  * Renders a complete root-level page (HTML document)
@@ -58,6 +59,7 @@ const blockRenderers = {
   'card-grid': cardGrid,
   'intro': intro,
   'fragment-include': fragmentInclude,
+  'gear-breakdown': gearBreakdown,
 };
 
 export function renderPage(pageData, siteData) {

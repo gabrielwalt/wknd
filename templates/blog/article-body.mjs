@@ -34,8 +34,10 @@ export function renderArticleBody(blocks = []) {
         return `<h3>${block.text}</h3>`;
 
       case 'figure':
+        const imgSrc = block.image?.src || block.src;
+        const imgAlt = block.image?.alt || block.alt;
         return `<figure>
-  <img src="${block.src}" alt="${block.alt}" class="gallery-img--wide">
+  <img src="${imgSrc}" alt="${imgAlt}" class="gallery-img--wide">
   ${block.caption ? `<figcaption>${block.caption}</figcaption>` : ''}
 </figure>`;
 

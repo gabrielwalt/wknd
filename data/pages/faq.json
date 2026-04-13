@@ -33,6 +33,7 @@
     },
     {
       "type": "faq-list",
+      "id": "planning",
       "heading": "Planning &amp; Adventures",
       "sectionClass": "section",
       "items": [
@@ -64,6 +65,7 @@
     },
     {
       "type": "faq-list",
+      "id": "stories",
       "heading": "Contributing Stories",
       "sectionClass": "section secondary-section",
       "items": [

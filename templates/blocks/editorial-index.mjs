@@ -1,3 +1,5 @@
+import { formatBody } from '../utils/text-formatter.mjs';
+
 /**
  * Renders an editorial index section with numbered items and optional card grid
  * @param {Object} data
@@ -7,7 +9,7 @@
  * @param {Array} data.items - Editorial items (required)
  * @param {number} data.items[].number - Item number (e.g., 1, 2, 3)
  * @param {string} data.items[].heading - Item title (required)
- * @param {string} data.items[].body - Item description (required)
+ * @param {string} data.items[].body - Item description (paragraphs separated by \n\n)
  * @param {Object} [data.items[].link] - Optional CTA link
  * @param {string} data.items[].link.href - Link URL
  * @param {string} data.items[].link.label - Link text
@@ -28,14 +30,18 @@
 export function editorialIndex(data) {
   const { sectionClass = 'section', containerClass = '', heading, items, cards } = data;
 
-  const itemsHtml = (items || []).map(item => {
+  const itemsHtml = (items || []).map((item, index) => {
     const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button">${item.link.label}</a>` : '';
+    const itemNumber = item.number !== undefined ? item.number : String(index + 1).padStart(2, '0');
+    const itemHeading = item.heading || item.title;
+    const itemBody = item.body || item.text;
+    const bodyHtml = formatBody(itemBody, 'paragraph-lg utility-text-secondary');
     return `
     <div class="editorial-index-item">
-      <span class="editorial-index-number">${item.number}</span>
+      <span class="editorial-index-number">${itemNumber}</span>
       <div>
-        <h3 class="h4-heading utility-margin-bottom-md">${item.heading}</h3>
-        <p class="paragraph-lg utility-text-secondary">${item.body}</p>
+        <h3 class="h4-heading utility-margin-bottom-md">${itemHeading}</h3>
+        ${bodyHtml}
         ${linkHtml}
       </div>
     </div>`;

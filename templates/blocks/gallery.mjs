@@ -18,7 +18,18 @@
  * Default background is dark/inverse (secondary-section)
  */
 export function gallery(data) {
-  const { sectionClass = 'section inverse-section', heading, headingLink, images = [], wideImage } = data;
+  const { sectionClass = 'section inverse-section', heading, headingLink } = data;
+  let images = data.images || [];
+  let wideImage = data.wideImage;
+
+  // If using 'items' format (blog galleries), split: first 3 are grid, 4th is wide
+  if (!images.length && data.items?.length) {
+    const allItems = data.items;
+    images = allItems.slice(0, 3);
+    if (allItems.length > 3) {
+      wideImage = allItems[3];
+    }
+  }
 
   const imagesHtml = images.map(img => `
     <img src="${img.src}" alt="${img.alt}" class="gallery-img" loading="lazy" />`).join('');

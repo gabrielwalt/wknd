@@ -12,13 +12,7 @@
     },
     "eyebrow": "Gear",
     "heading": "Gear",
-    "lead": "What goes in the pack matters. No affiliate links, no brand deals. Just what we actually use.",
-    "buttons": [
-      {
-        "label": "By Activity",
-        "href": "#gear-by-activity"
-      }
-    ]
+    "lead": "What goes in the pack matters. No affiliate links, no brand deals. Just what we actually use."
   },
   "sections": [
     {
@@ -39,7 +33,8 @@
         "label": "Read the Guide",
         "href": "blog/ultralight-backpacking.html"
       },
-      "sectionClass": "section secondary-section"
+      "sectionClass": "section secondary-section",
+      "body": "Taylor spent three years cutting weight from a 22 lb base down to 9.4. The answer wasn't expensive gear — it was hard questions. What do you actually need? What are you carrying out of habit? This guide is the honest breakdown of every decision."
     },
     {
       "type": "fragment-include",
@@ -48,27 +43,79 @@
       "sectionClass": "section"
     },
     {
-      "type": "editorial-index",
+      "type": "prose-narrow",
       "heading": "Gear Features",
-      "sectionClass": "section secondary-section",
+      "body": "Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.\n\nManufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.\n\nWe don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.\n\nWe do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.",
+      "sectionClass": "section secondary-section"
+    },
+    {
+      "type": "editorial-index",
+      "heading": "The Full Breakdown",
+      "sectionClass": "section",
       "items": [
         {
-          "heading": "How We Test Gear",
-          "body": "<p class=\"paragraph-lg utility-margin-bottom-md\">Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.</p><p class=\"paragraph-lg utility-margin-bottom-md\">Manufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.</p><p class=\"paragraph-lg utility-margin-bottom-md\">We don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.</p><p class=\"paragraph-lg utility-margin-bottom-md\">We do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.</p>"
+          "number": "01",
+          "heading": "Footwear for Technical Terrain",
+          "body": "Boot selection is the most consequential single gear decision in alpine and mountain travel. For technical terrain — routes graded D or above, mixed ground, or approaches requiring crampon use — you need a boot with a full-length rand, a stiff sole rated for B2 or B3 crampons, and a heel and toe welt. The fit principle that most people get wrong: leave 10–12 mm of toe room on flat ground and the boot will be correct on a steep descent. If it feels comfortable in the shop, it is probably too large for technical downclimbing."
+        },
+        {
+          "number": "02",
+          "heading": "Layering Systems Explained",
+          "body": "The three-layer system — base, mid, shell — is the correct framework for most mountain conditions, but the specific choices within that framework depend on activity intensity and weather. Base layers for high-output activities should be merino or a merino blend: it manages odour over multiple days and doesn't compress insulation the way synthetic fabrics do at rest. Mid-layer selection is where most people over-invest: a 100-weight fleece is sufficient for aerobic activity above a base layer; heavier insulation belongs in the belay jacket, not the hiking mid. Shell choice is straightforward — hardshell for sustained precipitation, softshell for dry cold and high output. The error is trying to find one shell that does both."
+        },
+        {
+          "number": "03",
+          "heading": "Navigation: Map, Compass, GPS",
+          "body": "GPS devices have changed navigation in the backcountry, but they have not replaced the capacity to read a 1:25,000 map and set a bearing. The failure mode of GPS navigation — battery death, screen condensation, terrain that looks different at ground level than it does as a track line — happens at exactly the moment you need navigation most. WKND contributors use a mix of Garmin inReach, Suunto Ambit, and offline mapping on phones as primary or secondary tools, but every contributor carries a map and compass as absolute backup. For battery strategy on multi-day routes: a 10,000 mAh power bank adds 230g and extends GPS device use by 4–6 days depending on tracking frequency."
         }
       ]
     },
     {
-      "type": "fragment-include",
-      "heading": "The Full Breakdown",
-      "fragmentSrc": "fragments/activity-tabs.html",
-      "sectionClass": "section"
-    },
-    {
-      "type": "prose-narrow",
+      "type": "gear-breakdown",
       "heading": "What Goes In",
       "sectionClass": "section secondary-section",
-      "body": "<p class=\"paragraph-lg utility-text-secondary utility-margin-bottom-xl\">Tested across multiple summer alpine routes in the Mont Blanc Massif and Écrins. Assumes mountain hut accommodation is unavailable. Base weight: 9.2 kg. Tested in the Saharan margin of southern Morocco and the Wadi Rum, Jordan. Assumes no water resupply for 48-hour stretches. Base weight: 7.8 kg.</p>"
+      "items": [
+        {
+          "title": "3-Day Alpine Route",
+          "description": "Tested across multiple summer alpine routes in the Mont Blanc Massif and Écrins. Assumes mountain hut accommodation is unavailable. Base weight: 9.2 kg.",
+          "gearList": [
+            "Sleeping bag rated to −5°C synthetic fill, 650g — synthetic dries faster than down at altitude where condensation is constant",
+            "Ultralight bivy sack, silnylon, 180g — your second shelter if the weather closes in faster than expected",
+            "30L alpine pack with hip-transfer capacity — bigger is not better; every litre you leave empty is weight you're carrying",
+            "B2-compatible double boots — not single-layer; overnight temperatures at 3,000m regularly drop below −8°C even in July",
+            "C2 aluminium 12-point crampons — steel is heavier and unnecessary for hard ice that isn't vertical",
+            "70cm ice axe, T-rated — the classic length is fine; shorter axes are faster to swing but worse for self-arrest",
+            "Hardshell jacket and trousers, Gore-Tex Pro equivalent — not eVent or cheaper membranes; sustained precipitation requires the best breathability available",
+            "Merino base layer, 200-weight — two tops; one on, one drying under the lid of your pack",
+            "Down belay jacket, 800-fill, stuffable to 600ml — worn at rests and belays, not during movement",
+            "Helmet, UIAA-certified — borrow one that fits correctly rather than buying a bad fit",
+            "30m 7mm tag line — for rappels on descents; doubles as a haul line in an emergency",
+            "1.5L water capacity with a Sawyer Squeeze filter — snowmelt is not clean; glacier flour causes long-term kidney damage",
+            "Three days of food at 600 kcal/hour moving rate — 5,400 kcal minimum; nuts, hard cheese, bars with no chocolate coating (chocolate cracks at altitude temperatures)",
+            "First aid: SAM splint, blister kit, ibuprofen 400mg, altitude sickness protocol sheet — not a full kit; weight is the enemy"
+          ]
+        },
+        {
+          "title": "5-Day Desert Trek",
+          "description": "Tested in the Saharan margin of southern Morocco and the Wadi Rum, Jordan. Assumes no water resupply for 48-hour stretches. Base weight: 7.8 kg.",
+          "gearList": [
+            "Sleeping bag rated to +8°C, 400g — desert nights drop sharply; +8°C is the correct temperature floor for most Saharan margins in spring",
+            "Freestanding single-skin tent, 1.2 kg — a tarp works but sandstorms require four solid walls and a working zip",
+            "40L pack with side-compression straps — water weight fluctuates by 2–4 kg; side straps let you rebalance as you drink",
+            "4L water capacity minimum — two 2L soft flasks, not bottles; soft flasks compress as they empty and don't rattle",
+            "Water purification tablets as backup — filter technology fails in high silt loads; chemical backup weighs 40g and has saved multiple contributors",
+            "Sun hoody, 50+ UPF, long sleeve — not a T-shirt; desert sun through a thin layer burns in under 20 minutes",
+            "Lightweight desert trousers, nylon, zip-off leg — full leg protection; shorts cause burns and abrasions on rocky descents",
+            "Trail runners with rock plate, not hiking boots — desert travel is flat to moderate gradient; rock plates prevent bruising from shale without the weight of a boot",
+            "Gaiters, low ankle — keeps sand out of shoes; the single most underrated piece of desert kit",
+            "Headtorch rated to 200 lumens with a red mode — desert navigation at night requires real light; red mode preserves night vision and extends battery",
+            "Emergency bivouac bag, reflective, 200g — not a sleeping bag; for unplanned nights and emergency signalling",
+            "Navigation: 1:50,000 map, compass, offline GPS — desert has few landmarks; grid navigation is more important here than anywhere",
+            "Electrolyte tablets, one per litre of water above 35°C — water without electrolytes at high sweat rates leads to hyponatraemia faster than dehydration",
+            "Blister prevention: wool socks, not synthetic; Leukotape pre-applied to known hotspots before day one — treating a blister on day three in 45°C heat is a serious problem"
+          ]
+        }
+      ]
     },
     {
       "type": "feature-cards",
@@ -82,6 +129,10 @@
         {
           "title": "Pack light",
           "text": "Every gram is a decision you'll revisit on mile 20."
+        },
+        {
+          "title": "Leave nothing",
+          "text": "The trace you leave is part of your kit. Pack it out."
         }
       ],
       "button": {

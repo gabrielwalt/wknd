@@ -12,13 +12,7 @@
     },
     "eyebrow": "WKND Adventures",
     "heading": "Field Notes",
-    "lead": "Essays, photographs, and dispatches from the wild. Slower stories for people who go further.",
-    "buttons": [
-      {
-        "label": "Latest Dispatch",
-        "href": "#dispatches"
-      }
-    ]
+    "lead": "Essays, photographs, and dispatches from the wild. Slower stories for people who go further."
   },
   "sections": [
     {

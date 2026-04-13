@@ -1,4 +1,5 @@
 import { renderButton } from '../components/button.mjs';
+import { formatBody } from '../utils/text-formatter.mjs';
 
 /**
  * Renders a call-to-action section with accent background
@@ -6,7 +7,7 @@ import { renderButton } from '../components/button.mjs';
  * @param {string} [data.sectionClass='section accent-section'] - Section CSS class
  * @param {boolean} [data.centered=true] - Center text and buttons
  * @param {string} [data.heading] - Section heading
- * @param {string} [data.body] - Section description text
+ * @param {string} [data.body] - Section description text (paragraphs separated by \n\n)
  * @param {Object} [data.button] - Single CTA button {href, label, variant}
  * @param {Array} [data.buttons] - Multiple CTA buttons (overrides button param)
  * @returns {string} HTML: <section class="section accent-section">
@@ -21,10 +22,13 @@ export function ctaSection(data) {
   const btnArray = buttons || (button ? [button] : []);
   const buttonsHtml = btnArray.map(btn => renderButton(btn)).join('\n      ');
 
+  // Format body paragraphs with extra space before buttons if they exist
+  const bodyHtml = body ? formatBody(body, 'paragraph-lg', btnArray.length > 0 ? 'utility-margin-bottom-xl' : '') : '';
+
   return `<section class="${sectionClass}">
   <div class="${containerClass}">
     ${heading ? `<h2 class="h2-heading utility-margin-bottom-lg">${heading}</h2>` : ''}
-    ${body ? `<p class="paragraph-lg utility-margin-bottom-xl">${body}</p>` : ''}
+    ${bodyHtml}
     ${btnArray.length > 0 ? `<div class="button-group${centered ? ' button-group--centered' : ''}">
       ${buttonsHtml}
     </div>` : ''}

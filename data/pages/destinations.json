@@ -44,7 +44,8 @@
         "label": "Read the Full Report",
         "href": "blog/patagonia-trek.html"
       },
-      "sectionClass": "section secondary-section"
+      "sectionClass": "section secondary-section",
+      "body": "South America's defining long-distance trail — the W Circuit in Torres del Paine, Chile. Nine days across wind-scoured pampas, glacial moraine, and the surreal blue ice of the Grey Glacier. The granite towers that give the park its name come into view only at the end, after you've earned the approach."
     },
     {
       "type": "fragment-include",
@@ -106,6 +107,28 @@
         {
           "label": "Browse All Adventures",
           "href": "adventures.html"
+        }
+      ]
+    },
+    {
+      "type": "feature-cards",
+      "heading": "Planning by Season",
+      "items": [
+        {
+          "title": "Winter in the Alps",
+          "text": "December through March locks in the ski touring calendar — high passes are buried under 2–4 metres of consolidated snow and access to summer routes closes completely. Hut-to-hut ski touring, ice climbing on frozen waterfalls, and winter mountaineering on the lower 4000ers are what winter in the Alps actually offers."
+        },
+        {
+          "title": "Spring in Patagonia",
+          "text": "October and November in the southern hemisphere are Patagonia's best trekking months — the crowds haven't arrived, the refugios are freshly stocked, and the weather windows are longer than high summer. The W Circuit in spring means solitude on the trail and the Torres at golden hour with no queue at the viewpoint."
+        },
+        {
+          "title": "Summer in Scandinavia",
+          "text": "June through August is the midnight-sun window for the Lofoten Islands — low swell but extraordinary light for hiking Norway's exposed coastal ranges and surfing the occasional late-summer storm swell. Midnight sun extends your activity window to near-24 hours, but it also means navigating by instinct rather than daylight cues — your body clock will drift within three days."
+        },
+        {
+          "title": "Autumn on the Atlantic",
+          "text": "September through November is when the Atlantic swells rebuild after summer's relative quiet and the surf breaks of southwest France and northwest Spain come alive. Hossegor, Mundaka, and the Cantabrian coast all fire reliably in autumn — with warm enough water and none of the July crowds."
         }
       ]
     }

@@ -24,7 +24,20 @@
     {
       "type": "editorial-index",
       "heading": "Wild Ethics",
-      "items": []
+      "items": [
+        {
+          "title": "Zero Trace",
+          "text": "We follow Leave No Trace principles on every trip: pack out everything, camp on durable surfaces, build no fires where prohibited. When we photograph a location, we don't share GPS coordinates for fragile ecosystems. The wild doesn't owe you a photograph."
+        },
+        {
+          "title": "Respect Access",
+          "text": "We work with rangers, land managers, and local communities before we go. We don't publish routes that cross private land without permission. When access is under threat, we say so — and we don't pretend our presence doesn't affect it. Good access requires good behaviour."
+        },
+        {
+          "title": "Defend the Wild",
+          "text": "We support conservation partners and access rights organisations. A portion of every subscription goes to land access campaigns. If a place we've written about comes under threat — development, closure, pollution — we cover it. Documenting adventure without defending wild places is hollow."
+        }
+      ]
     },
     {
       "type": "featured-article",
@@ -38,7 +51,8 @@
       "cta": {
         "label": "Read more",
         "href": "blog/wild-swimming-guide.html"
-      }
+      },
+      "body": "Wild swimming is one of the most contested access issues in outdoor recreation. Morgan L. has been swimming rivers for a decade and knows every argument — from the riparian rights debate in England to the open-water traditions of Scandinavia. This is the honest version: where you're welcome, where you're tolerated, and what you owe the water either way."
     },
     {
       "type": "tab-section",
@@ -74,6 +88,10 @@
         {
           "title": "Leave No Trace",
           "text": "Pack-in pack-out applies without exception. This includes food waste — apple cores, orange peel, and nut shells do not biodegrade in alpine or desert environments within a human-relevant timescale, and habituate wildlife to human food sources. In alpine environments above 3,000m, human waste must be packed out using a WAG bag system in many protected areas; check the specific regulations before you go, because \"I didn't know\" is not a defence to a ranger and is not a defence to the ecosystem. Burn bans exist for reasons — grey ash scars on rock take decades to disappear and the psychological experience of arriving at a pristine site to find a fire ring is not a small thing."
+        },
+        {
+          "title": "Respect Wild Inhabitants",
+          "text": "The minimum disturbance distance for large mammals (bears, mountain lions, bison, wolf packs) is 100 metres; for raptors and large wading birds during nesting season, 300 metres — and at that distance, if the animal changes its behaviour, you are still too close. Many alpine routes have seasonal closures for lammergeier or golden eagle nesting that run from January through June; these closures are not advisory. Noise in sensitive habitats matters beyond what you observe directly — a pair of hikers talking loudly through a forest is suppressing wildlife activity in a radius they cannot see. This is not a reason to be silent, but it is a reason to be deliberate."
         }
       ]
     },

@@ -35,7 +35,9 @@ export function hero(data) {
 function renderFullHero(data) {
   const overlayClass = data.overlay || 'overlay';
   const buttons = data.buttons || data.cta || [];
-  const buttonsHtml = buttons.map(btn => renderButton(btn)).join('\n            ');
+  const buttonsHtml = buttons.length > 0 ? `<div class="button-group">
+        ${buttons.map(btn => renderButton(btn)).join('\n            ')}
+      </div>` : '';
 
   return `<section class="hero-section hero-section--full">
   <div class="hero-bg">
@@ -47,9 +49,7 @@ function renderFullHero(data) {
       <p class="hero-eyebrow">${data.eyebrow}</p>
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
       <p class="paragraph-xl hero-lead">${data.lead || data.subheading}</p>
-      <div class="button-group">
-        ${buttonsHtml}
-      </div>
+      ${buttonsHtml}
     </div>
   </div>
 </section>`;
@@ -58,7 +58,9 @@ function renderFullHero(data) {
 function renderStandardHero(data) {
   const overlayClass = data.overlay || 'overlay';
   const buttons = data.buttons || data.cta || [];
-  const buttonsHtml = buttons.map(btn => renderButton(btn)).join('\n            ');
+  const buttonsHtml = buttons.length > 0 ? `<div class="button-group">
+        ${buttons.map(btn => renderButton(btn)).join('\n            ')}
+      </div>` : '';
 
   return `<section class="hero-section">
   <div class="hero-bg">
@@ -70,24 +72,13 @@ function renderStandardHero(data) {
       <p class="hero-eyebrow">${data.eyebrow}</p>
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
       <p class="paragraph-xl hero-lead">${data.lead || data.subheading}</p>
-      <div class="button-group">
-        ${buttonsHtml}
-      </div>
+      ${buttonsHtml}
     </div>
   </div>
 </section>`;
 }
 
 function renderBlogHero(data) {
-  const breadcrumbsHtml = (data.breadcrumbs || []).map((crumb, i, arr) => {
-    const label = crumb.label || crumb.text;
-    if (i === arr.length - 1) {
-      return `<span>${label}</span>`;
-    } else {
-      return `<a href="${crumb.href}">${label}</a> <span aria-hidden="true">›</span>`;
-    }
-  }).join('\n        ');
-
   const bylineHtml = data.byline ? `
       <div class="article-byline">
         <div class="avatar"><img src="${data.byline.avatarSrc || data.byline.avatar}" alt="${data.byline.avatarAlt || data.byline.author || ''}" /></div>
@@ -104,9 +95,6 @@ function renderBlogHero(data) {
   </div>
   <div class="hero-content">
     <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        ${breadcrumbsHtml}
-      </nav>
       <span class="tag blog-hero-tag">${data.tag}</span>
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
       ${bylineHtml}

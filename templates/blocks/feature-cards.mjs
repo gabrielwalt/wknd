@@ -20,12 +20,19 @@ import { renderButton } from '../components/button.mjs';
 export function featureCards(data) {
   const { sectionClass = 'section inverse-section', heading, items = [], button } = data;
 
-  const itemsHtml = items.map(item => `
+  const itemsHtml = items.map(item => {
+    const itemHeading = item.heading || item.title;
+    const itemBody = item.body || item.text;
+    const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button">
+ <div>${item.link.label}</div>
+</a>` : '';
+    return `
     <div class="feature-card">
-      <h3 class="h4-heading">${item.heading}</h3>
-      <p class="paragraph-lg utility-text-secondary${item.link ? ' utility-margin-bottom-sm' : ''}">${item.body}</p>
-      ${item.link ? renderButton(item.link) : ''}
-    </div>`).join('');
+      <h3 class="h4-heading">${itemHeading}</h3>
+      <p class="paragraph-lg utility-text-secondary${item.link ? ' utility-margin-bottom-md' : ''}">${itemBody}</p>
+      ${linkHtml}
+    </div>`;
+  }).join('');
 
   const buttonHtml = button ? `
     <div class="button-group utility-margin-top-lg">

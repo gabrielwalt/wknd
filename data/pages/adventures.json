@@ -12,35 +12,15 @@
     },
     "eyebrow": "WKND Adventures",
     "heading": "Adventures",
-    "lead": "Routes, guides, and trip reports for every kind of wild.",
-    "buttons": [
-      {
-        "label": "Browse All",
-        "href": "#browse-by-activity"
-      }
-    ]
+    "lead": "Routes, guides, and trip reports for every kind of wild."
   },
   "sections": [
-    {
-      "type": "featured-article",
-      "tag": "Surfing",
-      "heading": "Lofoten Islands: Arctic Surfing at the Top of the World",
-      "body": "Few surf destinations on Earth compress so much drama into a single wave. The Lofoten Islands rise straight from the Norwegian Sea — jagged, snow-capped, impossibly photogenic — and the swells that arrive from the open Atlantic break against a mountain backdrop that makes every other lineup feel small. Cold water, serious neoprene, and waves that have crossed thousands of kilometres of open ocean to reach you.",
-      "image": {
-        "src": "images/magazine/surfer-wave-02.jpg",
-        "alt": "Cold Atlantic swell rolling through the Lofoten Islands, Norway"
-      },
-      "button": {
-        "label": "Read Adventure",
-        "href": "blog/kayaking-norway.html"
-      }
-    },
     {
       "type": "cta-section",
       "heading": "Every route here has been walked.",
       "body": "No desk research. No secondhand accounts. Pick a terrain, read the full account, then go.",
       "centered": false,
-      "sectionClass": "section"
+      "sectionClass": "section accent-section"
     },
     {
       "type": "featured-article",

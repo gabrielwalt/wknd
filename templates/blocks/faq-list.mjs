@@ -1,8 +1,9 @@
 /**
  * Renders an FAQ accordion section with native <button> elements
  * @param {Object} data
+ * @param {string} [data.id] - Optional section ID for anchor links
  * @param {string} [data.sectionClass='section'] - Section CSS class
- * @param {string} [data.containerClass] - Additional container CSS class
+ * @param {string} [data.containerClass=''] - Additional container CSS class (e.g., 'container--narrow')
  * @param {string} [data.heading] - Optional section heading
  * @param {Object} [data.headingLink] - Optional link in heading
  * @param {string} data.headingLink.href - Link URL
@@ -20,7 +21,7 @@
  * Note: headingLink uses <span> not <div> for semantic HTML
  */
 export function faqList(data) {
-  const { sectionClass = 'section', containerClass = '', heading, headingLink, items } = data;
+  const { id, sectionClass = 'section', containerClass = '', heading, headingLink, items } = data;
 
   const itemsHtml = (items || []).map(item => `
     <div class="faq-item">
@@ -35,7 +36,9 @@ export function faqList(data) {
   const headingLinkHtml = headingLink ? `
       <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
 
-  return `<section class="${sectionClass}">
+  const idAttr = id ? ` id="${id}"` : '';
+
+  return `<section class="${sectionClass}"${idAttr}>
   <div class="container${containerClassStr}">
     ${heading ? `<div class="section-heading utility-margin-bottom-xl">
       <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}

@@ -26,13 +26,41 @@ export function tabSection(data) {
     <button class="tab-menu-link${i === 0 ? ' is-active' : ''}" data-tab="tab-${tab.id}" role="tab" aria-selected="${i === 0}">${tab.label}</button>`).join('');
 
   const tabPanesHtml = tabs.map((tab, i) => {
-    const itemsHtml = (tab.items || []).map(item => renderArticleCard(item)).join('');
-    return `
-    <div class="tab-pane${i === 0 ? ' is-active' : ''}" id="tab-${tab.id}" role="tabpanel">
-      ${tab.description ? `<p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">${tab.description}</p>` : ''}
+    let contentHtml = '';
+
+    // Check if this is a team profile tab (has image, name, role, bio)
+    if (tab.image && tab.name) {
+      contentHtml = `
+      <div class="team-profile-grid">
+        <div class="team-profile-row">
+          <div class="team-profile-spacer" aria-hidden="true"></div>
+          <div class="team-profile-col">
+            <div class="profile-circle">
+              <img src="${tab.image}" alt="${tab.imageAlt}" class="cover-image" loading="lazy" />
+            </div>
+            <div>
+              <p class="h5-heading profile-name">${tab.name}</p>
+              ${tab.role ? `<p class="paragraph-sm utility-text-secondary">${tab.role}</p>` : ''}
+            </div>
+          </div>
+          <div class="team-profile-bio">
+            ${(tab.bio || []).map((paragraph, idx) => `<p class="paragraph-lg utility-text-secondary${idx === (tab.bio.length - 1) ? ' utility-margin-bottom-xl' : ' utility-margin-bottom-lg'}">${paragraph}</p>`).join('')}
+          </div>
+        </div>
+      </div>`;
+    } else {
+      // Standard article card grid
+      const itemsHtml = (tab.items || []).map(item => renderArticleCard(item)).join('');
+      contentHtml = `
       <div class="grid-layout desktop-3-column grid-gap-lg">
         ${itemsHtml}
-      </div>
+      </div>`;
+    }
+
+    return `
+    <div class="tab-pane${i === 0 ? ' is-active' : ''}${tab.image && tab.name ? ' tab-pane--padded' : ''}" id="tab-${tab.id}" role="tabpanel">
+      ${tab.description ? `<p class="paragraph-lg utility-text-secondary utility-margin-bottom-xl utility-max-width-prose">${tab.description}</p>` : ''}
+      ${contentHtml}
     </div>`;
   }).join('');
 

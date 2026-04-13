@@ -49,11 +49,17 @@
 }
 
 .hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xxs) var(--space-xs);
   font-family: var(--font-heading);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--color-amber);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-full);
+  background-color: var(--color-amber);
+  color: var(--color-white);
+  text-shadow: none;
   margin-bottom: var(--space-md);
 }
 
