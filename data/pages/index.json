@@ -29,6 +29,10 @@
   },
   "sections": [
     {
+      "type": "ticker",
+      "items": ["Climbing", "Kayaking", "Cycling", "Desert", "Photography", "Hiking", "Winter", "Surfing", "Expedition", "Wild Swimming"]
+    },
+    {
       "type": "featured-article",
       "heading": "Sub-10 lb: What to Cut, What to Keep",
       "tag": "Gear Guide · Hiking",
