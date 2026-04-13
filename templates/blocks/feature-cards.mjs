@@ -23,20 +23,18 @@ export function featureCards(data) {
   const itemsHtml = items.map(item => {
     const itemHeading = item.heading || item.title;
     const itemBody = item.body || item.text;
-    const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button">
- <div>${item.link.label}</div>
-</a>` : '';
+    const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button"><span>${item.link.label}</span></a>` : '';
     return `
-    <div class="feature-card">
+    <div class="card card-body">
       <h3 class="h4-heading">${itemHeading}</h3>
-      <p class="paragraph-lg utility-text-secondary${item.link ? ' utility-margin-bottom-md' : ''}">${itemBody}</p>
+      <p class="paragraph-lg utility-text-secondary">${itemBody}</p>
       ${linkHtml}
     </div>`;
   }).join('');
 
   const buttonHtml = button ? `
     <div class="button-group utility-margin-top-lg">
-      <a href="${button.href}" class="button button-primary"><span class="button-label">${button.label}</span></a>
+      <a href="${button.href}" class="button"><span class="button-label">${button.label}</span></a>
     </div>` : '';
 
   return `<section class="${sectionClass}">

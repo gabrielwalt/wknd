@@ -29,7 +29,7 @@ export function gearBreakdown(data) {
     ${heading ? `<div class="section-heading">
       <h2 class="h2-heading">${heading}</h2>
     </div>` : ''}
-    <div class="grid-layout desktop-2-column grid-gap-xl">
+    <div class="grid-layout grid-layout--2col grid-gap-xl">
       ${itemsHtml}
     </div>
   </div>

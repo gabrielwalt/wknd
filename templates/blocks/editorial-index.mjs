@@ -53,10 +53,10 @@ export function editorialIndex(data) {
     <div class="grid-layout grid-layout--2col grid-gap-lg">
       ${cards.map(card => `
       <div class="card card-body">
-        <p class="hero-eyebrow">${card.eyebrow}</p>
+        <p class="tag">${card.eyebrow}</p>
         <h3 class="h3-heading">${card.heading}</h3>
         <p class="paragraph-lg">${card.body}</p>
-        <a href="${card.button.href}" class="button--${card.button.variant || 'ghost'}"><div class="button-label">${card.button.label}</div></a>
+        <a href="${card.button.href}" class="button--${card.button.variant || 'ghost'}"><span class="button-label">${card.button.label}</span></a>
       </div>
       `).join('')}
     </div>

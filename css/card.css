@@ -30,6 +30,9 @@ a.card:hover {
 
 .card-body {
   padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .cover-image {
@@ -38,17 +41,5 @@ a.card:hover {
   object-fit: cover;
 }
 
-/* ─────────────────────────────────────────
-   Feature card (icon + text block)
-───────────────────────────────────────── */
 
-.feature-card {
-  border-radius: var(--radius-card);
-  border: 1px solid var(--color-gray-200);
-  padding: var(--space-lg);
-  background: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
 

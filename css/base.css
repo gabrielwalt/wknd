@@ -199,6 +199,13 @@ h6 {
   border-radius: var(--radius-full);
   background-color: var(--color-amber);
   color: var(--color-white);
+  text-shadow: none;
+}
+
+/* When a tag precedes a heading, add breathing room */
+.tag + h1, .tag + h2, .tag + h3, .tag + h4,
+.tag + .h1-heading, .tag + .h2-heading, .tag + .h3-heading, .tag + .h4-heading {
+  margin-top: var(--space-md);
 }
 
 /* ── Default content flow ── */

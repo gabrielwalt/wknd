@@ -28,7 +28,7 @@ export function proseNarrow(data) {
 
   const buttonsHtml = buttons && buttons.length > 0 ? `
     <div class="button-group">
-      ${buttons.map(btn => `<a href="${btn.href}" class="button button-primary"><span class="button-label">${btn.label}</span></a>`).join('')}
+      ${buttons.map(btn => `<a href="${btn.href}" class="${btn.variant === 'ghost' ? 'button--ghost' : btn.variant === 'accent' ? 'accent-button' : 'button'}"><span class="button-label">${btn.label}</span></a>`).join('')}
     </div>` : '';
 
   const bodyHtml = formatBody(body);

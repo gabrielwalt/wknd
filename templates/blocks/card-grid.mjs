@@ -21,7 +21,7 @@ export function cardGrid(data) {
 
   const itemsHtml = items.map(item => `
     <div class="card card-body">
-      ${item.eyebrow ? `<p class="hero-eyebrow">${item.eyebrow}</p>` : ''}
+      ${item.eyebrow ? `<p class="tag">${item.eyebrow}</p>` : ''}
       <h3 class="h3-heading">${item.heading}</h3>
       <p class="paragraph-lg">${item.body}</p>
       ${item.link ? `<a href="${item.link.href}" class="${item.link.variant || 'button--ghost'}"><span class="button-label">${item.link.label}</span></a>` : ''}

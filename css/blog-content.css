@@ -23,11 +23,6 @@
    Blog hero meta
 ───────────────────────────────────────── */
 
-.blog-hero-tag {
-  margin-bottom: var(--space-md);
-  display: inline-block;
-}
-
 .blog-meta-name {
   color: var(--color-white);
   font-weight: 600;

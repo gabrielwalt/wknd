@@ -46,7 +46,7 @@ function renderFullHero(data) {
   </div>
   <div class="container hero-content">
     <div class="hero-content-inner">
-      <p class="hero-eyebrow">${data.eyebrow}</p>
+      ${data.eyebrow ? `<p class="tag">${data.eyebrow}</p>` : ''}
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
       <p class="paragraph-xl hero-lead">${data.lead || data.subheading}</p>
       ${buttonsHtml}
@@ -69,7 +69,7 @@ function renderStandardHero(data) {
   </div>
   <div class="container hero-content">
     <div class="hero-content-inner">
-      <p class="hero-eyebrow">${data.eyebrow}</p>
+      ${data.eyebrow ? `<p class="tag">${data.eyebrow}</p>` : ''}
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
       <p class="paragraph-xl hero-lead">${data.lead || data.subheading}</p>
       ${buttonsHtml}
@@ -95,7 +95,7 @@ function renderBlogHero(data) {
   </div>
   <div class="hero-content">
     <div class="container">
-      <span class="tag blog-hero-tag">${data.tag}</span>
+      <span class="tag">${data.tag}</span>
       <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
       ${bylineHtml}
     </div>

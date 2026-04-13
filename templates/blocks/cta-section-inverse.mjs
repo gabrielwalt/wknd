@@ -26,7 +26,7 @@ export function ctaSectionInverse(data) {
 
   return `<section class="${sectionClass}">
   <div class="container container--narrow">
-    ${eyebrow ? `<p class="hero-eyebrow">${eyebrow}</p>` : ''}
+    ${eyebrow ? `<p class="tag">${eyebrow}</p>` : ''}
     ${heading ? `<h2 class="h2-heading utility-margin-bottom-lg">${heading}</h2>` : ''}
     ${bodyHtml}
     ${btnArray.length > 0 ? `<div class="button-group">

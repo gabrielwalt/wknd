@@ -25,7 +25,7 @@ export function featuredArticle(data) {
   const btn = button || cta;
   const articleBody = body || data.description;  // Handle both body and description field names
 
-  const tagHtml = tag ? `<div class="tag">${tag}</div>` : eyebrow ? `<p class="hero-eyebrow">${eyebrow}</p>` : '';
+  const tagHtml = (tag || eyebrow) ? `<p class="tag">${tag || eyebrow}</p>` : '';
   const bodyHtml = formatBody(articleBody, 'paragraph-lg utility-text-secondary');
   const body2Html = body2 ? `<p class="paragraph-lg utility-text-secondary utility-margin-bottom-lg">${body2}</p>` : '';
   const imageElement = image ? (image.href ?
