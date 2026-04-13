@@ -124,20 +124,6 @@
           "href": "#"
         }
       ]
-    },
-    {
-      "type": "cta-section",
-      "sectionClass": "section inverse-section",
-      "buttons": [
-        {
-          "label": "Browse Adventures",
-          "href": "adventures.html"
-        },
-        {
-          "label": "Read Field Notes",
-          "href": "field-notes.html"
-        }
-      ]
     }
   ]
 }
