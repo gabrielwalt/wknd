@@ -5,7 +5,7 @@ export function gallery(data) {
     <img src="${img.src}" alt="${img.alt}" class="gallery-img" loading="lazy" />`).join('');
 
   const headingLinkHtml = headingLink ? `
-      <a href="${headingLink.href}" class="text-button"><div>${headingLink.label}</div></a>` : '';
+      <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container">

@@ -9,6 +9,7 @@ import { tabSection } from './blocks/tab-section.mjs';
 import { articleCardGrid } from './blocks/article-card-grid.mjs';
 import { featureCards } from './blocks/feature-cards.mjs';
 import { ctaSection } from './blocks/cta-section.mjs';
+import { ctaSectionInverse } from './blocks/cta-section-inverse.mjs';
 import { proseNarrow } from './blocks/prose-narrow.mjs';
 import { gallery } from './blocks/gallery.mjs';
 import { ticker } from './blocks/ticker.mjs';
@@ -25,6 +26,7 @@ const blockRenderers = {
   'article-card-grid': articleCardGrid,
   'feature-cards': featureCards,
   'cta-section': ctaSection,
+  'cta-section-inverse': ctaSectionInverse,
   'prose-narrow': proseNarrow,
   'gallery': gallery,
   'ticker': ticker,
