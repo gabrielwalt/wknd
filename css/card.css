@@ -10,6 +10,7 @@
   transition: background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
+
 a.card:hover,
 a.article-card:hover {
   background-color: var(--color-cream);
@@ -47,6 +48,3 @@ a.article-card:hover {
   height: 100%;
   object-fit: cover;
 }
-
-
-

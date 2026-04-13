@@ -16,7 +16,10 @@ export function formatBody(body, className = 'paragraph-lg utility-text-secondar
 
   return paragraphs.map((para, i) => {
     const isLast = i === paragraphs.length - 1;
+    const trimmed = para.trim();
+    // Already HTML — output as-is, don't wrap in <p>
+    if (trimmed.startsWith('<')) return trimmed;
     const margin = isLast ? (lastMargin ? ' ' + lastMargin : '') : ' utility-margin-bottom-lg';
-    return `<p class="${className}${margin}">${para.trim()}</p>`;
+    return `<p class="${className}${margin}">${trimmed}</p>`;
   }).join('');
 }

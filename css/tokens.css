@@ -39,14 +39,12 @@
   --color-white: #ffffff;
   --color-black: #0f1a14;
   --color-amber: #e8651a;
-  --color-forest: #1a3a2e;
   --color-cream: #f5f0e8;
   --color-gray-100: #f0ece4;
   --color-gray-200: #ddd8cf;
   --color-gray-300: #c8c2b8;
   --color-gray-500: #7a8a80;
   --color-gray-700: #3d4f45;
-  --color-gray-900: #161e19;
 
   /* Typography */
   --font-heading: "Syncopate", sans-serif;
@@ -74,7 +72,6 @@
   --space-2xl: 3rem;
   --space-3xl: 4rem;
   --space-4xl: 5rem;
-  --space-5xl: 8rem;
   --section-gap: var(--space-2xl);   /* spacing between logical groups within a section */
 
   /* Layout */
@@ -83,7 +80,6 @@
   --container-padding: 1.5rem;
 
   /* Radius */
-  --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --radius-card: 1.25rem;
@@ -91,23 +87,14 @@
 
   /* Shadows */
   --shadow-button: 4px 4px 0 0 var(--color-black);
-  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
-  --transition-normal: 0.3s ease;
 
   /* Focus ring */
   --focus-ring-color: var(--color-black);
   --focus-ring-width: 2px;
   --focus-ring-offset: 2px;
-
-  /* Icons */
-  --icon-xs: 0.75rem;
-  --icon-sm: 1rem;
-  --icon-md: 1.5rem;
-  --icon-lg: 2rem;
-  --icon-xl: 3rem;
 }
 
 /* ─────────────────────────────────────────
