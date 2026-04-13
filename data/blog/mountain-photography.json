@@ -191,6 +191,6 @@
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "../fragments/expeditions-grid.html"
+    "fragmentSrc": "fragments/expeditions-grid.html"
   }
 }

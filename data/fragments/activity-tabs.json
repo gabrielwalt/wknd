@@ -1,0 +1,160 @@
+{
+  "tabs": [
+    {
+      "id": "climbing",
+      "label": "Climbing",
+      "items": [
+        {
+          "href": "/blog/winter-mountaineering.html",
+          "image": {
+            "src": "/images/activities/ice-climbing.jpg",
+            "alt": "Winter mountaineering on steep snow slope"
+          },
+          "tagText": "Winter",
+          "heading": "Why Cold Routes Demand Warm Minds",
+          "body": "Winter mountaineering primer",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/patagonia-trek.html",
+          "image": {
+            "src": "/images/adventures/adobestock-231698835.jpg",
+            "alt": "W Circuit Patagonia"
+          },
+          "tagText": "Expedition",
+          "heading": "W Circuit, Patagonia",
+          "body": "9 days, 115 km in Torres del Paine",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/yosemite-rock-climbing.html",
+          "image": {
+            "src": "/images/activities/sport-climbing.jpg",
+            "alt": "Yosemite rock climbing"
+          },
+          "tagText": "Climbing",
+          "heading": "First Light on the Valley",
+          "body": "Yosemite beginner guide",
+          "headingClass": "h6-heading"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Water",
+      "items": [
+        {
+          "href": "/blog/wild-swimming-guide.html",
+          "image": {
+            "src": "/images/magazine/beach-walking.jpg",
+            "alt": "Wild swimming in a mountain pool"
+          },
+          "tagText": "Water",
+          "heading": "Reading a River",
+          "body": "Wild swimming guide",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/kayaking-norway.html",
+          "image": {
+            "src": "/images/magazine/surfer-wave-02.jpg",
+            "alt": "Cold Atlantic swell, Lofoten Islands, Norway"
+          },
+          "tagText": "Surf",
+          "heading": "Lofoten Islands",
+          "body": "Arctic surf expedition, Norway",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/surfing-costa-rica.html",
+          "image": {
+            "src": "/images/adventures/adobestock-278302117.jpeg",
+            "alt": "Surfing Costa Rica"
+          },
+          "tagText": "Surf",
+          "heading": "Pavones & Playa Negra",
+          "body": "Costa Rica break guide",
+          "headingClass": "h6-heading"
+        }
+      ]
+    },
+    {
+      "id": "cycling",
+      "label": "Cycling",
+      "items": [
+        {
+          "href": "/blog/alpine-cycling.html",
+          "image": {
+            "src": "/images/adventures/adobestock-261097343.jpeg",
+            "alt": "Road cyclists riding hard through the high passes"
+          },
+          "tagText": "Cycling",
+          "heading": "Galibier, Izoard, Telegraphe",
+          "body": "Six days through the High Alps by bike",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/mountain-photography.html",
+          "image": {
+            "src": "/images/adventures/adobestock-277768563.jpeg",
+            "alt": "Mountain photography at alpenglow"
+          },
+          "tagText": "Essay",
+          "heading": "The Camera on Your Back",
+          "body": "Mountain photography guide",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/ultralight-backpacking.html",
+          "image": {
+            "src": "/images/adventures/adobestock-257541512.jpeg",
+            "alt": "Ultralight backpacking gear"
+          },
+          "tagText": "Gear",
+          "heading": "Sub-10 lb: What to Cut",
+          "body": "Ultralight backpacking guide",
+          "headingClass": "h6-heading"
+        }
+      ]
+    },
+    {
+      "id": "hiking",
+      "label": "Hiking",
+      "items": [
+        {
+          "href": "/blog/patagonia-trek.html",
+          "image": {
+            "src": "/images/adventures/adobestock-231698835.jpg",
+            "alt": "Patagonia W Circuit"
+          },
+          "tagText": "Expedition",
+          "heading": "W Circuit, Patagonia",
+          "body": "9 days, 115 km",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/ultralight-backpacking.html",
+          "image": {
+            "src": "/images/adventures/adobestock-257541512.jpeg",
+            "alt": "Ultralight backpacking gear laid out"
+          },
+          "tagText": "Gear",
+          "heading": "Sub-10 lb: What to Cut",
+          "body": "Ultralight backpacking guide",
+          "headingClass": "h6-heading"
+        },
+        {
+          "href": "/blog/desert-survival-guide.html",
+          "image": {
+            "src": "/images/adventures/adobestock-185324648.jpg",
+            "alt": "Desert landscape at golden hour"
+          },
+          "tagText": "Desert",
+          "heading": "48 Hours in the Sonoran",
+          "body": "A field guide to desert survival",
+          "headingClass": "h6-heading"
+        }
+      ]
+    }
+  ]
+}

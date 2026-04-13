@@ -195,6 +195,6 @@
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "../fragments/field-notes-grid.html"
+    "fragmentSrc": "fragments/field-notes-grid.html"
   }
 }

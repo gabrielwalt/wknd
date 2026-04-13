@@ -1,5 +1,9 @@
 # Architecture
 
+**WKND Adventures is a static site generator (SSG) that builds the complete wknd-adventures.com website from data + templates.**
+
+All HTML (root pages, blog posts, content fragments) is generated at build time from JSON data files and JavaScript template modules. No server-side runtime or database. The generated site is deployed to GitHub Pages.
+
 ## Core Model
 
 ```

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "href": "/blog/mountain-photography.html",
+      "image": {
+        "src": "/images/adventures/adobestock-277768563.jpeg",
+        "alt": "Mountain Photography"
+      },
+      "tagText": "Essay",
+      "heading": "Mountain Photography",
+      "body": "The camera as creative tool and physical burden. Alex R.'s landmark essay on shooting in the high mountains.",
+      "byline": {
+        "name": "Alex R.",
+        "meta": "September 2025"
+      }
+    },
+    {
+      "href": "/blog/ultralight-backpacking.html",
+      "image": {
+        "src": "/images/adventures/adobestock-257541512.jpeg",
+        "alt": "Ultralight Backpacking"
+      },
+      "tagText": "Gear Guide",
+      "heading": "Ultralight Backpacking",
+      "body": "What to cut, what to keep, and what the ultralight obsession reveals about how we think about wilderness.",
+      "byline": {
+        "name": "Taylor B.",
+        "meta": "August 2025"
+      }
+    },
+    {
+      "href": "/blog/desert-survival-guide.html",
+      "image": {
+        "src": "/images/adventures/adobestock-185324648.jpg",
+        "alt": "Desert Survival Guide"
+      },
+      "tagText": "Desert",
+      "heading": "Desert Survival Guide",
+      "body": "From Taylor B., after three weeks in the Sonoran: the real lessons from moving through extreme heat.",
+      "byline": {
+        "name": "Taylor B.",
+        "meta": "October 2025"
+      }
+    }
+  ]
+}

@@ -3,6 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { renderPage } from '../templates/page.mjs';
 import { renderBlogPage } from '../templates/blog-page.mjs';
+import { articleTabs } from '../templates/fragments/article-tabs.mjs';
+import { articleGrid } from '../templates/fragments/article-grid.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -31,6 +33,30 @@ function generatePages() {
   // Load site-wide data
   const siteData = loadJSON(path.join(projectRoot, 'data', 'site.json'));
 
+  // Generate fragments FIRST (needed by pages that include them)
+  const fragmentsDir = path.join(projectRoot, 'data', 'fragments');
+  const fragmentRenderers = {
+    'activity-tabs': articleTabs,
+    'expeditions-grid': articleGrid,
+    'field-notes-grid': articleGrid
+  };
+
+  if (fs.existsSync(fragmentsDir)) {
+    fs.readdirSync(fragmentsDir)
+      .filter(f => f.endsWith('.json'))
+      .forEach(file => {
+        const fragData = loadJSON(path.join(fragmentsDir, file));
+        const fragName = path.basename(file, '.json');
+        const renderer = fragmentRenderers[fragName];
+
+        if (renderer) {
+          const html = renderer(fragData);
+          const htmlPath = path.join(projectRoot, 'fragments', `${fragName}.html`);
+          writeFile(htmlPath, html);
+        }
+      });
+  }
+
   // Generate root pages
   const pagesDir = path.join(projectRoot, 'data', 'pages');
   if (fs.existsSync(pagesDir)) {
@@ -58,20 +84,6 @@ function generatePages() {
 
         const html = renderBlogPage(postData, siteData);
         writeFile(htmlPath, html);
-      });
-  }
-
-  // Generate fragments
-  const fragmentsDir = path.join(projectRoot, 'data', 'fragments');
-  if (fs.existsSync(fragmentsDir)) {
-    fs.readdirSync(fragmentsDir)
-      .filter(f => f.endsWith('.json'))
-      .forEach(file => {
-        const fragData = loadJSON(path.join(fragmentsDir, file));
-        // Fragments are rendered with a simple template
-        const fragName = path.basename(file, '.json');
-        // For now, store fragment rendering logic or just output raw HTML
-        // TODO: Implement fragment rendering if needed
       });
   }
 }

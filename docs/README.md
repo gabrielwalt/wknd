@@ -1,6 +1,14 @@
 # WKND Adventures — Documentation
 
-A complete reference for understanding and maintaining the WKND Adventures project.
+**This project generates the complete wknd-adventures.com website from JSON data + ES module templates.**
+
+WKND Adventures is a static site generator (SSG) that builds a premium outdoor adventure publication website. All HTML pages, blog posts, and content fragments are generated at build time from:
+- **JSON data files** (`data/site.json`, `data/pages/`, `data/blog/`, `data/fragments/`)
+- **ES module templates** (`templates/partials/`, `templates/components/`, `templates/blocks/`, `templates/blog/`)
+
+The generated site is then deployed to wknd-adventures.com via GitHub Pages.
+
+## Complete Reference
 
 ## Quick Navigation
 

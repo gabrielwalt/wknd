@@ -84,18 +84,6 @@
     q.setAttribute('aria-expanded', String(item.classList.contains('is-open')));
   }
 
-  function loadFragments() {
-    document.querySelectorAll('[data-fragment]').forEach(function (el) {
-      var url = el.getAttribute('data-fragment');
-      if (!url) return;
-      fetch(url)
-        .then(function (r) { return r.text(); })
-        .then(function (html) {
-          el.outerHTML = html;
-        });
-    });
-  }
-
   function initForms() {
     document.querySelectorAll('form[data-subscribe]').forEach(function(form) {
       form.addEventListener('submit', function(e) {
@@ -109,7 +97,6 @@
     initMegamenuMobile();
     initMegamenuDesktopHover();
     document.addEventListener('click', onDocumentClick);
-    loadFragments();
     initForms();
   }
 
