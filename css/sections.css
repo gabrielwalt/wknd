@@ -106,9 +106,7 @@
   color: var(--color-white);
 }
 
-.inverse-section .article-byline-meta,
-.inverse-section .article-card-byline,
-.inverse-section .article-card-location {
+.inverse-section .article-byline-meta {
   color: rgba(255, 255, 255, 0.5);
 }
 

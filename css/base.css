@@ -258,14 +258,6 @@ h6 {
    Spacing utilities
 ───────────────────────────────────────── */
 
-.utility-margin-top-0-5rem {
-  margin-top: 0.5rem;
-}
-
-.utility-margin-top-auto {
-  margin-top: auto;
-}
-
 .utility-padding-top-0 {
   padding-top: 0;
 }
@@ -279,21 +271,10 @@ h6 {
   color: var(--color-gray-500);
 }
 
-.utility-text-inverse-secondary {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .utility-text-align-center {
   text-align: center;
 }
 
-.utility-max-width-prose {
-  max-width: 52rem;
-}
-
-.utility-max-width-sm {
-  max-width: 34rem;
-}
 
 /* ─────────────────────────────────────────
    Misc utilities
@@ -317,8 +298,7 @@ h6 {
 }
 
 .inverse-section :focus-visible,
-.inverse-footer :focus-visible,
-.inverse-card-link :focus-visible {
+.inverse-footer :focus-visible {
   --focus-ring-color: var(--color-white);
 }
 
@@ -547,10 +527,7 @@ h6 {
 .utility-margin-bottom-xl { margin-bottom: var(--space-xl); }
 .utility-margin-bottom-md { margin-bottom: var(--space-md); }
 .utility-margin-bottom-sm { margin-bottom: var(--space-sm); }
-.utility-margin-bottom-xs { margin-bottom: var(--space-xs); }
-
 .utility-margin-top-lg { margin-top: var(--space-lg); }
-.utility-margin-top-xl { margin-top: var(--space-xl); }
 
 /* ─────────────────────────────────────────
    Grid alignment utilities

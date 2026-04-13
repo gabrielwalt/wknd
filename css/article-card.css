@@ -54,15 +54,6 @@
   margin-bottom: var(--space-sm);
 }
 
-.article-card .article-card-body > h3.h5-heading.utility-margin-bottom-xs {
-  margin-top: var(--space-sm);
-  margin-bottom: var(--space-xs);
-}
-
-.article-card .article-card-body > h4.h6-heading.utility-margin-bottom-xs {
-  margin-top: var(--space-sm);
-  margin-bottom: var(--space-xs);
-}
 
 /* Pill badge should stay content-sized */
 .article-card-body > .tag {

@@ -74,11 +74,3 @@
   border-color: var(--color-amber);
 }
 
-/* ─────────────────────────────────────────
-   FAQ answer link
-───────────────────────────────────────── */
-
-.faq-link {
-  color: var(--color-amber);
-  text-decoration: underline;
-}
