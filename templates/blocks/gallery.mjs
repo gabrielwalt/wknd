@@ -42,7 +42,7 @@ export function gallery(data) {
     ${heading ? `<div class="section-heading">
       <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
     </div>` : ''}
-    <div class="grid-layout desktop-3-column grid-gap-lg">
+    <div class="grid-layout desktop-3-column grid-images grid-gap-lg">
       ${imagesHtml}
     </div>
     ${wideImage ? `<div class="utility-margin-top-lg">

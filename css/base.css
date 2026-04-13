@@ -389,10 +389,20 @@ h6 {
   .grid-layout.desktop-4-column {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Image-only 3-col grids can stay 3-wide at tablet — images scale fine */
+  .grid-layout.desktop-3-column.grid-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
   .grid-layout.desktop-3-column {
+    grid-template-columns: 1fr;
+  }
+
+  /* Image grids also collapse to single column at mobile */
+  .grid-layout.desktop-3-column.grid-images {
     grid-template-columns: 1fr;
   }
 }
