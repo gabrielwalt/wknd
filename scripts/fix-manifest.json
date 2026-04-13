@@ -1,0 +1,715 @@
+{
+  "index": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Explore Adventures",
+        "Read Field Notes"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section hero-section--full"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "Sub-10 lb: What to Cut, What to Keep"
+      ],
+      "buttons": [
+        "Read the Story"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "Browse by Activity"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "Not sure where to start?"
+      ],
+      "buttons": [
+        "Browse Adventures",
+        "Find a Destination"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Quick Answers"
+      ],
+      "buttons": [
+        "Full FAQ"
+      ],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "How We Work"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "In the Field"
+      ],
+      "buttons": [
+        "Field Notes"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "Ready to plan your next adventure?"
+      ],
+      "buttons": [
+        "Find a Destination",
+        "Browse Gear Guides"
+      ],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    }
+  ],
+  "adventures": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Browse All"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section hero-section--full"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "Every route here has been walked."
+      ],
+      "buttons": [],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "Lofoten Islands: Arctic Surfing at the Top of the World"
+      ],
+      "buttons": [
+        "Read the Full Story"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "Browse by Activity"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Choosing Your Adventure"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "Recent Reports"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "Adventure by Skill Level"
+      ],
+      "buttons": [
+        "Explore Expeditions",
+        "Read Field Notes"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "Know your kit before you go."
+      ],
+      "buttons": [
+        "Browse Gear Guides"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    }
+  ],
+  "community": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Submit Your Story"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "One story a month. Chosen by the editors. Written by you."
+      ],
+      "buttons": [],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "Traversing the Rochefort Ridge: Two Days on Skis Above Chamonix",
+        "How to Submit"
+      ],
+      "buttons": [
+        "Read Alex's Story",
+        "Submit Your Story"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "From the Wild"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Reader Dispatches",
+        "What the Lofoten taught our readers about commitment — and cold water."
+      ],
+      "buttons": [
+        "Read the Story"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "What makes a great dispatch?"
+      ],
+      "buttons": [],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "Join in"
+      ],
+      "buttons": [
+        "Submit via email",
+        "Subscribe"
+      ],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "Submission FAQ"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 9,
+      "headings": [
+        "Start reading."
+      ],
+      "buttons": [
+        "Adventures",
+        "Field Notes"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    }
+  ],
+  "destinations": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Americas",
+        "Europe"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "Explore by Region"
+      ],
+      "buttons": [],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "W Circuit, Torres del Paine"
+      ],
+      "buttons": [
+        "Read the Full Report"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "Americas"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Europe",
+        "Planning by Season"
+      ],
+      "buttons": [
+        "See winter routes →",
+        "See spring routes →",
+        "See summer routes →",
+        "See autumn routes →"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "High Altitude"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "Essential Route Reports"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "Permits &amp; Logistics"
+      ],
+      "buttons": [],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 9,
+      "headings": [
+        "Regional Editors"
+      ],
+      "buttons": [
+        "Read their reports →",
+        "Read the Expeditions",
+        "Browse Gear Guides"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 10,
+      "headings": [
+        "Every destination starts with a good briefing."
+      ],
+      "buttons": [
+        "Browse All Adventures"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    }
+  ],
+  "expeditions": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Read Patagonia",
+        "See Destinations"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "W Circuit: 9 Days, 115 km, One Life-Changing Walk"
+      ],
+      "buttons": [
+        "Read the Full Story"
+      ],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "Our Expeditions"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "What an Expedition Demands",
+        "What makes an expedition?"
+      ],
+      "buttons": [
+        "sustainability commitments"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Full Accounts"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "The Gear You'll Actually Need"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "The WKND Pre-Departure Checklist"
+      ],
+      "buttons": [
+        "Download the full checklist"
+      ],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "What's next"
+      ],
+      "buttons": [
+        "Subscribe for Updates"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 9,
+      "headings": [],
+      "buttons": [
+        "Browse Adventures",
+        "Read Field Notes"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    }
+  ],
+  "field-notes": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Latest Dispatch"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "Written close to the event."
+      ],
+      "buttons": [],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "The Camera on Your Back: A Practical and Philosophical Guide"
+      ],
+      "buttons": [
+        "Read the Essay"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "What Is a Field Note?"
+      ],
+      "buttons": [],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 5,
+      "headings": [],
+      "buttons": [
+        "Submit a Story",
+        "Read the Expeditions"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "Essential Reading"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "Adventures start here."
+      ],
+      "buttons": [
+        "Browse All Adventures"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    }
+  ],
+  "faq": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "Planning a Trip",
+        "Contributing a Story"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "Planning &amp; Adventures",
+        "Contributing Stories"
+      ],
+      "buttons": [],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "Planning &amp; Adventures"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "Contributing Stories"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Planning Your Trip"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "About WKND Content"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "Contributing &amp; Community"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "Most popular starting points"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 9,
+      "headings": [
+        "Still stuck?"
+      ],
+      "buttons": [
+        "Get in touch",
+        "Browse Adventures"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    }
+  ],
+  "gear": [
+    {
+      "position": 1,
+      "headings": [],
+      "buttons": [
+        "By Activity"
+      ],
+      "backgroundColor": "white",
+      "classes": "hero-section"
+    },
+    {
+      "position": 2,
+      "headings": [
+        "Buy once. Pack light. Leave nothing."
+      ],
+      "buttons": [],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    },
+    {
+      "position": 3,
+      "headings": [
+        "Sub-10 lb: What to Cut, What to Keep"
+      ],
+      "buttons": [
+        "Read the Guide"
+      ],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 4,
+      "headings": [
+        "Gear by Activity"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 5,
+      "headings": [
+        "Gear Features",
+        "How We Test Gear"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 6,
+      "headings": [
+        "The Full Breakdown"
+      ],
+      "buttons": [],
+      "backgroundColor": "white",
+      "classes": "section"
+    },
+    {
+      "position": 7,
+      "headings": [
+        "What Goes In"
+      ],
+      "buttons": [],
+      "backgroundColor": "beige",
+      "classes": "section secondary-section"
+    },
+    {
+      "position": 8,
+      "headings": [
+        "Three rules we live by"
+      ],
+      "buttons": [
+        "Our wild ethics"
+      ],
+      "backgroundColor": "dark",
+      "classes": "section inverse-section"
+    },
+    {
+      "position": 9,
+      "headings": [
+        "Gear is only half the story."
+      ],
+      "buttons": [
+        "Browse Adventures"
+      ],
+      "backgroundColor": "orange",
+      "classes": "section accent-section"
+    }
+  ]
+}

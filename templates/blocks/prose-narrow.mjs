@@ -15,10 +15,15 @@
  * Heading link appears next to h2 in same section-heading div
  */
 export function proseNarrow(data) {
-  const { sectionClass = 'section', containerClass = 'container--narrow', heading, headingLink, body } = data;
+  const { sectionClass = 'section', containerClass = 'container--narrow', heading, headingLink, body, buttons } = data;
 
   const headingLinkHtml = headingLink ? `
         <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
+
+  const buttonsHtml = buttons && buttons.length > 0 ? `
+    <div class="button-group">
+      ${buttons.map(btn => `<a href="${btn.href}" class="button button-primary"><span class="button-label">${btn.label}</span></a>`).join('')}
+    </div>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container ${containerClass}">
@@ -26,6 +31,7 @@ export function proseNarrow(data) {
       <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
     </div>` : ''}
     ${body}
+    ${buttonsHtml}
   </div>
 </section>`;
 }

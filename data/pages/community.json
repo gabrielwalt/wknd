@@ -13,7 +13,7 @@
     "eyebrow": "Community",
     "heading": "Community",
     "lead": "Real adventures from real readers. One story a month — chosen by the editors.",
-    "cta": [
+    "buttons": [
       {
         "label": "Submit Your Story",
         "href": "#submit"
@@ -24,7 +24,8 @@
     {
       "type": "cta-section",
       "heading": "One story a month. Chosen by the editors. Written by you.",
-      "body": "Not polished. Not perfect. True — and specific enough that only someone who was there could have written it."
+      "body": "Not polished. Not perfect. True — and specific enough that only someone who was there could have written it.",
+      "sectionClass": "section inverse-section"
     },
     {
       "type": "featured-article",
@@ -32,70 +33,73 @@
       "description": "Alex C. from Brisbane had been planning the Rochefort Ridge for three seasons. A classic ski mountaineering traverse in the Mont Blanc massif — approached from the Helbronner cable car on the Italian side, moving across the high ridge above the Mer de Glace with glacier travel, mixed terrain, and the kind of exposure that narrows the whole world to the next placement. He sent us his account two weeks after returning and we read it in one sitting.",
       "image": {
         "src": "images/activities/ice-climbing.jpg",
-        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France"
+      },
+      "button": {
+        "label": "Read Alex's Story",
         "href": "blog/winter-mountaineering.html"
       },
-      "cta": {
-        "label": "Read more",
-        "href": "blog/winter-mountaineering.html"
-      }
+      "sectionClass": "section secondary-section"
+    },
+    {
+      "type": "prose-narrow",
+      "heading": "How to Submit",
+      "sectionClass": "section secondary-section",
+      "body": "<p class=\"paragraph-lg utility-margin-bottom-md\">A WKND dispatch is a first-person account of a specific route on specific dates. It should include: the full route name and location, the dates you travelled, your experience level and party size, the conditions you encountered (weather, snow, river levels — whatever was relevant), the gear you relied on, and an honest assessment of difficulty. Write about what happened, not what you planned. If the route went sideways, write about that. If you turned around, write about why. We're not interested in summary; we want the experience from the inside. 1,000–1,500 words is the target length.</p>",
+      "buttons": [
+        {
+          "label": "Submit Your Story",
+          "href": "#submit"
+        }
+      ]
     },
     {
       "type": "fragment-include",
       "heading": "From the Wild",
-      "fragmentSrc": "fragments/expeditions-grid.html"
+      "fragmentSrc": "fragments/expeditions-grid.html",
+      "sectionClass": "section"
     },
     {
       "type": "featured-article",
       "heading": "Reader Dispatches",
-      "description": "More from the community — routes completed, conditions encountered, lessons earned.",
-      "image": {
-        "src": "images/activities/ice-climbing.jpg",
-        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France",
-        "href": "blog/kayaking-norway.html"
-      },
-      "cta": {
-        "label": "Read more",
-        "href": "blog/kayaking-norway.html"
-      }
-    },
-    {
-      "type": "cta-section",
-      "heading": "What makes a great dispatch?",
-      "body": "The dispatches we publish have one thing in common: they are specific. Not \"the mountain was beautiful and the experience changed me\" — but \"the wind on the col was south-southeast at around 40 knots and we had to cross it crawling on hands and knees to avoid being blown off the ridge.\" That level of specificity is not just more interesting to read; it is genuinely useful to the next person planning the same route. The test we apply to every submission is this: does the reader who is planning this trip now know something useful that they didn't know before? If the answer is no, the piece isn't working yet. Honest reporting of difficulty and failure is not optional — it's the whole point. We are not interested in sanitised accounts that smooth over the moments when things went wrong, the decision to turn around, the gear failure, the navigational error that cost three hours. Those are the moments that teach the most, and the best dispatches we've published have all contained at least one honest account of a mistake or a setback. Writing about failure requires more craft than writing about success, and we consider it the mark of a writer who has something real to say. If your route went perfectly according to plan, ask yourself whether you're telling the whole story. We ask all contributors to respect the communities and ecosystems they pass through. This means: don't identify precise camp locations in sensitive areas where impact is already concentrated. Don't name access routes through private land without the landowner's knowledge. Don't publish coordinates for spots that are currently under pressure from overuse. We will edit for this where necessary and flag it during review, but the responsibility starts with the writer. If a place is worth writing about, it's worth protecting — and those two obligations sometimes pull in opposite directions. When they do, protection wins. Photographs should be honest before they are beautiful. We don't expect professional equipment or post-processing skills. We do expect that images represent conditions accurately: if it was raining, we want to see the rain. If the route was loose and exposed, the photographs should show that. Heavily filtered images that make harsh terrain look inviting create a false impression that can put inexperienced readers in situations they weren't prepared for. Phone cameras in honest conditions beat DSLRs with misleading processing. Shoot what's actually there. No promotional content, in any form. Mentions of gear you used and assessed honestly are fine — we encourage them. Mentions of gear you used because a brand sent it to you must be disclosed. Do not include links to brand websites, tour operators, or guiding companies in your submission text. Do not mention commercial services unless they are directly relevant to the route and you're prepared to assess them critically. If a mountain hut was overpriced and under-maintained, say so. If a local guiding company was excellent, say so — but also say what it cost and what you got. We'll remove any content that reads as unpaid advertising, with or without your knowledge that it reads that way. Finally: write like yourself. The dispatches that land hardest are the ones where the writer's voice is present and distinct. Don't sand off the edges trying to sound like a magazine. Don't over-explain the emotional significance of what happened. Trust the specific detail to carry the meaning — it almost always does. The mountain doesn't need editorialising. Tell us what it looked like, what it felt like underfoot, what decision you made and why, and what you'd do differently. That's the whole brief."
-    },
-    {
-      "type": "cta-section",
-      "heading": "Join in",
-      "body": "1,200 words max. One route, one honest account. No fluff. Weekly dispatches from the trail. New stories, route updates, gear notes — no spam, unsubscribe any time."
-    },
-    {
-      "type": "featured-article",
-      "heading": "What the Lofoten taught our readers about commitment — and cold water.",
+      "description": "What the Lofoten taught our readers about commitment — and cold water.",
       "body": "When Morgan published the Lofoten Arctic surfing article in November, we weren't prepared for the response. Dozens of reader emails, three international surf trip inquiries, and more than a few people who said they'd already booked flights to Bodø. The lesson the article kept teaching — and that readers kept writing back about — was that surfing in the Arctic is not about toughness. It's about the right equipment, the right timing, and patience for the swell. The ocean has its own schedule.",
       "image": {
-        "src": "images/contributors/justin-barr.jpg",
-        "alt": "Morgan L."
+        "src": "images/activities/ice-climbing.jpg",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France"
       },
       "button": {
         "label": "Read the Story",
         "href": "blog/kayaking-norway.html"
-      }
+      },
+      "sectionClass": "section secondary-section"
     },
     {
-      "type": "editorial-index",
-      "heading": "How to Submit",
-      "items": [
+      "type": "cta-section",
+      "heading": "What makes a great dispatch?",
+      "body": "The dispatches we publish have one thing in common: they are specific. Not \"the mountain was beautiful and the experience changed me\" — but \"the wind on the col was south-southeast at around 40 knots and we had to cross it crawling on hands and knees to avoid being blown off the ridge.\" That level of specificity is not just more interesting to read; it is genuinely useful to the next person planning the same route. The test we apply to every submission is this: does the reader who is planning this trip now know something useful that they didn't know before? If the answer is no, the piece isn't working yet. Honest reporting of difficulty and failure is not optional — it's the whole point. We are not interested in sanitised accounts that smooth over the moments when things went wrong, the decision to turn around, the gear failure, the navigational error that cost three hours. Those are the moments that teach the most, and the best dispatches we've published have all contained at least one honest account of a mistake or a setback. Writing about failure requires more craft than writing about success, and we consider it the mark of a writer who has something real to say. If your route went perfectly according to plan, ask yourself whether you're telling the whole story. We ask all contributors to respect the communities and ecosystems they pass through. This means: don't identify precise camp locations in sensitive areas where impact is already concentrated. Don't name access routes through private land without the landowner's knowledge. Don't publish coordinates for spots that are currently under pressure from overuse. We will edit for this where necessary and flag it during review, but the responsibility starts with the writer. If a place is worth writing about, it's worth protecting — and those two obligations sometimes pull in opposite directions. When they do, protection wins. Photographs should be honest before they are beautiful. We don't expect professional equipment or post-processing skills. We do expect that images represent conditions accurately: if it was raining, we want to see the rain. If the route was loose and exposed, the photographs should show that. Heavily filtered images that make harsh terrain look inviting create a false impression that can put inexperienced readers in situations they weren't prepared for. Phone cameras in honest conditions beat DSLRs with misleading processing. Shoot what's actually there. No promotional content, in any form. Mentions of gear you used and assessed honestly are fine — we encourage them. Mentions of gear you used because a brand sent it to you must be disclosed. Do not include links to brand websites, tour operators, or guiding companies in your submission text. Do not mention commercial services unless they are directly relevant to the route and you're prepared to assess them critically. If a mountain hut was overpriced and under-maintained, say so. If a local guiding company was excellent, say so — but also say what it cost and what you got. We'll remove any content that reads as unpaid advertising, with or without your knowledge that it reads that way. Finally: write like yourself. The dispatches that land hardest are the ones where the writer's voice is present and distinct. Don't sand off the edges trying to sound like a magazine. Don't over-explain the emotional significance of what happened. Trust the specific detail to carry the meaning — it almost always does. The mountain doesn't need editorialising. Tell us what it looked like, what it felt like underfoot, what decision you made and why, and what you'd do differently. That's the whole brief.",
+      "sectionClass": "section inverse-section"
+    },
+    {
+      "type": "cta-section",
+      "heading": "Join in",
+      "body": "1,200 words max. One route, one honest account. No fluff. Weekly dispatches from the trail. New stories, route updates, gear notes — no spam, unsubscribe any time.",
+      "sectionClass": "section accent-section",
+      "buttons": [
         {
-          "number": "01",
-          "heading": "Write your dispatch",
-          "body": "A WKND dispatch is a first-person account of a specific route on specific dates. It should include: the full route name and location, the dates you travelled, your experience level and party size, the conditions you encountered (weather, snow, river levels — whatever was relevant), the gear you relied on, and an honest assessment of difficulty. Write about what happened, not what you planned. If the route went sideways, write about that. If you turned around, write about why. We're not interested in summary; we want the experience from the inside. 1,000–1,500 words is the target length."
+          "label": "Submit via email",
+          "href": "mailto:stories@wknd-adventures.com"
+        },
+        {
+          "label": "Subscribe",
+          "href": "#subscribe"
         }
       ]
     },
     {
       "type": "faq-list",
       "heading": "Submission FAQ",
+      "sectionClass": "section",
       "items": [
         {
           "question": "How long should my story be?",
@@ -125,7 +129,18 @@
     },
     {
       "type": "cta-section",
-      "heading": "Start reading."
+      "heading": "Start reading.",
+      "sectionClass": "section inverse-section",
+      "buttons": [
+        {
+          "label": "Adventures",
+          "href": "adventures.html"
+        },
+        {
+          "label": "Field Notes",
+          "href": "field-notes.html"
+        }
+      ]
     }
   ]
 }

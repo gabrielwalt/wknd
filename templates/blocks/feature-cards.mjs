@@ -18,7 +18,7 @@ import { renderButton } from '../components/button.mjs';
  * Buttons are optional per card; margin adjusts automatically
  */
 export function featureCards(data) {
-  const { sectionClass = 'section inverse-section', heading, items = [] } = data;
+  const { sectionClass = 'section inverse-section', heading, items = [], button } = data;
 
   const itemsHtml = items.map(item => `
     <div class="feature-card">
@@ -26,6 +26,11 @@ export function featureCards(data) {
       <p class="paragraph-lg utility-text-secondary${item.link ? ' utility-margin-bottom-sm' : ''}">${item.body}</p>
       ${item.link ? renderButton(item.link) : ''}
     </div>`).join('');
+
+  const buttonHtml = button ? `
+    <div class="button-group utility-margin-top-lg">
+      <a href="${button.href}" class="button button-primary"><span class="button-label">${button.label}</span></a>
+    </div>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container">
@@ -35,6 +40,7 @@ export function featureCards(data) {
     <div class="grid-layout desktop-3-column grid-gap-lg">
       ${itemsHtml}
     </div>
+    ${buttonHtml}
   </div>
 </section>`;
 }

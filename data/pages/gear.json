@@ -13,7 +13,7 @@
     "eyebrow": "Gear",
     "heading": "Gear",
     "lead": "What goes in the pack matters. No affiliate links, no brand deals. Just what we actually use.",
-    "cta": [
+    "buttons": [
       {
         "label": "By Activity",
         "href": "#gear-by-activity"
@@ -24,12 +24,8 @@
     {
       "type": "cta-section",
       "heading": "Buy once. Pack light. Leave nothing.",
-      "body": "Three rules. Every guide, every review, every gear list on this site follows them without exception."
-    },
-    {
-      "type": "prose-narrow",
-      "heading": "How We Test Gear",
-      "body": "<p class=\"paragraph-lg utility-margin-bottom-md\">Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.</p><p class=\"paragraph-lg utility-margin-bottom-md\">Manufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.</p><p class=\"paragraph-lg utility-margin-bottom-md\">We don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.</p><p class=\"paragraph-lg utility-margin-bottom-md\">We do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.</p>"
+      "body": "Three rules. Every guide, every review, every gear list on this site follows them without exception.",
+      "sectionClass": "section accent-section"
     },
     {
       "type": "featured-article",
@@ -37,54 +33,47 @@
       "description": "Taylor spent three years cutting weight from a 22 lb base down to 9.4. The answer wasn't expensive gear — it was hard questions. What do you actually need? What are you carrying out of habit? This guide is the honest breakdown of every decision.",
       "image": {
         "src": "images/adventures/adobestock-257541512.jpeg",
-        "alt": "Ultralight backpacking kit laid out on a tarp",
+        "alt": "Ultralight backpacking kit laid out on a tarp"
+      },
+      "button": {
+        "label": "Read the Guide",
         "href": "blog/ultralight-backpacking.html"
       },
-      "cta": {
-        "label": "Read more",
-        "href": "blog/ultralight-backpacking.html"
-      }
+      "sectionClass": "section secondary-section"
     },
     {
-      "type": "tab-section",
+      "type": "fragment-include",
       "heading": "Gear by Activity",
-      "tabs": [
+      "fragmentSrc": "fragments/activity-tabs.html",
+      "sectionClass": "section"
+    },
+    {
+      "type": "editorial-index",
+      "heading": "Gear Features",
+      "sectionClass": "section secondary-section",
+      "items": [
         {
-          "id": "climbing",
-          "label": "Climbing"
-        },
-        {
-          "id": "water",
-          "label": "Water"
-        },
-        {
-          "id": "cycling",
-          "label": "Cycling"
-        },
-        {
-          "id": "desert",
-          "label": "Desert"
+          "heading": "How We Test Gear",
+          "body": "<p class=\"paragraph-lg utility-margin-bottom-md\">Everything reviewed in this section has been used on an actual route, in actual conditions, by an actual person who made actual decisions about whether to trust it. We do not test gear in controlled environments or against manufacturer specifications. We carry it, beat it against rock, leave it in the rain, and report what happened. The minimum time before a piece of gear is eligible for review is 30 days of use — not 30 days of ownership.</p><p class=\"paragraph-lg utility-margin-bottom-md\">Manufacturer samples are accepted only with full disclosure in the article. When a brand sends us kit, we say so, in the piece, in the first paragraph. Readers can then apply their own judgment. What we do not do is accept samples under conditions of editorial influence, embargo, or pre-approval. If a brand won't send kit without those conditions, we buy it ourselves or we don't review it.</p><p class=\"paragraph-lg utility-margin-bottom-md\">We don't use star ratings. The reason is simple: a four-star boot in the Scottish Highlands in winter is a two-star boot in the Patagonian summer, and any rating system that doesn't communicate that is worse than useless. Instead, WKND gear reviews describe the specific terrain the piece was tested on, the conditions it encountered, and the type of user the contributor is — body type, experience level, activity intensity. That gives you enough information to extrapolate honestly to your own situation.</p><p class=\"paragraph-lg utility-margin-bottom-md\">We do not carry affiliate links. When you click a product name in our reviews, it goes to the manufacturer's site or a neutral source, not a tracked link that earns us a commission. This is a deliberate editorial decision — it is not a moral position on the retail model, but a practical one: we believe you should be able to read a gear recommendation without wondering whether the recommendation is shaped by what it earns. The moment that ambiguity enters, the review is worth less.</p>"
         }
       ]
     },
     {
       "type": "fragment-include",
-      "heading": "Gear Features",
-      "fragmentSrc": "fragments/activity-tabs.html"
-    },
-    {
-      "type": "editorial-index",
       "heading": "The Full Breakdown",
-      "items": []
+      "fragmentSrc": "fragments/activity-tabs.html",
+      "sectionClass": "section"
     },
     {
       "type": "prose-narrow",
       "heading": "What Goes In",
+      "sectionClass": "section secondary-section",
       "body": "<p class=\"paragraph-lg utility-text-secondary utility-margin-bottom-xl\">Tested across multiple summer alpine routes in the Mont Blanc Massif and Écrins. Assumes mountain hut accommodation is unavailable. Base weight: 9.2 kg. Tested in the Saharan margin of southern Morocco and the Wadi Rum, Jordan. Assumes no water resupply for 48-hour stretches. Base weight: 7.8 kg.</p>"
     },
     {
       "type": "feature-cards",
       "heading": "Three rules we live by",
+      "sectionClass": "section inverse-section",
       "items": [
         {
           "title": "Buy once",
@@ -94,12 +83,23 @@
           "title": "Pack light",
           "text": "Every gram is a decision you'll revisit on mile 20."
         }
-      ]
+      ],
+      "button": {
+        "label": "Our wild ethics",
+        "href": "sustainability.html"
+      }
     },
     {
       "type": "cta-section",
       "heading": "Gear is only half the story.",
-      "body": "Read the adventures where it gets used."
+      "body": "Read the adventures where it gets used.",
+      "sectionClass": "section accent-section",
+      "buttons": [
+        {
+          "label": "Browse Adventures",
+          "href": "adventures.html"
+        }
+      ]
     }
   ]
 }

@@ -13,7 +13,7 @@
     "eyebrow": "Questions",
     "heading": "Questions",
     "lead": "Everything you want to know before heading out — or before hitting send on a story.",
-    "cta": [
+    "buttons": [
       {
         "label": "Planning a Trip",
         "href": "#planning"
@@ -28,11 +28,13 @@
     {
       "type": "cta-section",
       "heading": "Planning &amp; Adventures",
-      "body": "Route conditions, fitness levels, solo travel, logistics. Submissions, rights, review timeline, what we look for."
+      "body": "Route conditions, fitness levels, solo travel, logistics. Submissions, rights, review timeline, what we look for.",
+      "sectionClass": "section accent-section"
     },
     {
       "type": "faq-list",
       "heading": "Planning &amp; Adventures",
+      "sectionClass": "section",
       "items": [
         {
           "question": "What fitness level do your adventures assume? (Be honest — I skip leg day.)",
@@ -63,6 +65,7 @@
     {
       "type": "faq-list",
       "heading": "Contributing Stories",
+      "sectionClass": "section secondary-section",
       "items": [
         {
           "question": "How do I submit a reader story without summoning a PDF demon?",
@@ -93,6 +96,7 @@
     {
       "type": "faq-list",
       "heading": "Planning Your Trip",
+      "sectionClass": "section",
       "items": [
         {
           "question": "Is this route \"within my ability\" or main-character syndrome?",
@@ -119,6 +123,7 @@
     {
       "type": "faq-list",
       "heading": "About WKND Content",
+      "sectionClass": "section secondary-section",
       "items": [
         {
           "question": "How do you pick difficulty — dartboard, vibes, or science?",
@@ -141,6 +146,7 @@
     {
       "type": "faq-list",
       "heading": "Contributing &amp; Community",
+      "sectionClass": "section",
       "items": [
         {
           "question": "I write like a text message — is that disqualifying?",
@@ -163,12 +169,24 @@
     {
       "type": "fragment-include",
       "heading": "Most popular starting points",
-      "fragmentSrc": "fragments/expeditions-grid.html"
+      "fragmentSrc": "fragments/expeditions-grid.html",
+      "sectionClass": "section secondary-section"
     },
     {
       "type": "cta-section",
       "heading": "Still stuck?",
-      "body": "Write to us. We read every message."
+      "body": "Write to us. We read every message.",
+      "sectionClass": "section inverse-section",
+      "buttons": [
+        {
+          "label": "Get in touch",
+          "href": "mailto:hello@wknd-adventures.com"
+        },
+        {
+          "label": "Browse Adventures",
+          "href": "adventures.html"
+        }
+      ]
     }
   ]
 }

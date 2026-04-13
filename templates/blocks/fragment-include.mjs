@@ -27,7 +27,7 @@ const projectRoot = path.resolve(__dirname, '../..');
  * Note: Requires data/fragments/*.json + corresponding fragment template in templates/fragments/
  */
 export function fragmentInclude(data) {
-  const { sectionClass = 'section', containerClass = '', heading, headingLink, fragmentSrc } = data;
+  const { sectionClass = 'section', containerClass = '', heading, headingLink, subheading, fragmentSrc } = data;
 
   // Load pre-rendered fragment HTML
   let fragmentHtml = '';
@@ -44,12 +44,14 @@ export function fragmentInclude(data) {
   const containerClassStr = containerClass ? ` ${containerClass}` : '';
   const headingLinkHtml = headingLink ? `
       <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
+  const subheadingHtml = subheading ? `<p class="section-subheading">${subheading}</p>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container${containerClassStr}">
     ${heading ? `<div class="section-heading">
       <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
     </div>` : ''}
+    ${subheadingHtml}
     ${fragmentHtml}
   </div>
 </section>`;

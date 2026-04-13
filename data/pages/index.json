@@ -52,6 +52,24 @@
       "fragmentSrc": "fragments/activity-tabs.html"
     },
     {
+      "type": "cta-section-inverse",
+      "heading": "Not sure where to start?",
+      "eyebrow": "Start Here",
+      "body": "WKND Adventures is built for people who are serious about the outdoors — but it's not a gatekeeping exercise. If you're planning your first multi-day route, you belong here. If you're a seasoned alpinist looking for detailed beta on a route you haven't done, you belong here too. The depth of the archive is the point. If you know roughly what you want to do but haven't committed to a specific route yet, the Destinations section is the fastest way in. It's organised by region, and every destination page links to every relevant route, gear guide, and field note we've published for that area. Start broad, then go deep.",
+      "buttons": [
+        {
+          "label": "Browse Adventures",
+          "href": "adventures.html",
+          "variant": "primary"
+        },
+        {
+          "label": "Find a Destination",
+          "href": "destinations.html",
+          "variant": "ghost"
+        }
+      ]
+    },
+    {
       "type": "faq-list",
       "heading": "Quick Answers",
       "sectionClass": "section",
@@ -67,24 +85,6 @@
         {
           "question": "Can I contribute a story?",
           "answer": "Yes. We accept reader submissions — routes completed, dispatches from the field, gear reflections. Email stories@wknd-adventures.com with your draft and a one-line bio. We review submissions monthly and respond to everything, yes or no."
-        }
-      ]
-    },
-    {
-      "type": "cta-section-inverse",
-      "heading": "Not sure where to start?",
-      "eyebrow": "Start Here",
-      "body": "WKND Adventures is built for people who are serious about the outdoors — but it's not a gatekeeping exercise. If you're planning your first multi-day route, you belong here. If you're a seasoned alpinist looking for detailed beta on a route you haven't done, you belong here too. The depth of the archive is the point. If you know roughly what you want to do but haven't committed to a specific route yet, the Destinations section is the fastest way in. It's organised by region, and every destination page links to every relevant route, gear guide, and field note we've published for that area. Start broad, then go deep.",
-      "buttons": [
-        {
-          "label": "Browse Adventures",
-          "href": "adventures.html",
-          "variant": "primary"
-        },
-        {
-          "label": "Find a Destination",
-          "href": "destinations.html",
-          "variant": "ghost"
         }
       ]
     },
@@ -143,10 +143,16 @@
       "body": "Gear up, read the briefing, then go. Every route you need is here.",
       "centered": true,
       "sectionClass": "section accent-section",
-      "button": {
-        "label": "Find a Destination",
-        "href": "destinations.html"
-      }
+      "buttons": [
+        {
+          "label": "Find a Destination",
+          "href": "destinations.html"
+        },
+        {
+          "label": "Browse Gear Guides",
+          "href": "gear.html"
+        }
+      ]
     }
   ]
 }
