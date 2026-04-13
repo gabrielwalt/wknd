@@ -49,7 +49,14 @@ export function navbar(siteData, depth) {
       <div class="nav-right">
         ${renderButton({ href: ref(nav.subscribeHref, depth), label: 'Subscribe', variant: 'primary' })}
         <button class="nav-mobile-menu-button" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-          <span>Menu</span>
+          <svg class="nav-icon-hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="6" width="18" height="2" fill="currentColor"/>
+            <rect x="3" y="11" width="18" height="2" fill="currentColor"/>
+            <rect x="3" y="16" width="18" height="2" fill="currentColor"/>
+          </svg>
+          <svg class="nav-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </button>
       </div>
     </div>

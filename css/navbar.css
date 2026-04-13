@@ -247,7 +247,13 @@
   cursor: pointer;
   background: none;
   border: none;
+  color: var(--color-black);
 }
+
+.nav-icon-close { display: none; }
+
+.nav-mobile-menu-button[aria-expanded="true"] .nav-icon-hamburger { display: none; }
+.nav-mobile-menu-button[aria-expanded="true"] .nav-icon-close    { display: block; }
 
 /* ─────────────────────────────────────────
    Logo text
