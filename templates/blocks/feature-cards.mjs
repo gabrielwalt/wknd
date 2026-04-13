@@ -1,22 +1,15 @@
-import { renderButton } from '../components/button.mjs';
+import { renderButton, renderButtonGroup } from '../components/button.mjs';
 import { formatBody } from '../utils/text-formatter.mjs';
+import { renderSectionHeading } from '../utils.mjs';
 
 /**
- * Renders a 3-column grid of feature cards with optional buttons
+ * Renders a 3-column grid of feature cards with optional section-level button
  * @param {Object} data
  * @param {string} [data.sectionClass='section inverse-section'] - Section CSS class
  * @param {string} [data.heading] - Optional section heading
- * @param {Array} [data.items=[]] - Feature cards to display
- * @param {string} data.items[].heading - Card title (required)
- * @param {string} data.items[].body - Card description (required)
- * @param {Object} [data.items[].link] - Optional button (passed to renderButton)
- * @param {string} data.items[].link.href - Button href (required if link provided)
- * @param {string} data.items[].link.label - Button label (required if link provided)
- * @param {string} [data.items[].link.variant] - Button variant ('primary'|'accent'|'ghost')
+ * @param {Array} [data.items=[]] - Feature cards {heading, body, link?}
+ * @param {Object} [data.button] - Optional section-level CTA button {href, label, variant}
  * @returns {string} HTML: <section> with <div class="grid-layout desktop-3-column">
- *
- * Default background is dark/inverse (inverse-section)
- * Buttons are optional per card; margin adjusts automatically
  */
 export function featureCards(data) {
   const { sectionClass = 'section inverse-section', heading, items = [], button } = data;
@@ -34,20 +27,13 @@ export function featureCards(data) {
     </div>`;
   }).join('');
 
-  const buttonHtml = button ? `
-    <div class="button-group utility-margin-top-lg">
-      <a href="${button.href}" class="button"><span class="button-label">${button.label}</span></a>
-    </div>` : '';
-
   return `<section class="${sectionClass}">
   <div class="container">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>
-    </div>` : ''}
+    ${renderSectionHeading(heading)}
     <div class="grid-layout desktop-3-column grid-gap-lg">
       ${itemsHtml}
     </div>
-    ${buttonHtml}
+    ${button ? renderButtonGroup([button]) : ''}
   </div>
 </section>`;
 }

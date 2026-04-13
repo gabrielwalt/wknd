@@ -1,5 +1,5 @@
 import { ref } from '../utils.mjs';
-import { renderButton } from '../components/button.mjs';
+import { renderButtonGroup } from '../components/button.mjs';
 
 /**
  * Renders a hero section (dispatches to variant-specific renderers)
@@ -35,9 +35,7 @@ export function hero(data) {
 function renderFullHero(data) {
   const overlayClass = data.overlay || 'overlay';
   const buttons = data.buttons || data.cta || [];
-  const buttonsHtml = buttons.length > 0 ? `<div class="button-group">
-        ${buttons.map(btn => renderButton(btn)).join('\n            ')}
-      </div>` : '';
+  const buttonsHtml = renderButtonGroup(buttons);
 
   return `<section class="hero-section hero-section--full">
   <div class="hero-bg">
@@ -58,9 +56,7 @@ function renderFullHero(data) {
 function renderStandardHero(data) {
   const overlayClass = data.overlay || 'overlay';
   const buttons = data.buttons || data.cta || [];
-  const buttonsHtml = buttons.length > 0 ? `<div class="button-group">
-        ${buttons.map(btn => renderButton(btn)).join('\n            ')}
-      </div>` : '';
+  const buttonsHtml = renderButtonGroup(buttons);
 
   return `<section class="hero-section">
   <div class="hero-bg">

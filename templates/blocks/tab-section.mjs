@@ -1,4 +1,5 @@
 import { renderArticleCard } from '../components/article-card.mjs';
+import { renderSectionHeading } from '../utils.mjs';
 
 /**
  * Renders an interactive tab section with article cards in each tab pane
@@ -66,9 +67,7 @@ export function tabSection(data) {
 
   return `<section class="${sectionClass}" data-tabs>
   <div class="container">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>
-    </div>` : ''}
+    ${renderSectionHeading(heading)}
     <div class="tab-menu" role="tablist">
       ${tabButtonsHtml}
     </div>

@@ -1,5 +1,6 @@
 import { formatBody } from '../utils/text-formatter.mjs';
 import { renderCard } from '../components/card.mjs';
+import { renderSectionHeading } from '../utils.mjs';
 
 /**
  * Renders an editorial index section with numbered items and optional card grid
@@ -60,9 +61,7 @@ export function editorialIndex(data) {
 
   return `<section class="${sectionClass}">
   <div class="container${containerClassStr}">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>
-    </div>` : ''}
+    ${renderSectionHeading(heading)}
     <div class="editorial-index">${itemsHtml}
     </div>
   </div>${cardsHtml}

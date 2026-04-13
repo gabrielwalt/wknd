@@ -19,3 +19,18 @@ export function renderButton({ href, label, variant = 'primary' }) {
             : 'button';
   return `<a href="${href}" class="${cls}"><span class="button-label">${label}</span></a>`;
 }
+
+/**
+ * Renders a button-group wrapper containing one or more buttons.
+ * Returns empty string if buttons array is empty.
+ * @param {Array} buttons - Array of button objects passed to renderButton()
+ * @param {Object} [opts]
+ * @param {boolean} [opts.centered=false] - Add button-group--centered modifier
+ */
+export function renderButtonGroup(buttons, { centered = false } = {}) {
+  if (!buttons || !buttons.length) return '';
+  const cls = centered ? ' button-group--centered' : '';
+  return `<div class="button-group${cls}">
+      ${buttons.map(btn => renderButton(btn)).join('\n      ')}
+    </div>`;
+}

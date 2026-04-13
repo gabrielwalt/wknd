@@ -17,6 +17,8 @@
  * All images use loading="lazy" for performance
  * Default background is dark/inverse (secondary-section)
  */
+import { renderSectionHeading } from '../utils.mjs';
+
 export function gallery(data) {
   const { sectionClass = 'section inverse-section', heading, headingLink } = data;
   let images = data.images || [];
@@ -34,14 +36,9 @@ export function gallery(data) {
   const imagesHtml = images.map(img => `
     <img src="${img.src}" alt="${img.alt}" class="gallery-img" loading="lazy" />`).join('');
 
-  const headingLinkHtml = headingLink ? `
-      <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
-
   return `<section class="${sectionClass}">
   <div class="container">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
-    </div>` : ''}
+    ${renderSectionHeading(heading, headingLink)}
     <div class="grid-layout desktop-3-column grid-images grid-gap-lg">
       ${imagesHtml}
     </div>

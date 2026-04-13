@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { renderSectionHeading } from '../utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -42,15 +43,11 @@ export function fragmentInclude(data) {
   }
 
   const containerClassStr = containerClass ? ` ${containerClass}` : '';
-  const headingLinkHtml = headingLink ? `
-      <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
   const subheadingHtml = subheading ? `<p class="paragraph-lg utility-text-secondary">${subheading}</p>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container${containerClassStr}">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
-    </div>` : ''}
+    ${renderSectionHeading(heading, headingLink)}
     ${subheadingHtml}
     ${fragmentHtml}
   </div>

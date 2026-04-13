@@ -10,7 +10,9 @@
   transition: background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-a.card:hover {
+a.card:hover,
+.card-link:hover .card,
+a.article-card:hover {
   background-color: var(--color-cream);
   border-color: var(--color-gray-300);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -20,12 +22,6 @@ a.card:hover {
   display: block;
   text-decoration: none;
   color: inherit;
-}
-
-.card-link:hover .card {
-  background-color: var(--color-cream);
-  border-color: var(--color-gray-300);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card-body {

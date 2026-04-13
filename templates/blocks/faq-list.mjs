@@ -20,6 +20,8 @@
  *
  * Note: headingLink uses <span> not <div> for semantic HTML
  */
+import { renderSectionHeading } from '../utils.mjs';
+
 export function faqList(data) {
   const { id, sectionClass = 'section', containerClass = '', heading, headingLink, items } = data;
 
@@ -33,16 +35,11 @@ export function faqList(data) {
     </div>`).join('');
 
   const containerClassStr = containerClass ? ` ${containerClass}` : '';
-  const headingLinkHtml = headingLink ? `
-      <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
-
   const idAttr = id ? ` id="${id}"` : '';
 
   return `<section class="${sectionClass}"${idAttr}>
   <div class="container${containerClassStr}">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
-    </div>` : ''}
+    ${renderSectionHeading(heading, headingLink)}
     <div class="faq-list">${itemsHtml}
     </div>
   </div>

@@ -12,6 +12,8 @@
  * Used for detailed gear breakdowns with lists and explanations
  * Each item displays as a column with heading, description, and ul list
  */
+import { renderSectionHeading } from '../utils.mjs';
+
 export function gearBreakdown(data) {
   const { sectionClass = 'section secondary-section', heading, items = [] } = data;
 
@@ -26,9 +28,7 @@ export function gearBreakdown(data) {
 
   return `<section class="${sectionClass}">
   <div class="container">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>
-    </div>` : ''}
+    ${renderSectionHeading(heading)}
     <div class="grid-layout grid-layout--2col grid-gap-xl">
       ${itemsHtml}
     </div>

@@ -1,4 +1,5 @@
 import { renderCard } from '../components/card.mjs';
+import { renderSectionHeading } from '../utils.mjs';
 
 /**
  * Renders a 2-column grid of cards with optional buttons
@@ -15,9 +16,7 @@ export function cardGrid(data) {
 
   return `<section class="${sectionClass}">
   <div class="container container--narrow">
-    ${heading ? `<div class="section-heading">
-      <h2 class="h2-heading">${heading}</h2>
-    </div>` : ''}
+    ${renderSectionHeading(heading)}
     <div class="grid-layout grid-layout--2col grid-gap-lg">
       ${itemsHtml}
     </div>
