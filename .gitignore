@@ -7,6 +7,3 @@ dist/
 *.html
 blog/*.html
 fragments/*.html
-
-# Reference HTML files from pre-refactor (for comparison only)
-html-reference/
