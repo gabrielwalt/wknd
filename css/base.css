@@ -197,6 +197,8 @@ h6 {
   background-color: var(--color-amber);
   color: var(--color-white);
   text-shadow: none;
+  padding-top: calc(var(--space-xxs) + 1px);
+  padding-bottom: calc(var(--space-xxs) - 1px);
 }
 
 /* When a tag precedes a heading, add breathing room */
