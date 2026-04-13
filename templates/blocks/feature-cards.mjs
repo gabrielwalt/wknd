@@ -33,7 +33,7 @@ export function featureCards(data) {
     <div class="grid-layout desktop-3-column grid-gap-lg">
       ${itemsHtml}
     </div>
-    ${button ? renderButtonGroup([button], { centered: true }) : ''}
+    ${button ? renderButtonGroup([button]) : ''}
   </div>
 </section>`;
 }
