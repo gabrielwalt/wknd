@@ -89,9 +89,9 @@ function renderBlogHero(data) {
 
   const bylineHtml = data.byline ? `
       <div class="article-byline">
-        <div class="avatar"><img src="${data.byline.avatarSrc}" alt="${data.byline.avatarAlt}" /></div>
+        <div class="avatar"><img src="${data.byline.avatarSrc || data.byline.avatar}" alt="${data.byline.avatarAlt || data.byline.author || ''}" /></div>
         <div>
-          <p class="article-byline-name">${data.byline.authors}</p>
+          <p class="article-byline-name">${data.byline.authors || data.byline.name}</p>
           <p class="article-byline-meta">${data.byline.meta}</p>
         </div>
       </div>` : '';
@@ -109,7 +109,8 @@ function renderBlogHero(data) {
         <span>${data.breadcrumbs[2].label}</span>
       </nav>
       <span class="tag blog-hero-tag">${data.tag}</span>
-      <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>${bylineHtml}
+      <h1 class="h1-heading utility-margin-bottom-lg">${data.heading}</h1>
+      ${bylineHtml}
     </div>
   </div>
 </section>`;
