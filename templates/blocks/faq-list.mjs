@@ -1,4 +1,24 @@
-// FIX: use native <button> instead of <div role="button" tabindex="0">
+/**
+ * Renders an FAQ accordion section with native <button> elements
+ * @param {Object} data
+ * @param {string} [data.sectionClass='section'] - Section CSS class
+ * @param {string} [data.containerClass] - Additional container CSS class
+ * @param {string} [data.heading] - Optional section heading
+ * @param {Object} [data.headingLink] - Optional link in heading
+ * @param {string} data.headingLink.href - Link URL
+ * @param {string} data.headingLink.label - Link text
+ * @param {Array} data.items - FAQ items (required)
+ * @param {string} data.items[].question - Question text (required)
+ * @param {string} data.items[].answer - Answer text (required)
+ * @returns {string} HTML: <section> with <button class="faq-question"> elements
+ *
+ * Features:
+ *   - Uses native <button> elements (semantic, accessible)
+ *   - aria-expanded attribute for toggle state
+ *   - Toggle behavior via js/site.js
+ *
+ * Note: headingLink uses <span> not <div> for semantic HTML
+ */
 export function faqList(data) {
   const { sectionClass = 'section', containerClass = '', heading, headingLink, items } = data;
 
@@ -13,7 +33,7 @@ export function faqList(data) {
 
   const containerClassStr = containerClass ? ` ${containerClass}` : '';
   const headingLinkHtml = headingLink ? `
-      <a href="${headingLink.href}" class="text-button"><div>${headingLink.label}</div></a>` : '';
+      <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container${containerClassStr}">

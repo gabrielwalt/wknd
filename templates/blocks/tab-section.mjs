@@ -1,5 +1,24 @@
 import { renderArticleCard } from '../components/article-card.mjs';
 
+/**
+ * Renders an interactive tab section with article cards in each tab pane
+ * @param {Object} data
+ * @param {string} [data.sectionClass='section'] - Section CSS class
+ * @param {string} [data.heading] - Optional section heading
+ * @param {Array} [data.tabs=[]] - Tab configuration (required)
+ * @param {string} data.tabs[].id - Tab ID (used for tab-pane id and data-tab)
+ * @param {string} data.tabs[].label - Tab button label (required)
+ * @param {string} [data.tabs[].description] - Optional paragraph above cards
+ * @param {Array} [data.tabs[].items] - Article cards in this tab pane (passed to renderArticleCard)
+ * @returns {string} HTML: <section data-tabs> with role="tablist", role="tab", role="tabpanel"
+ *
+ * Features:
+ *   - First tab is active by default (is-active class + aria-selected="true")
+ *   - Native <button> elements for tab triggers (semantic HTML)
+ *   - aria-expanded and tabindex managed by js/site.js
+ *   - Each tab pane displays 3-column grid of article cards
+ *   - data-tabs attribute enables JS tab switching
+ */
 export function tabSection(data) {
   const { sectionClass = 'section', heading, tabs = [] } = data;
 

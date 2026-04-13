@@ -1,5 +1,26 @@
 import { ref, LOGO_ICON_SVG } from '../utils.mjs';
 
+/**
+ * Renders the footer with logo, tagline, and links
+ * @param {Object} siteData - Site configuration (from data/site.json)
+ * @param {Object} siteData.footer - Footer configuration
+ * @param {Array} siteData.footer.columns - Footer column definitions (see renderLinksColumn)
+ * @param {string} siteData.footer.copyrightText - Copyright notice text
+ * @param {string} siteData.footer.closingText - Closing tagline text
+ * @param {number} depth - URL depth: 0 for root, 1 for /blog (controls relative paths)
+ * @param {string} [variant='root'] - Footer variant: 'root' shows "Published weekly..." tagline, 'blog' hides it
+ * @returns {string} HTML: <footer class="footer inverse-footer"> with logo and columns
+ *
+ * Layout:
+ *   - Logo column (always rendered)
+ *   - 3 additional link columns (Explore, Recent Stories, Info)
+ *   - Bottom row: copyright + closing text
+ *   - Dark background (inverse-footer class)
+ *   - Responsive 4-column grid on desktop, adapts on mobile
+ *
+ * Depth awareness:
+ *   - Blog pages (depth=1) get relative paths like "../" instead of "/"
+ */
 export function footer(siteData, depth, variant = 'root') {
   const { footer: footerData } = siteData;
   const hasPublishedWeeklyTagline = variant === 'root';

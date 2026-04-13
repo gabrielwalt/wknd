@@ -1,6 +1,27 @@
 import { ref } from '../utils.mjs';
 import { renderButton } from '../components/button.mjs';
 
+/**
+ * Renders a hero section (dispatches to variant-specific renderers)
+ * @param {Object} data
+ * @param {string} data.variant - 'full', 'standard', or 'blog'
+ * @param {Object} data.image - {src, alt} (required)
+ * @param {string} [data.overlay='overlay'] - Overlay class ('overlay' or 'overlay-side')
+ * @param {string} data.eyebrow - Small text above heading
+ * @param {string} data.heading - Main heading (supports newlines) (required)
+ * @param {string} data.lead - Subtitle/lead text
+ * @param {Array} [data.buttons] - CTA buttons (for full/standard variants)
+ * @param {Array} [data.breadcrumbs] - Breadcrumb navigation (for blog variant)
+ * @param {string} [data.tag] - Category tags (for blog variant)
+ * @param {Object} [data.byline] - Author byline (for blog variant)
+ * @param {number} data.depth - URL depth for relative paths
+ * @returns {string} HTML: <section class="hero-section">
+ *
+ * Variants:
+ *   - 'full': Full-height hero with image, overlay, content, buttons
+ *   - 'standard': Standard hero layout
+ *   - 'blog': Blog article hero with breadcrumbs, tag, and byline
+ */
 export function hero(data) {
   if (data.variant === 'blog') {
     return renderBlogHero(data);

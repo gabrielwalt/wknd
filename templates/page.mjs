@@ -17,6 +17,31 @@ import { cardGrid } from './blocks/card-grid.mjs';
 import { intro } from './blocks/intro.mjs';
 import { fragmentInclude } from './blocks/fragment-include.mjs';
 
+/**
+ * Renders a complete root-level page (HTML document)
+ * @param {Object} pageData - Page configuration object
+ * @param {Object} pageData.meta - Page metadata (required)
+ * @param {string} pageData.meta.title - Page title (required, for <title> tag)
+ * @param {string} pageData.meta.description - Meta description (required)
+ * @param {number} pageData.meta.depth - URL depth (should be 0 for root pages)
+ * @param {Object} [pageData.hero] - Optional hero section config (passed to hero())
+ * @param {Array} [pageData.sections=[]] - Array of content sections
+ * @param {string} pageData.sections[].type - Block type (maps to blockRenderers)
+ * @param {Object} siteData - Site-wide configuration (from data/site.json)
+ * @returns {string} HTML: complete <!doctype html> document with head, body, nav, footer
+ *
+ * Page composition:
+ *   1. <head> with title, description, favicon, stylesheet
+ *   2. Skip link (a11y)
+ *   3. Navbar with megamenus, subscribe button
+ *   4. <main> with hero (if provided) + rendered sections
+ *   5. Footer with logo, links, copyright
+ *   6. Deferred script: js/site.js
+ *
+ * Sections are rendered by type using blockRenderers dispatch table
+ * All renderers receive depth param for depth-aware URL resolution
+ */
+
 const blockRenderers = {
   'hero': hero,
   'featured-article': featuredArticle,

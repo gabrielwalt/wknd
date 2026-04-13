@@ -1,279 +1,453 @@
-# AGENTS — Maintenance Instructions
+# AGENTS — Development Guide for WKND Adventures
 
-Guidelines for making changes to the WKND Adventures site consistently and without breaking the design system.
+Guidelines for making changes to the WKND Adventures site. The site is now **generated from JSON data + template modules**, not hand-written HTML.
 
-Read the [Site Guide](docs/site-guide.md) and linked docs before making structural changes.
-
----
-
-## Core Principles
-
-1. **Never hardcode design values.** Always use CSS custom properties from `css/tokens.css` for colors, spacing, radius, and typography. Adding `color: #e8651a` is wrong; `color: var(--color-amber)` is right.
-
-2. **Reuse existing components.** Every visual pattern on this site is already built. Before writing new HTML structures, check [docs/components.md](docs/components.md) for the canonical pattern. Inventing new layout primitives creates inconsistency.
-
-3. **Respect the section rhythm.** Sections alternate backgrounds for visual contrast. Never place two `inverse-section` blocks back-to-back, or two `secondary-section` blocks adjacent, without a white `section` between them.
-
-4. **The navbar and footer are duplicated across all 20 files.** Any change to nav links, megamenu structure, footer columns, or footer links must be applied to every HTML file. There is no shared include system.
-
-5. **Images must be in `docs/image-catalog.md`.** Every image added to the site must have an entry in the catalog. Every image removed must have its entry updated. See the image management section below.
+**Read [DOCUMENTATION.md](DOCUMENTATION.md) first** for architecture and workflows.
 
 ---
 
-## Making Changes to Existing Pages
+## Golden Rule
 
-### Editing a section's content
-- Keep the same section background class — don't change `secondary-section` to `inverse-section` without considering the rhythm of adjacent sections.
-- Keep heading hierarchy: `h1` only in heroes; `h2` for section headings; `h3`/`h4` for card titles.
-- Don't add new CSS classes to elements — use what's already there.
+**Edit JSON files and templates, not HTML files.**
 
-### Adding a section to an existing page
-1. Decide which background variant fits the rhythm (white → gray → dark → white is the common pattern).
-2. Pick a component that fits the content: article grid, featured-article, editorial-index, card pair, etc. — see [docs/components.md](docs/components.md) for patterns.
-3. Insert the section in a position that maintains visual contrast with its neighbours.
-4. Update [docs/page-inventory.md](docs/page-inventory.md) to reflect the change.
+All `.html` files are **generated**. Hand-editing them will lose changes when you run `npm run generate`.
 
-### Removing a section
-- Check whether any other page links into that section via an anchor (`#id`). Search all HTML files first.
-- Update [docs/page-inventory.md](docs/page-inventory.md).
-
----
-
-## HTML Fragments (Reusable Content Blocks)
-
-Some content blocks appear identically on multiple pages and are managed as shared HTML fragments in the `fragments/` directory. See [docs/content-reuse-strategy.md](docs/content-reuse-strategy.md) for the full strategy.
-
-**Current fragments and the pages that use them:**
-
-| Fragment file | Articles | Used on |
-|---|---|---|
-| `fragments/activity-tabs.html` | All 10 articles (4 tabs × 3 cards; some articles appear in more than one tab) | `index.html`, `adventures.html`, `field-notes.html`, `expeditions.html`, `gear.html` |
-| `fragments/expeditions-grid.html` | patagonia-trek · kayaking-norway · alpine-cycling | `expeditions.html`, `destinations.html` (×3), `faq.html`, `sustainability.html`, `adventures.html`, `community.html`, 5 blog pages |
-| `fragments/field-notes-grid.html` | mountain-photography · ultralight-backpacking · desert-survival-guide | `about.html`, `destinations.html`, 5 blog pages |
-
-### Rules for working with fragments
-
-1. **Never edit the inline placeholder.** The `<div data-fragment="…">` element in a page has no content — all content lives in the fragment file. Do not add content inside the placeholder div.
-
-2. **To update a card or tab in a shared block, edit the fragment file.** For example, to change the Climbing tab cards, edit `fragments/activity-tabs.html` — not `index.html` or `adventures.html`.
-
-3. **Image and link paths in fragments use absolute root-relative paths** (e.g. `src="/images/activities/ice-climbing.jpg"`, `href="/blog/article.html"`). This ensures correctness whether the fragment is loaded from a root page or a blog page. Never use bare-relative paths like `images/…` or `blog/…` inside fragment files.
-
-4. **The `data-fragment` attribute on the page is a relative path** to the fragment file: root pages use `data-fragment="fragments/name.html"`, blog pages use `data-fragment="../fragments/name.html"`.
-
-5. **When a new article should surface in a fragment**, update the fragment file and confirm the change appears correctly on all pages that include it (listed in the table above).
-
-6. **When adding a new fragment**, follow the steps in [docs/content-reuse-strategy.md](docs/content-reuse-strategy.md) and update the table above.
-
-7. **Never use fragments for the navbar, footer, or "In the Field" galleries.** Navbar and footer are duplicated by design (no include system); galleries are intentionally unique per page.
-
----
-
-## Adding a New Blog Article
-
-Blog articles follow a shared template (hero, body, gallery, gear + pull quote, More Stories fragment). All 10 existing articles match this structure — a new article must match exactly.
-
-### Steps
-
-1. **Copy an existing blog article** as a starting point, e.g. `blog/wild-swimming-guide.html`.
-
-2. **Update the `<head>`**:
-   - `<meta name="description">` — article-specific description
-   - `<title>` — "Article Title — WKND Adventures"
-   - CSS path stays `../css/styles.css` (one level up)
-
-3. **Section 1 — Hero** (`hero-section`, bottom overlay `.overlay`):
-   - Update breadcrumbs: `Home › [Parent] › [Article Title]`
-   - Update `.tag.blog-hero-tag` category string
-   - Update `hero-bg` image (`../images/...`)
-   - Update H1 title
-   - Update `article-byline`: avatar image, author name, date
-
-4. **Section 2 — Article body** (`blog-article-section`):
-   - Write the article in `.blog-content` using `h2`, `h3`, `p`, `ul`, `blockquote`, `figure` as needed
-   - Include at least one `pull-quote`
-   - Use `blog-gear-list` for gear/equipment lists
-
-5. **Section 3 — Gear + pull quote** (`secondary-section`):
-   - Same `grid-layout` pattern as sibling articles (`blog-gear-list` + `pull-quote`); heading may be "What We Carried" or a variant (e.g. kit title)
-
-6. **Section 4 — In the Field gallery** (`inverse-section` — dark; match existing articles):
-   - Use the same heading row as the homepage: `.section-heading` with H2 "In the Field" + `.text-button` link to `../field-notes.html` ("Field Notes")
-   - Add 3 `gallery-img` images + 1 `gallery-img--wide` (`loading="lazy"` on each)
-   - Pick images from the catalog that are not already overused
-   - Update `docs/image-catalog.md` to mark these images as used on this page
-
-7. **Section 5 — More Stories** (`section` — white):
-   - Use `<div data-fragment="../fragments/field-notes-grid.html"></div>` or `expeditions-grid.html` to match articles of the same parent (Field Notes → field-notes grid; Expeditions → expeditions grid; Adventures articles typically use expeditions grid — copy the placeholder from a peer article)
-
-8. **Determine the parent section** based on article type:
-   - Trip report / multi-day journey → Expeditions
-   - Activity guide / skills article → Adventures
-   - Essay / photography / personal writing → Field Notes
-
-9. **Update the navbar** — add the new article to the Stories megamenu "Recent from the Field" grid (replace the oldest article). Apply this change to **all 20 HTML files**.
-
-10. **Update the footer** — update the "Recent Stories" column to include the new article. Apply to **all 20 HTML files**.
-
-11. **Cross-link** — update `fragments/field-notes-grid.html`, `fragments/expeditions-grid.html`, and/or `fragments/activity-tabs.html` if the new article should appear in those shared grids; adjust peer article bodies only when linking in prose.
-
-12. **Update docs/image-catalog.md** for every image used.
-
----
-
-## Adding a New Root Page
-
-1. **Copy the closest existing root page** structurally — e.g. `field-notes.html` for an editorial index, `faq.html` for a Q&A page.
-
-2. **Update `<head>`**: title, description, correct relative CSS path (root pages use `css/styles.css`, blog pages use `../css/styles.css`).
-
-3. **Design the section sequence** — aim for 7–10 sections, alternating backgrounds. Start with a hero; end with a CTA (accent or inverse section).
-
-4. **Add to the navbar megamenu** — decide which category (Explore / Stories / Info) it belongs to, and add a `nav-megamenu-link` entry. Apply to all 20 existing HTML files.
-
-5. **Add to the footer** — add a link in the relevant column. Apply to all 20 existing HTML files.
-
-6. **Update [docs/page-inventory.md](docs/page-inventory.md)** — add a row to the usage matrix and a section table entry.
-
----
-
-## Updating Navigation
-
-The navbar and footer HTML are **duplicated identically across all 20 pages**. Any structural navigation change must be applied to all 20 files.
-
-### When to update the navbar
-- A new page is added or removed
-- A page is renamed or its URL changes
-- The "Recent from the Field" articles in the Stories megamenu need refreshing (do this whenever a new article is published)
-
-### How to update safely
-Use a script or search-and-replace across all 20 files. Verify with:
 ```bash
-grep -l 'nav-megamenu' *.html blog/*.html
-```
-That should return all 20 files. If any are missing, they were not updated.
+# ✓ DO THIS
+edit data/pages/index.json
+npm run generate
 
-### Updating "Recent from the Field" (Stories megamenu)
-The Stories megamenu shows 4 recent articles in a 2×2 grid. When a new article is published:
-1. Replace the oldest article link with the new one
-2. Apply to all 20 HTML files
+# ✗ DON'T DO THIS
+edit index.html directly
+```
 
 ---
 
-## Image Management
+## Making Changes
 
-Every image used on the site must be tracked in `docs/image-catalog.md`.
+### Content Changes (Text, Images, Links)
 
-### Adding images
-1. Place the image in the appropriate subfolder:
-   - `images/activities/` — action shots (hiking, climbing, surfing)
-   - `images/adventures/` — location/landscape shots
-   - `images/magazine/` — editorial, atmospheric, wide shots
-   - `images/contributors/` — author portraits
-2. Add an entry to `docs/image-catalog.md` with: filename, description, `*Unused*` status
-3. Use descriptive `alt` text on every `<img>` tag — never leave it empty
+1. Find the relevant JSON file:
+   - Root page: `data/pages/pagename.json`
+   - Blog post: `data/blog/slug.json`
+   - Global (nav, footer): `data/site.json`
 
-### Using an image
-When you add an image to a page, update its `docs/image-catalog.md` entry from `*Unused*` to `*Used on: [page.html]*`.
+2. Edit the JSON:
+   ```json
+   {
+     "sections": [
+       {
+         "type": "featured-article",
+         "heading": "New Title Here",
+         "body": "New description here"
+       }
+     ]
+   }
+   ```
 
-### Replacing an image
-1. Find a suitable replacement in the catalog — prefer unused images
-2. Update all `src` attributes in HTML that reference the old image
-3. Update `alt` text if the replacement has different content
-4. Update `docs/image-catalog.md`: mark old image as unused (or delete entry if file is removed), update new image to used
-5. Delete the old image file if it is no longer needed
+3. Regenerate:
+   ```bash
+   npm run generate
+   ```
 
-### Deleting images
-Before deleting an image file:
-```bash
-grep -rl 'filename.jpg' --include='*.html' .
+4. View in browser (HTML is ready to open)
+
+5. Commit:
+   ```bash
+   git add data/ *.html blog/ fragments/
+   git commit -m "Update [what changed]"
+   ```
+
+### Structure Changes (Adding/Removing Sections)
+
+1. Edit the JSON `sections` array. Add or remove a block object:
+   ```json
+   {
+     "type": "faq-list",
+     "heading": "Questions",
+     "items": [
+       { "question": "Q?", "answer": "A." }
+     ]
+   }
+   ```
+
+2. Use a valid block type from `templates/blocks/`:
+   - `hero`, `featured-article`, `editorial-index`, `faq-list`
+   - `tab-section`, `article-card-grid`, `feature-cards`
+   - `cta-section`, `cta-section-inverse`, `prose-narrow`
+   - `gallery`, `ticker`, `card-grid`, `intro`
+   - `fragment-include`
+
+3. Regenerate and verify:
+   ```bash
+   npm run generate
+   ```
+
+### Template Changes (Layout, Styling Structure)
+
+1. Edit the relevant template:
+   - Block: `templates/blocks/blockname.mjs`
+   - Partial: `templates/partials/navbar.mjs`, `footer.mjs`, `head.mjs`
+   - Component: `templates/components/button.mjs`, `article-card.mjs`, `pull-quote.mjs`
+
+2. Regenerate:
+   ```bash
+   npm run generate
+   ```
+
+3. Changes apply to all pages automatically
+
+4. Example — changing button structure:
+   ```javascript
+   // templates/components/button.mjs
+   export function renderButton({ href, label, variant = 'primary' }) {
+     const cls = variant === 'accent' ? 'accent-button' : 'button';
+     return `<a href="${href}" class="${cls}"><span class="button-label">${label}</span></a>`;
+   }
+   // Regenerate → all buttons updated across all 20+ pages
+   ```
+
+### Adding Navigation Links
+
+Edit `data/site.json`:
+
+```json
+{
+  "nav": {
+    "megamenus": [
+      {
+        "label": "Explore",
+        "links": [
+          {
+            "href": "new-page.html",
+            "title": "New Page",
+            "desc": "Description of the new page."
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
-If any HTML files reference it, replace the image first, then delete. Update `docs/image-catalog.md`.
 
-### Choosing images
-- Prefer images that are contextually relevant to the content they illustrate
-- When replacing used images, choose from within the same photographic series where possible for visual consistency
-- Check `docs/image-catalog.md` for which images are unused before selecting
-- **"In the Field" galleries**: use only images that do not appear anywhere else on the site — no image should be shared between two gallery sections, and no gallery image should already appear in non-gallery content (article body, article cards, featured articles)
+Regenerate → navbar updates on all pages.
 
-### Keeping the catalog accurate
-The catalog must be updated **every time** an image `src` attribute changes in HTML. There is no automatic sync. After any image change:
-1. For each image you added: update its catalog entry from `*Unused*` to `*Used on: [page]*`
-2. For each image you removed: check whether it still appears on any page; if not, update to `*Unused*`; if still used elsewhere, remove only the affected page from its list
-3. To verify accuracy after bulk changes, run:
-```bash
-grep -rh 'src="images/' --include='*.html' . | grep -o 'images/[^"]*' | sort -u
+### Adding Footer Links
+
+Edit `data/site.json`:
+
+```json
+{
+  "footer": {
+    "columns": [
+      {
+        "heading": "Explore",
+        "links": [
+          { "href": "new-page.html", "label": "New Page" }
+        ]
+      }
+    ]
+  }
+}
 ```
-Cross-check that result against the catalog entries.
+
+Regenerate → footer updates on all pages.
 
 ---
 
-## Section Style Rules
+## Adding a New Page
 
-### When to use each section background
+1. Create `data/pages/pagename.json`:
+   ```json
+   {
+     "meta": {
+       "title": "Page Title — WKND Adventures",
+       "description": "Short description for search engines.",
+       "depth": 0
+     },
+     "hero": {
+       "variant": "full",
+       "image": {
+         "src": "images/section/image.jpg",
+         "alt": "Description"
+       },
+       "heading": "Page Title",
+       "lead": "Subtitle or lead text"
+     },
+     "sections": [
+       {
+         "type": "featured-article",
+         "heading": "First section heading",
+         "body": "Description text..."
+       }
+     ]
+   }
+   ```
 
-| Background | Use when |
+2. Add to navigation in `data/site.json`
+
+3. Generate:
+   ```bash
+   npm run generate
+   ```
+   Creates `pagename.html`
+
+4. Commit
+
+---
+
+## Adding a New Blog Post
+
+1. Create `data/blog/slug.json`:
+   ```json
+   {
+     "meta": {
+       "title": "Article Title — WKND Adventures",
+       "description": "Short description",
+       "depth": 1
+     },
+     "hero": {
+       "variant": "blog",
+       "image": { "src": "../images/...", "alt": "..." },
+       "breadcrumbs": [
+         { "text": "Home", "href": "../index.html" },
+         { "text": "Expeditions", "href": "../expeditions.html" },
+         { "text": "Article Title", "href": null }
+       ],
+       "tag": "Expedition · Region · Activity",
+       "heading": "Article Title",
+       "byline": {
+         "name": "Author Name",
+         "meta": "Date or location",
+         "avatar": "../images/contributors/author.jpg"
+       }
+     },
+     "articleBody": [
+       { "type": "p", "text": "First paragraph..." },
+       { "type": "h2", "text": "Section heading" },
+       { "type": "p", "text": "More content..." },
+       { "type": "blockquote", "text": "Quote text" },
+       { "type": "figure", "src": "../images/...", "alt": "...", "caption": "Caption" },
+       { "type": "pull-quote", "text": "Pull quote", "attribution": "— Author" }
+     ],
+     "gearPullquote": {
+       "gearHeading": "What We Carried",
+       "gearItems": ["Item 1: weight", "Item 2: weight"],
+       "pullQuoteText": "Main quote...",
+       "pullQuoteAttribution": "— Attribution"
+     },
+     "gallery": {
+       "heading": "In the Field",
+       "images": [
+         { "src": "../images/...", "alt": "..." }
+       ]
+     },
+     "moreStories": {
+       "fragmentSrc": "../fragments/field-notes-grid.html"
+     }
+   }
+   ```
+
+2. Update recent articles in `data/site.json` nav:
+   ```json
+   {
+     "recentArticles": [
+       {
+         "href": "blog/slug.html",
+         "title": "Article Title",
+         "desc": "Brief description"
+       }
+     ]
+   }
+   ```
+
+3. Generate:
+   ```bash
+   npm run generate
+   ```
+   Creates `blog/slug.html`
+
+4. Commit
+
+---
+
+## Article Body Block Types
+
+The `articleBody` array in blog posts uses typed blocks:
+
+- `p` — Paragraph (`{ "type": "p", "text": "..." }`)
+- `h2`, `h3` — Headings (`{ "type": "h2", "text": "..." }`)
+- `blockquote` — Block quote (`{ "type": "blockquote", "text": "..." }`)
+- `figure` — Image with caption (`{ "type": "figure", "src": "...", "alt": "...", "caption": "..." }`)
+- `ul`, `ol` — Lists (`{ "type": "ul", "items": ["item1", "item2"] }`)
+- `pull-quote` — Styled pull quote (`{ "type": "pull-quote", "text": "...", "attribution": "..." }`)
+- `html` — Escape hatch for custom markup (`{ "type": "html", "html": "<custom>..." }`)
+
+---
+
+## Section Block Types
+
+Use these `type` values in the `sections` array of any page:
+
+| Type | Used for |
 |---|---|
-| `section` (white) | Default content; featured articles; tab sections; body text |
-| `section secondary-section` (gray) | Article card grids; supporting promo content; alternating rhythm filler |
-| `section inverse-section` (dark) | Editorial statements; key quotes; In the Field galleries; closing CTAs |
-| `section accent-section` (amber) | The primary CTA on each page; newsletter prompts; high-energy highlights |
-| `hero-section` | Always the first section on every page |
-
-### Contrast rhythm rule
-Adjacent sections must alternate backgrounds. Valid sequences:
-- `white → gray`, `white → dark`, `white → amber` ✓
-- `gray → white`, `gray → dark` ✓
-- `dark → white`, `dark → gray` ✓
-- `dark → dark` ✗ — never adjacent
-- `amber → amber` ✗ — never adjacent
-- `gray → gray` ✗ — never adjacent (except separated by a full-bleed element)
-
----
-
-## Component Consistency Rules
-
-### Article cards
-- Always use `loading="lazy"` on card images
-- Always include a `.tag` category badge in `.article-card-meta`
-- Link the entire card (`a.article-card`) not just the title
-
-### Buttons
-- One `.accent-button` maximum per page (the primary hero CTA)
-- Use `.button--ghost` for secondary actions alongside a primary button
-- Use `.text-button` only for inline prose-level links, not standalone section CTAs
-- Never use plain `<a>` for buttons — always use the button classes
-
-### Gallery grids ("In the Field")
-- Always 3 `gallery-img` in the top row + 1 `gallery-img--wide` below
-- Section heading should include a `.text-button` link to Field Notes
-- Use `loading="lazy"` on all gallery images
-- On the homepage and all blog articles: wrap the gallery in `inverse-section` and include the Field Notes `.text-button` in the section heading (blog: `href="../field-notes.html"`)
-
-### FAQ accordions
-- Always use the `.faq-item` + `.faq-question` + `.faq-answer` + `.faq-icon` structure
-- The FAQ and tab toggles are handled in `js/site.js` (included at the bottom of every page) — `.faq-item` and `[data-tabs]` work generically, no configuration needed
-
-### Tab menus
-- Wrap the entire tab section in `<section ... data-tabs>` to activate the generic JS handler
-- Each `tab-pane` must have a unique `id` on the page
-- First tab and first pane both get `is-active`; all others don't
-
-### Editorial index
-- Numbers must be zero-padded two-digit strings: `01`, `02`, `03`
-- Each item needs both a `h3`/`h4` title and at least one `<p>` description
+| `hero` | Hero section (only used in hero, not in sections) |
+| `featured-article` | Featured article box with image |
+| `editorial-index` | Numbered editorial sections |
+| `faq-list` | FAQ accordion |
+| `tab-section` | Tabbed content |
+| `article-card-grid` | Grid of article cards |
+| `feature-cards` | Feature card layout |
+| `cta-section` | Call-to-action section (accent) |
+| `cta-section-inverse` | Inverse CTA (dark) |
+| `prose-narrow` | Narrow prose column |
+| `gallery` | Image gallery |
+| `ticker` | Ticker strip (activity list) |
+| `card-grid` | Generic card grid |
+| `intro` | Intro section |
+| `fragment-include` | Load an HTML fragment |
 
 ---
 
-## Keeping Documentation Up to Date
+## Understanding Depth
 
-When you make structural changes to the site, update the relevant docs:
+All pages have a `depth` value that controls relative URLs:
 
-| Change | Files to update |
-|---|---|
-| New/removed page | `docs/site-guide.md` file structure · `docs/page-inventory.md` matrix |
-| New/removed section on a page | `docs/page-inventory.md` section table for that page |
-| New/changed component pattern | `docs/components.md` |
-| New CSS token or style rule | `docs/design-system.md` |
-| Image added/moved/deleted | `docs/image-catalog.md` |
-| New article published | Navbar (all 20 files) · Footer (all 20 files) · `docs/page-inventory.md` |
+- **Root pages** (`index.html`, `about.html`, etc.): `"depth": 0`
+- **Blog pages** (`blog/slug.html`): `"depth": 1`
+
+Templates use `ref(url, depth)` to resolve paths automatically:
+
+```javascript
+ref('css/styles.css', 0)  // → 'css/styles.css'
+ref('css/styles.css', 1)  // → '../css/styles.css'
+```
+
+**In JSON, store URLs as-is — templates handle depth.**
+
+---
+
+## Semantic Improvements
+
+The generated HTML includes these improvements (automatically applied):
+
+1. **Buttons**: Use `<span class="button-label">` instead of `<div>` (valid HTML)
+2. **FAQ**: Use native `<button>` elements instead of `<div role="button">` (better accessibility)
+3. **Pull quotes**: Use `<cite>` for attribution instead of `<footer>` (semantic)
+
+These are enforced in the templates, so they apply to all pages.
+
+---
+
+## CSS and JS
+
+These are **not** generated — edit directly:
+
+- **Styling**: `css/styles.css`
+- **Behavior**: `js/site.js`
+
+Changes take effect immediately; no regeneration needed.
+
+---
+
+## Build Process
+
+```bash
+# Generate HTML from JSON + templates
+npm run generate
+# ↓ Creates/updates all .html files
+
+# Build for deployment (minify + dist/)
+npm run build:pages
+# ↓ Runs generate, then minifies CSS/JS/HTML to dist/
+
+# Deploy to GitHub Pages
+npm run deploy:pages
+# ↓ Runs build:pages, then pushes dist/ to gh-pages branch
+```
+
+---
+
+## Common Mistakes
+
+### ❌ "I edited index.html but my changes disappeared"
+
+You hand-edited a generated file. Run `npm run generate` and your edits are overwritten.
+
+**Fix**: Edit `data/pages/index.json` instead, then regenerate.
+
+### ❌ "The navbar looks different on the blog page"
+
+All navbars come from `data/site.json`. The `depth` value handles the path difference. No special logic needed.
+
+**Fix**: Edit `data/site.json` once, regenerate, and it updates everywhere.
+
+### ❌ "I added a button to the template but the existing buttons didn't change"
+
+The existing HTML was already generated. You must regenerate.
+
+**Fix**: After editing a template, always run `npm run generate`.
+
+### ❌ "The new section doesn't appear on the page"
+
+The section is in the JSON but was not added to the `sections` array.
+
+**Fix**: Make sure your new section object is inside the `"sections": [...]` array, not at the root level.
+
+### ❌ "Images are broken on blog pages (404s)"
+
+Images on blog pages must use relative paths that account for depth.
+
+**Fix**: Use `../images/...` in blog posts, or store URL as `images/...` in JSON and let the template handle it via `ref()`.
+
+---
+
+## File Inventory
+
+### Don't Edit These (They're Generated)
+
+- `index.html`, `about.html`, `*.html` (root pages)
+- `blog/*.html` (blog posts)
+- `fragments/*.html` (fragments)
+
+### Edit These
+
+- `data/site.json` — nav, footer, global config
+- `data/pages/*.json` — root page content
+- `data/blog/*.json` — blog post content
+- `templates/**/*.mjs` — page structure and components
+- `css/styles.css` — styling
+- `js/site.js` — client behavior
+
+---
+
+## Verification
+
+After making changes:
+
+1. **Regenerate**: `npm run generate`
+2. **View**: Open the generated `.html` file in a browser
+3. **Check links**: Click through to verify navigation works
+4. **Check images**: Ensure images load correctly
+5. **Validate JSON**: Use `node -c data/pages/index.json` to check syntax
+
+---
+
+## Resources
+
+- **[DOCUMENTATION.md](DOCUMENTATION.md)** — Full architecture guide
+- **[templates/](templates/)** — All template modules
+- **[data/](data/)** — All content JSON files
+- **[package.json](package.json)** — NPM scripts
+
+---
+
+## Summary
+
+1. **Content changes** → Edit JSON files in `data/`
+2. **Structure changes** → Add/remove sections in JSON
+3. **Template changes** → Edit `.mjs` files in `templates/`
+4. **Always regenerate** → `npm run generate` after any change
+5. **Never hand-edit HTML** → It will be overwritten
+
+Questions? See [DOCUMENTATION.md](DOCUMENTATION.md).

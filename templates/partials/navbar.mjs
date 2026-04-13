@@ -1,6 +1,26 @@
 import { ref, LOGO_ICON_SVG } from '../utils.mjs';
 import { renderButton } from '../components/button.mjs';
 
+/**
+ * Renders the top navigation bar with logo, menus, and subscribe button
+ * @param {Object} siteData - Site configuration (from data/site.json)
+ * @param {Object} siteData.nav - Navigation configuration
+ * @param {string} siteData.nav.logoHref - Logo link destination (default '/')
+ * @param {string} siteData.nav.subscribeHref - Subscribe button href
+ * @param {Array} siteData.nav.megamenus - Array of megamenu configurations
+ * @param {number} depth - URL depth: 0 for root, 1 for /blog (controls relative paths)
+ * @returns {string} HTML: <div class="navbar"> with megamenu, buttons, mobile toggle
+ *
+ * Features:
+ *   - Responsive mobile menu toggle button
+ *   - Two megamenu variants:
+ *     a) Grid layout: siteData.nav.megamenus[].variant !== 'stories'
+ *     b) Stories layout: siteData.nav.megamenus[].variant === 'stories'
+ *   - All links are depth-aware (via ref() for relative paths)
+ *   - Subscribe button uses primary variant
+ *   - ARIA labels: aria-label, aria-controls, aria-expanded
+ *   - Mobile menu toggle managed by js/site.js
+ */
 export function navbar(siteData, depth) {
   const { nav } = siteData;
 

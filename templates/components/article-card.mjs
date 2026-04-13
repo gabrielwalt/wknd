@@ -1,3 +1,26 @@
+/**
+ * Renders an article card with image, metadata, heading, description, and optional byline
+ * @param {Object} card
+ * @param {string} card.href - Link to article (used when not muted)
+ * @param {Object} card.image
+ * @param {string} card.image.src - Image URL (required)
+ * @param {string} card.image.alt - Image alt text (required)
+ * @param {string} [card.tagText] - Category/tag label
+ * @param {string} [card.tagMeta] - Location or secondary metadata
+ * @param {string} card.heading - Article title (required)
+ * @param {string} card.body - Short description (required)
+ * @param {Object} [card.byline] - Author byline
+ * @param {string} card.byline.name - Author name
+ * @param {string} card.byline.meta - Date or subtitle
+ * @param {string} card.byline.avatarSrc - Avatar image URL
+ * @param {string} card.byline.avatarAlt - Avatar alt text
+ * @param {boolean} [card.isMuted=false] - If true, renders as div (not link)
+ * @param {boolean} [card.ariaDisabled] - If true, adds aria-disabled="true"
+ * @param {string} [card.tagClass='tag'] - CSS class for tag element
+ * @param {string} [card.headingClass='h5-heading'] - CSS class for heading
+ * @param {string} [card.textButton] - Text for optional text button
+ * @returns {string} HTML: <a class="article-card"> or <div class="article-card">
+ */
 export function renderArticleCard(card) {
   const { href, image, tagText, tagMeta, heading, body, byline, isMuted, ariaDisabled } = card;
   const isLink = !isMuted;

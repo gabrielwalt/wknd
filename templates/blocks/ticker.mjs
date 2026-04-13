@@ -1,3 +1,15 @@
+/**
+ * Renders an animated ticker strip (seamless scrolling text)
+ * @param {Object} data
+ * @param {Array} data.items - Text items to scroll (required)
+ * @returns {string} HTML: <div class="ticker-strip" aria-hidden="true"> with animated track
+ *
+ * Features:
+ *   - Items are duplicated internally for seamless loop effect
+ *   - Separated by · bullet character
+ *   - aria-hidden="true" (decorative, not read by screen readers)
+ *   - Animation handled by CSS (see css/styles.css .ticker-track)
+ */
 export function ticker(data) {
   const { items = [] } = data;
 

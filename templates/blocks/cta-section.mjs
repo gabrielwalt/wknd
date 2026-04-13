@@ -1,5 +1,19 @@
 import { renderButton } from '../components/button.mjs';
 
+/**
+ * Renders a call-to-action section with accent background
+ * @param {Object} data
+ * @param {string} [data.sectionClass='section accent-section'] - Section CSS class
+ * @param {boolean} [data.centered=true] - Center text and buttons
+ * @param {string} [data.heading] - Section heading
+ * @param {string} [data.body] - Section description text
+ * @param {Object} [data.button] - Single CTA button {href, label, variant}
+ * @param {Array} [data.buttons] - Multiple CTA buttons (overrides button param)
+ * @returns {string} HTML: <section class="section accent-section">
+ *
+ * Used for primary calls-to-action, newsletter prompts, key CTAs
+ * Default background is amber/accent color
+ */
 export function ctaSection(data) {
   const { sectionClass = 'section accent-section', centered = true, heading, body, button, buttons } = data;
 

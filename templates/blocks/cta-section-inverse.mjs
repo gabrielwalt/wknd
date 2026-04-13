@@ -1,5 +1,21 @@
 import { renderButton } from '../components/button.mjs';
 
+/**
+ * Renders a call-to-action section with dark inverse background
+ * @param {Object} data
+ * @param {string} [data.sectionClass='section inverse-section'] - Section CSS class
+ * @param {string} [data.eyebrow] - Optional small label above heading
+ * @param {string} [data.heading] - Section heading
+ * @param {string} [data.body] - Section description text
+ * @param {Array} [data.buttons=[]] - CTA buttons (passed to renderButton)
+ * @returns {string} HTML: <section class="section inverse-section"> in narrow container
+ *
+ * Variant of ctaSection with:
+ *   - Dark/inverse background (secondary-section)
+ *   - Narrow container width
+ *   - Optional eyebrow above heading
+ *   - Multiple buttons displayed in button-group
+ */
 export function ctaSectionInverse(data) {
   const { sectionClass = 'section inverse-section', eyebrow, heading, body, buttons = [] } = data;
 
