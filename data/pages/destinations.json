@@ -67,12 +67,6 @@
       "sectionClass": "section"
     },
     {
-      "type": "fragment-include",
-      "heading": "Essential Route Reports",
-      "fragmentSrc": "fragments/expeditions-grid.html",
-      "sectionClass": "section"
-    },
-    {
       "type": "cta-section",
       "heading": "Permits &amp; Logistics",
       "centered": false,
@@ -86,16 +80,14 @@
       "sectionClass": "section secondary-section",
       "buttons": [
         {
-          "label": "Read their reports →",
-          "href": "#reports"
+          "label": "Read their reports",
+          "href": "#reports",
+          "variant": "accent"
         },
         {
           "label": "Read the Expeditions",
-          "href": "expeditions.html"
-        },
-        {
-          "label": "Browse Gear Guides",
-          "href": "gear.html"
+          "href": "expeditions.html",
+          "variant": "ghost"
         }
       ]
     },
@@ -126,10 +118,6 @@
         {
           "title": "Summer in Scandinavia",
           "text": "June through August is the midnight-sun window for the Lofoten Islands — low swell but extraordinary light for hiking Norway's exposed coastal ranges and surfing the occasional late-summer storm swell. Midnight sun extends your activity window to near-24 hours, but it also means navigating by instinct rather than daylight cues — your body clock will drift within three days."
-        },
-        {
-          "title": "Autumn on the Atlantic",
-          "text": "September through November is when the Atlantic swells rebuild after summer's relative quiet and the surf breaks of southwest France and northwest Spain come alive. Hossegor, Mundaka, and the Cantabrian coast all fire reliably in autumn — with warm enough water and none of the July crowds."
         }
       ]
     }
