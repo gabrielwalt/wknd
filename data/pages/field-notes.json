@@ -36,11 +36,6 @@
       }
     },
     {
-      "type": "fragment-include",
-      "heading": "",
-      "fragmentSrc": "fragments/activity-tabs.html"
-    },
-    {
       "type": "cta-section",
       "heading": "Written close to the event.",
       "body": "Not summaries. Not guidebooks. Honest dispatches written while the body still remembers the weight of the pack.",
@@ -53,6 +48,22 @@
       "body": "A field note is not a route report. It does not need to be useful in the conventional sense — it does not need to tell you what time the first bus leaves or which campsite has the most reliable water source. What it needs to be is true: written close to the event, in the present tense or the recent past, from a point of view that belongs to the person who was there. A field note carries subjectivity as a feature, not a flaw. The author's discomfort, uncertainty, or private satisfaction is part of what gets reported. The distinction matters because the adventure writing most people encounter is either purely instrumental — the guidebook — or purely retrospective and polished, which is to say, edited for drama and resolution. Field notes sit in a third category. They are written while the body still remembers the weight of the pack, while the decisions made on the mountain are still live enough to interrogate honestly. The best field notes have the quality of field research: observational, disciplined, alert to the specific rather than the general. They know what the weather was at 0600. They can tell you exactly which side of the valley held snow the longest. When the editors at WKND commission or review a field note submission, we are looking for three things above everything else: a moment of genuine difficulty or uncertainty (this does not mean physical danger — it can be as quiet as a wrong turn that changed the day's plan); a specific detail that could only have come from someone who was present (not \"the mountains were beautiful\" but \"the north face above the Aiguille du Midi was holding blue ice at eight in the morning, which the guidebook had said was unlikely in summer\"); and a willingness to write about what was hard or unknown or poorly executed without immediately resolving it with a lesson. Some field notes end in ambiguity. That is not a failure. That is often the most accurate account of what it felt like to be there.",
       "centered": false,
       "sectionClass": "section accent-section"
+    },
+    {
+      "type": "fragment-include",
+      "heading": "Essential Reading",
+      "fragmentSrc": "fragments/activity-tabs.html"
+    },
+    {
+      "type": "cta-section",
+      "heading": "Adventures start here.",
+      "body": "Field Notes gives you the thinking behind the trips. The Adventures section gives you the routes, the gear, and the on-the-ground detail. Browse everything we've published and find your next wild place.",
+      "centered": true,
+      "sectionClass": "section inverse-section",
+      "button": {
+        "label": "Browse All Adventures",
+        "href": "adventures.html"
+      }
     }
   ]
 }
