@@ -70,6 +70,30 @@
       "body": "1,200 words max. One route, one honest account. No fluff. Weekly dispatches from the trail. New stories, route updates, gear notes — no spam, unsubscribe any time."
     },
     {
+      "type": "featured-article",
+      "heading": "What the Lofoten taught our readers about commitment — and cold water.",
+      "body": "When Morgan published the Lofoten Arctic surfing article in November, we weren't prepared for the response. Dozens of reader emails, three international surf trip inquiries, and more than a few people who said they'd already booked flights to Bodø. The lesson the article kept teaching — and that readers kept writing back about — was that surfing in the Arctic is not about toughness. It's about the right equipment, the right timing, and patience for the swell. The ocean has its own schedule.",
+      "image": {
+        "src": "images/contributors/justin-barr.jpg",
+        "alt": "Morgan L."
+      },
+      "button": {
+        "label": "Read the Story",
+        "href": "blog/kayaking-norway.html"
+      }
+    },
+    {
+      "type": "editorial-index",
+      "heading": "How to Submit",
+      "items": [
+        {
+          "number": "01",
+          "heading": "Write your dispatch",
+          "body": "A WKND dispatch is a first-person account of a specific route on specific dates. It should include: the full route name and location, the dates you travelled, your experience level and party size, the conditions you encountered (weather, snow, river levels — whatever was relevant), the gear you relied on, and an honest assessment of difficulty. Write about what happened, not what you planned. If the route went sideways, write about that. If you turned around, write about why. We're not interested in summary; we want the experience from the inside. 1,000–1,500 words is the target length."
+        }
+      ]
+    },
+    {
       "type": "faq-list",
       "heading": "Submission FAQ",
       "items": [

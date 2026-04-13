@@ -45,6 +45,11 @@
       }
     },
     {
+      "type": "prose-narrow",
+      "heading": "Planning by Season",
+      "body": "<p class=\"paragraph-lg\">Every destination in this section is organized by region and season. Use the category headings to find the route that matches where you want to go and when you want to go there.</p>"
+    },
+    {
       "type": "fragment-include",
       "heading": "Americas",
       "fragmentSrc": "fragments/field-notes-grid.html"
