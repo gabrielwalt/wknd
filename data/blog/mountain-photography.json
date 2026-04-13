@@ -187,10 +187,16 @@
         "src": "../images/adventures/adobestock-291339093.jpeg",
         "alt": "Alpinist ascending Mont Blanc — the kind of frame you wait hours for, then have six seconds to compose"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/expeditions-grid.html"
+    "fragmentSrc": "fragments/expeditions-grid.html",
+    "heading": "More Stories"
   }
 }

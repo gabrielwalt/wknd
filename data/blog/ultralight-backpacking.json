@@ -211,10 +211,16 @@
         "src": "../images/magazine/skitouring8sjoeberg.jpg",
         "alt": "Tent pitched in snow at a high-altitude ski touring camp"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/expeditions-grid.html"
+    "fragmentSrc": "fragments/expeditions-grid.html",
+    "heading": "More Stories"
   }
 }

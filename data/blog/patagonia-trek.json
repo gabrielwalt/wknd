@@ -208,10 +208,16 @@
         "src": "../images/adventures/adobestock-238491803.jpeg",
         "alt": "A hiker settled by a campfire in the forest after a long day in the wind — one of the better reasons to carry an Aeropress all the way to Patagonia, even if it adds 200g"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/field-notes-grid.html"
+    "fragmentSrc": "fragments/field-notes-grid.html",
+    "heading": "More Stories"
   }
 }

@@ -191,10 +191,16 @@
         "src": "../images/adventures/surfing-5.jpg",
         "alt": "Dropping into a wave at a rocky coastal surf spot — the same commitment the Lofoten breaks demand, with considerably less neoprene required"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/field-notes-grid.html"
+    "fragmentSrc": "fragments/field-notes-grid.html",
+    "heading": "More Stories"
   }
 }

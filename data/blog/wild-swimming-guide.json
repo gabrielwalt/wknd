@@ -191,10 +191,16 @@
         "src": "../images/magazine/amazon-river-01.jpg",
         "alt": "The Amazon at first light — wild swimming on a different scale entirely"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/expeditions-grid.html"
+    "fragmentSrc": "fragments/expeditions-grid.html",
+    "heading": "More Stories"
   }
 }

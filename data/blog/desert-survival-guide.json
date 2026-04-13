@@ -216,10 +216,16 @@
         "src": "../images/adventures/adobestock-167833331.jpeg",
         "alt": "View from a tent doorway over a remote billabong, Northern Territory — the desert night that drops 20°C after sunset, demanding the emergency bivy you almost didn"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/expeditions-grid.html"
+    "fragmentSrc": "fragments/expeditions-grid.html",
+    "heading": "More Stories"
   }
 }

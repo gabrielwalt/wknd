@@ -240,10 +240,16 @@
         "src": "../images/adventures/adobestock-273139829.jpeg",
         "alt": "First tracks on an untracked slope — the reward for starting before anyone else"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/expeditions-grid.html"
+    "fragmentSrc": "fragments/expeditions-grid.html",
+    "heading": "More Stories"
   }
 }

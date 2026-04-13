@@ -191,10 +191,16 @@
         "src": "../images/adventures/adobestock-221043703.jpg",
         "alt": "A couple on mountain bikes pausing to take in a panoramic view — every col earns exactly the perspective it cost to reach"
       }
-    ]
+    ],
+    "heading": "In the Field",
+    "headingLink": {
+      "href": "../field-notes.html",
+      "label": "Field Notes"
+    }
   },
   "moreStories": {
     "type": "fragment-include",
-    "fragmentSrc": "fragments/field-notes-grid.html"
+    "fragmentSrc": "fragments/field-notes-grid.html",
+    "heading": "More Stories"
   }
 }
