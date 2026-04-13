@@ -151,17 +151,6 @@ h6 {
   gap: var(--space-xl);
 }
 
-.grid-gap-xxl {
-  gap: var(--space-3xl);
-}
-
-/* ─────────────────────────────────────────
-   Flex alignment
-───────────────────────────────────────── */
-
-.x-left {
-  align-items: flex-start;
-}
 
 /* ─────────────────────────────────────────
    Avatar
@@ -232,14 +221,6 @@ h6 {
 }
 
 /* ─────────────────────────────────────────
-   Aspect-ratio utilities
-───────────────────────────────────────── */
-
-.utility-aspect-4x3 {
-  aspect-ratio: 4 / 3;
-}
-
-/* ─────────────────────────────────────────
    Overlay
 ───────────────────────────────────────── */
 
@@ -276,17 +257,6 @@ h6 {
 }
 
 
-/* ─────────────────────────────────────────
-   Misc utilities
-───────────────────────────────────────── */
-
-.utility-radius-card {
-  border-radius: var(--radius-card);
-}
-
-.utility-overflow-clip {
-  overflow: hidden;
-}
 
 /* ─────────────────────────────────────────
    Accessibility
@@ -505,15 +475,6 @@ h6 {
 /* ─────────────────────────────────────────
    Container variants
 ───────────────────────────────────────── */
-
-.container--centered {
-  text-align: center;
-}
-
-.container--centered ul,
-.container--centered ol {
-  text-align: left;
-}
 
 .container--narrow {
   max-width: var(--container-narrow);

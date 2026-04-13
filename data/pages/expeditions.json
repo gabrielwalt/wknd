@@ -104,7 +104,7 @@
       "type": "prose-narrow",
       "heading": "The WKND Pre-Departure Checklist",
       "sectionClass": "section accent-section",
-      "containerClass": "container--narrow container--centered",
+      "containerClass": "container--narrow",
       "body": "<ul class=\"blog-gear-list utility-margin-bottom-lg\"><li>Permit confirmed and physical or digital copy carried</li><li>Emergency contact filed with name, route plan, and expected return date</li><li>Weather window checked within 48 hours of departure</li><li>First-aid kit contents reviewed and restocked to full inventory</li><li>GPS device loaded with correct route and waypoints; batteries fresh</li><li>Satellite communicator tested and registered with rescue authority</li><li>All food weighed and portioned for exact number of days plus one buffer day</li><li>Water treatment equipment tested and backup method packed</li><li>Shelter pitched at home to check for any broken poles, torn fabric, or faulty zips</li><li>Leave-no-trace protocols reviewed for specific terrain type (alpine, coastal, desert)</li><li>Team medical and dietary requirements confirmed with all party members</li><li>Exit strategy and bailout points identified on map for each day of the route</li></ul>",
       "buttons": [
         {

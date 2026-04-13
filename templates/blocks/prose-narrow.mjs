@@ -24,13 +24,13 @@ export function proseNarrow(data) {
   if (image) {
     return `<section class="${sectionClass}">
   <div class="container">
-    <div class="grid-layout grid-gap-xxl tablet-1-column x-left">
+    <div class="grid-layout grid-gap-xl tablet-1-column">
       <div>
         ${renderSectionHeading(heading, headingLink)}
         ${bodyHtml}
         ${buttonsHtml}
       </div>
-      <div class="utility-aspect-4x3 utility-radius-card utility-overflow-clip">
+      <div class="card">
         <img class="cover-image" src="${image.src}" alt="${image.alt}" loading="lazy" />
       </div>
     </div>
