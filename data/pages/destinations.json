@@ -61,12 +61,6 @@
       "subheading": "Planning by Season"
     },
     {
-      "type": "fragment-include",
-      "heading": "High Altitude",
-      "fragmentSrc": "fragments/expeditions-grid.html",
-      "sectionClass": "section"
-    },
-    {
       "type": "cta-section",
       "heading": "Permits &amp; Logistics",
       "centered": false,
