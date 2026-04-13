@@ -44,7 +44,7 @@ export function fragmentInclude(data) {
   const containerClassStr = containerClass ? ` ${containerClass}` : '';
   const headingLinkHtml = headingLink ? `
       <a href="${headingLink.href}" class="text-button"><span>${headingLink.label}</span></a>` : '';
-  const subheadingHtml = subheading ? `<p class="section-subheading">${subheading}</p>` : '';
+  const subheadingHtml = subheading ? `<p class="paragraph-lg utility-text-secondary">${subheading}</p>` : '';
 
   return `<section class="${sectionClass}">
   <div class="container${containerClassStr}">

@@ -1,4 +1,5 @@
 import { formatBody } from '../utils/text-formatter.mjs';
+import { renderCard } from '../components/card.mjs';
 
 /**
  * Renders an editorial index section with numbered items and optional card grid
@@ -31,7 +32,7 @@ export function editorialIndex(data) {
   const { sectionClass = 'section', containerClass = '', heading, items, cards } = data;
 
   const itemsHtml = (items || []).map((item, index) => {
-    const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button">${item.link.label}</a>` : '';
+    const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button"><span>${item.link.label}</span></a>` : '';
     const itemNumber = item.number !== undefined ? item.number : String(index + 1).padStart(2, '0');
     const itemHeading = item.heading || item.title;
     const itemBody = item.body || item.text;
@@ -51,14 +52,7 @@ export function editorialIndex(data) {
 
   <div class="container container--narrow">
     <div class="grid-layout grid-layout--2col grid-gap-lg">
-      ${cards.map(card => `
-      <div class="card card-body">
-        <p class="tag">${card.eyebrow}</p>
-        <h3 class="h3-heading">${card.heading}</h3>
-        <p class="paragraph-lg">${card.body}</p>
-        <a href="${card.button.href}" class="button--${card.button.variant || 'ghost'}"><span class="button-label">${card.button.label}</span></a>
-      </div>
-      `).join('')}
+      ${cards.map(card => renderCard(card)).join('')}
     </div>
   </div>` : '';
 

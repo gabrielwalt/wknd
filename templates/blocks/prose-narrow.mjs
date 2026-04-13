@@ -1,4 +1,5 @@
 import { formatBody } from '../utils/text-formatter.mjs';
+import { renderButton } from '../components/button.mjs';
 
 /**
  * Renders a narrow prose section with optional heading link and optional side image
@@ -28,7 +29,7 @@ export function proseNarrow(data) {
 
   const buttonsHtml = buttons && buttons.length > 0 ? `
     <div class="button-group">
-      ${buttons.map(btn => `<a href="${btn.href}" class="${btn.variant === 'ghost' ? 'button--ghost' : btn.variant === 'accent' ? 'accent-button' : 'button'}"><span class="button-label">${btn.label}</span></a>`).join('')}
+      ${buttons.map(btn => renderButton(btn)).join('')}
     </div>` : '';
 
   const bodyHtml = formatBody(body);

@@ -40,7 +40,7 @@ export function faqList(data) {
 
   return `<section class="${sectionClass}"${idAttr}>
   <div class="container${containerClassStr}">
-    ${heading ? `<div class="section-heading utility-margin-bottom-xl">
+    ${heading ? `<div class="section-heading">
       <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
     </div>` : ''}
     <div class="faq-list">${itemsHtml}

@@ -1,4 +1,5 @@
 import { renderButton } from '../components/button.mjs';
+import { formatBody } from '../utils/text-formatter.mjs';
 
 /**
  * Renders a 3-column grid of feature cards with optional buttons
@@ -24,10 +25,11 @@ export function featureCards(data) {
     const itemHeading = item.heading || item.title;
     const itemBody = item.body || item.text;
     const linkHtml = item.link ? `<a href="${item.link.href}" class="text-button"><span>${item.link.label}</span></a>` : '';
+    const bodyHtml = formatBody(itemBody, 'paragraph-lg utility-text-secondary');
     return `
     <div class="card card-body">
       <h3 class="h4-heading">${itemHeading}</h3>
-      <p class="paragraph-lg utility-text-secondary">${itemBody}</p>
+      ${bodyHtml}
       ${linkHtml}
     </div>`;
   }).join('');

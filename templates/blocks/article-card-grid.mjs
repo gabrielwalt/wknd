@@ -23,7 +23,7 @@ export function articleCardGrid(data) {
 
   return `<section class="${sectionClass}">
   <div class="container">
-    ${heading ? `<div class="section-heading${headingLink ? '' : ' utility-margin-bottom-xl'}">
+    ${heading ? `<div class="section-heading">
       <h2 class="h2-heading">${heading}</h2>${headingLinkHtml}
     </div>` : ''}
     <div class="grid-layout desktop-3-column grid-gap-lg">
