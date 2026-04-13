@@ -60,9 +60,6 @@
    Tab pane top margin (explicit variant)
 ───────────────────────────────────────── */
 
-.tab-pane--padded {
-  margin-top: var(--space-xl);
-}
 
 /* ─────────────────────────────────────────
    Responsive

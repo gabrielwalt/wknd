@@ -267,21 +267,6 @@
   line-height: 1.2;
 }
 
-/* ─────────────────────────────────────────
-   Breadcrumbs
-───────────────────────────────────────── */
-
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-  margin-bottom: var(--space-xl);
-}
-
-.breadcrumbs img {
-  width: 0.75rem;
-  height: 0.75rem;
-}
 
 /* ─────────────────────────────────────────
    Responsive

@@ -130,9 +130,6 @@ h6 {
   gap: var(--space-xl);
 }
 
-.grid-layout.desktop-1-column {
-  grid-template-columns: 1fr;
-}
 
 .grid-layout.desktop-3-column {
   grid-template-columns: repeat(3, 1fr);
@@ -271,17 +268,6 @@ h6 {
   padding-top: 0;
 }
 
-.utility-overflow-x-clip {
-  overflow-x: clip;
-}
-
-.utility-padding-left-lg {
-  padding-left: var(--space-lg);
-}
-
-.utility-margin-inline-auto {
-  margin-inline: auto;
-}
 
 /* ─────────────────────────────────────────
    Text utilities
