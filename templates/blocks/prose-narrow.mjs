@@ -30,9 +30,7 @@ export function proseNarrow(data) {
         ${bodyHtml}
         ${buttonsHtml}
       </div>
-      <div class="card">
-        <img class="cover-image" src="${image.src}" alt="${image.alt}" loading="lazy" />
-      </div>
+      <img class="gallery-img--wide" src="${image.src}" alt="${image.alt}" loading="lazy" />
     </div>
   </div>
 </section>`;
