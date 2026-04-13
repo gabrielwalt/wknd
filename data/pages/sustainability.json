@@ -108,7 +108,8 @@
     {
       "type": "cta-section",
       "heading": "This is not optional.",
-      "body": "We take a hard line on this. Wild ethics are not a brand value — they are the condition under which we operate. The wild exists without us, indifferent to whether we show up or not, and it will survive our absence longer than our presence. The privilege of access comes with responsibility that is non-negotiable. Every person who visits a wild place either contributes to its protection or its erosion — there is no neutral ground. Documenting adventure without protecting the places where it happens is hollow. We refuse to separate the story from the ethic. That is the WKND pledge, and it is not up for revision. \"The mountain doesn't owe you a summit. The river doesn't owe you a swim. We go as guests.\""
+      "centered": false,
+      "body": "We take a hard line on this. Wild ethics are not a brand value — they are the condition under which we operate. The wild exists without us, indifferent to whether we show up or not, and it will survive our absence longer than our presence. The privilege of access comes with responsibility that is non-negotiable.\n\nEvery person who visits a wild place either contributes to its protection or its erosion — there is no neutral ground. Documenting adventure without protecting the places where it happens is hollow. We refuse to separate the story from the ethic. That is the WKND pledge, and it is not up for revision.\n\n\"The mountain doesn't owe you a summit. The river doesn't owe you a swim. We go as guests.\""
     },
     {
       "type": "cta-section",

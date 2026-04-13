@@ -30,7 +30,8 @@
     {
       "type": "cta-section",
       "heading": "W Circuit: 9 Days, 115 km, One Life-Changing Walk",
-      "body": "Flagship Expedition Torres del Paine is not a place you visit. It's a place that works on you — slowly, relentlessly, through wind and weather and the sheer scale of its granite towers. The W Circuit covers the park's most iconic terrain: Los Cuernos, the French Valley, the Mirador Las Torres. Over nine days and 115 kilometres, we documented every camp, every weather window, every lesson the trail had to teach. Jordan M. and Morgan L. completed the route in late austral summer, carrying full packs and splitting the writing. This is the definitive WKND account of South America's greatest trail. Gear lists, daily breakdowns, honest assessments of what the guidebooks won't tell you.",
+      "centered": false,
+      "body": "Torres del Paine is not a place you visit. It's a place that works on you — slowly, relentlessly, through wind and weather and the sheer scale of its granite towers.\n\nThe W Circuit covers the park's most iconic terrain: Los Cuernos, the French Valley, the Mirador Las Torres. Over nine days and 115 kilometres, we documented every camp, every weather window, every lesson the trail had to teach.\n\nJordan M. and Morgan L. completed the route in late austral summer, carrying full packs and splitting the writing. This is the definitive WKND account of South America's greatest trail. Gear lists, daily breakdowns, honest assessments of what the guidebooks won't tell you.",
       "button": {
         "label": "Read the Full Story",
         "href": "blog/patagonia-trek.html"
