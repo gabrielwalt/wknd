@@ -73,46 +73,30 @@
     {
       "type": "gear-breakdown",
       "heading": "What Goes In",
-      "sectionClass": "section secondary-section",
+      "sectionClass": "section",
       "items": [
         {
           "title": "3-Day Alpine Route",
-          "description": "Tested across multiple summer alpine routes in the Mont Blanc Massif and Écrins. Assumes mountain hut accommodation is unavailable. Base weight: 9.2 kg.",
           "gearList": [
-            "Sleeping bag rated to −5°C synthetic fill, 650g — synthetic dries faster than down at altitude where condensation is constant",
-            "Ultralight bivy sack, silnylon, 180g — your second shelter if the weather closes in faster than expected",
-            "30L alpine pack with hip-transfer capacity — bigger is not better; every litre you leave empty is weight you're carrying",
-            "B2-compatible double boots — not single-layer; overnight temperatures at 3,000m regularly drop below −8°C even in July",
-            "C2 aluminium 12-point crampons — steel is heavier and unnecessary for hard ice that isn't vertical",
-            "70cm ice axe, T-rated — the classic length is fine; shorter axes are faster to swing but worse for self-arrest",
-            "Hardshell jacket and trousers, Gore-Tex Pro equivalent — not eVent or cheaper membranes; sustained precipitation requires the best breathability available",
-            "Merino base layer, 200-weight — two tops; one on, one drying under the lid of your pack",
-            "Down belay jacket, 800-fill, stuffable to 600ml — worn at rests and belays, not during movement",
-            "Helmet, UIAA-certified — borrow one that fits correctly rather than buying a bad fit",
-            "30m 7mm tag line — for rappels on descents; doubles as a haul line in an emergency",
-            "1.5L water capacity with a Sawyer Squeeze filter — snowmelt is not clean; glacier flour causes long-term kidney damage",
-            "Three days of food at 600 kcal/hour moving rate — 5,400 kcal minimum; nuts, hard cheese, bars with no chocolate coating (chocolate cracks at altitude temperatures)",
-            "First aid: SAM splint, blister kit, ibuprofen 400mg, altitude sickness protocol sheet — not a full kit; weight is the enemy"
+            "Sleeping bag rated to −5°C synthetic fill — synthetic dries faster than down at altitude where condensation is constant",
+            "30L alpine pack with hip-transfer capacity — every litre you leave empty is weight you're carrying",
+            "B2-compatible double boots — overnight temperatures at 3,000m regularly drop below −8°C even in July",
+            "70cm ice axe, T-rated — classic length works for self-arrest",
+            "Hardshell jacket and trousers, Gore-Tex Pro equivalent — sustained precipitation requires the best breathability",
+            "Merino base layer, 200-weight — two tops; one on, one drying in your pack",
+            "Helmet, UIAA-certified — borrow one that fits correctly rather than buying a bad fit"
           ]
         },
         {
           "title": "5-Day Desert Trek",
-          "description": "Tested in the Saharan margin of southern Morocco and the Wadi Rum, Jordan. Assumes no water resupply for 48-hour stretches. Base weight: 7.8 kg.",
           "gearList": [
-            "Sleeping bag rated to +8°C, 400g — desert nights drop sharply; +8°C is the correct temperature floor for most Saharan margins in spring",
-            "Freestanding single-skin tent, 1.2 kg — a tarp works but sandstorms require four solid walls and a working zip",
-            "40L pack with side-compression straps — water weight fluctuates by 2–4 kg; side straps let you rebalance as you drink",
-            "4L water capacity minimum — two 2L soft flasks, not bottles; soft flasks compress as they empty and don't rattle",
-            "Water purification tablets as backup — filter technology fails in high silt loads; chemical backup weighs 40g and has saved multiple contributors",
-            "Sun hoody, 50+ UPF, long sleeve — not a T-shirt; desert sun through a thin layer burns in under 20 minutes",
-            "Lightweight desert trousers, nylon, zip-off leg — full leg protection; shorts cause burns and abrasions on rocky descents",
-            "Trail runners with rock plate, not hiking boots — desert travel is flat to moderate gradient; rock plates prevent bruising from shale without the weight of a boot",
-            "Gaiters, low ankle — keeps sand out of shoes; the single most underrated piece of desert kit",
-            "Headtorch rated to 200 lumens with a red mode — desert navigation at night requires real light; red mode preserves night vision and extends battery",
-            "Emergency bivouac bag, reflective, 200g — not a sleeping bag; for unplanned nights and emergency signalling",
-            "Navigation: 1:50,000 map, compass, offline GPS — desert has few landmarks; grid navigation is more important here than anywhere",
-            "Electrolyte tablets, one per litre of water above 35°C — water without electrolytes at high sweat rates leads to hyponatraemia faster than dehydration",
-            "Blister prevention: wool socks, not synthetic; Leukotape pre-applied to known hotspots before day one — treating a blister on day three in 45°C heat is a serious problem"
+            "Sleeping bag rated to +8°C, lightweight — desert nights drop sharply; +8°C is the correct temperature floor for Saharan margins",
+            "Freestanding single-skin tent, 1.2 kg — sandstorms require four solid walls and a working zip",
+            "40L pack with side-compression straps — water weight fluctuates; side straps let you rebalance as you drink",
+            "4L water capacity minimum — two 2L soft flasks that compress as they empty",
+            "Sun hoody, 50+ UPF, long sleeve — desert sun through a thin layer burns in under 20 minutes",
+            "Trail runners with rock plate, not hiking boots — rock plates prevent bruising without the weight of a boot",
+            "Headtorch rated to 200 lumens with a red mode — red mode preserves night vision and extends battery"
           ]
         }
       ]
