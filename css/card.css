@@ -35,6 +35,23 @@ a.card:hover {
   gap: var(--space-sm);
 }
 
+/* Tag/eyebrow inside a card: don't stretch to full width, and the flex
+   gap already provides spacing so the adjacent-sibling margin isn't needed */
+.card-body > .tag {
+  align-self: flex-start;
+}
+
+.card-body .tag + h1,
+.card-body .tag + h2,
+.card-body .tag + h3,
+.card-body .tag + h4,
+.card-body .tag + .h1-heading,
+.card-body .tag + .h2-heading,
+.card-body .tag + .h3-heading,
+.card-body .tag + .h4-heading {
+  margin-top: 0;
+}
+
 .cover-image {
   width: 100%;
   height: 100%;
