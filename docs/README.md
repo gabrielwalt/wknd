@@ -1,40 +1,47 @@
-# Legacy Documentation (Deprecated)
+# WKND Adventures — Documentation
 
-⚠️ **This directory contains documentation from the old system (hand-written HTML files).**
+A complete reference for understanding and maintaining the WKND Adventures project.
 
-The project has been **refactored to use JSON data + template modules**. These files are **no longer accurate**.
+## Quick Navigation
 
-## Current Documentation
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** — How the system works: JSON data + template modules → HTML generation
+- **[DATA_FORMAT.md](DATA_FORMAT.md)** — JSON schema reference for site data, pages, and blog posts
+- **[GENERATION.md](GENERATION.md)** — Build process, npm scripts, and deployment
+- **[DESIGN_SYSTEM.md](DESIGN_SYSTEM.md)** — CSS tokens, section styles, typography, grid system
+- **[VISUAL_GUIDE.md](VISUAL_GUIDE.md)** — Design philosophy, colors, spacing, interactions
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — How to maintain the project and documentation
 
-For how the project actually works now, see:
+## Quick Start
 
-- **[DOCUMENTATION.md](../DOCUMENTATION.md)** — Complete guide to the new architecture
-- **[AGENTS.md](../AGENTS.md)** — Development guide for making changes
+The site is **generated from JSON data + ES module templates**.
 
-## Legacy Files (Don't Use)
+```bash
+# Make content changes
+edit data/pages/*.json or data/blog/*.json
 
-The files in this directory describe the old system where:
-- All HTML was hand-written and duplicated across 20 files
-- Changes required editing multiple files
-- There was no generation system
+# Regenerate HTML
+npm run generate
 
-These files are kept for reference only:
+# Build for deployment (minify)
+npm run build:pages
+```
 
-- `site-guide.md` — Old site structure (outdated)
-- `page-inventory.md` — Old page inventory (outdated)
-- `components.md` — Old component guide (partially outdated)
-- `design-system.md` — Design tokens (still relevant for CSS, but structure references are outdated)
-- `visual-design-guide.md` — Design reference (still relevant for styling, outdated for structure)
-- `content-reuse-strategy.md` — Old fragment strategy (outdated; fragments now loaded differently)
-- `image-catalog.md` — Image tracking (still useful for managing images)
+For detailed workflows, see [GENERATION.md](GENERATION.md).
 
-## What to Do Instead
+## Key Files
 
-1. **For understanding the architecture**: Read [DOCUMENTATION.md](../DOCUMENTATION.md)
-2. **For making changes**: Read [AGENTS.md](../AGENTS.md)
-3. **For CSS/styling reference**: `css/styles.css` and the visual design guide are still useful
-4. **For image management**: Track images in the code, not in a separate catalog
+- **Data**: `data/site.json`, `data/pages/`, `data/blog/`, `data/fragments/`
+- **Templates**: `templates/partials/`, `templates/components/`, `templates/blocks/`, `templates/blog/`
+- **Assembly**: `templates/page.mjs` (root pages), `templates/blog-page.mjs` (blog)
+- **Styles**: `css/styles.css` (imports all modules)
+- **Scripts**: `js/site.js` (client-side behavior)
 
----
+## Code Documentation
 
-**TL;DR**: The system is now data-driven. Edit JSON in `data/`, run `npm run generate`, done.
+All template functions are self-documented via JSDoc comments. See the source files in `templates/` for detailed parameter specs, examples, and notes. References from the docs below link directly to the code.
+
+## For Different Roles
+
+- **Developers**: Start with [ARCHITECTURE.md](ARCHITECTURE.md), then [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Content editors**: See [DATA_FORMAT.md](DATA_FORMAT.md) for how to structure JSON
+- **Designers/stakeholders**: See [VISUAL_GUIDE.md](VISUAL_GUIDE.md) and [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md)

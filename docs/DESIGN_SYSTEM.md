@@ -1,8 +1,8 @@
 # Design System
 
-Reference for tokens, section styles, layout, and buttons.
+CSS architecture, design tokens, section styles, and layout system.
 
-→ Part of the [WKND Adventures Site Guide](site-guide.md)
+For design philosophy and visual guidelines, see [VISUAL_GUIDE.md](VISUAL_GUIDE.md).
 
 ---
 

@@ -1,8 +1,8 @@
-# WKND Adventures — Visual Design Guide
+# Visual Design Guide
 
-A complete plain-language reference for how this site looks, feels, and is organised. No coding knowledge required.
+Design philosophy, aesthetics, color usage, spacing, and interactions for the WKND Adventures brand.
 
-→ Part of the [WKND Adventures Site Guide](site-guide.md)
+For CSS implementation details and token values, see [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md).
 
 ---
 
