@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var MOBILE_MAX = 991;
+  var MOBILE_MAX = 1024;
   var HOVER_CLOSE_MS = 200;
 
   function initMobileNav() {
