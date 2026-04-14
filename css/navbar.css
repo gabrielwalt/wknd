@@ -301,13 +301,15 @@
 
   /* Megamenu becomes an accordion on mobile */
   .nav-megamenu {
-    display: none;
     position: static;
     box-shadow: none;
     border: none;
     border-top: 1px solid var(--color-gray-200);
     padding: var(--space-sm) 0 var(--space-sm) var(--space-md);
     margin-top: var(--space-xxs);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-fast);
   }
 
   .nav-megamenu-grid,
@@ -328,7 +330,7 @@
   }
 
   .nav-megamenu-item.is-open .nav-megamenu {
-    display: block;
+    max-height: 2000px;
   }
 
   .nav-megamenu-item.is-open .nav-caret {
