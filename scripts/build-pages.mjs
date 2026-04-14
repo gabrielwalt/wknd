@@ -116,6 +116,8 @@ async function main() {
   await copyDir(path.join(ROOT, 'images'), path.join(DIST, 'images'));
   await copyDir(path.join(ROOT, 'fonts'), path.join(DIST, 'fonts'));
   await fs.copyFile(path.join(ROOT, 'favicon.svg'), path.join(DIST, 'favicon.svg'));
+  await fs.copyFile(path.join(ROOT, 'sitemap.xml'), path.join(DIST, 'sitemap.xml'));
+  await fs.copyFile(path.join(ROOT, 'robots.txt'), path.join(DIST, 'robots.txt'));
 
   // Copy CNAME to preserve GitHub Pages domain across deployments
   const cnameFile = path.join(ROOT, 'CNAME');
