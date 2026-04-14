@@ -301,6 +301,7 @@
 
   /* Megamenu becomes an accordion on mobile */
   .nav-megamenu {
+    display: none;
     position: static;
     box-shadow: none;
     border: none;
