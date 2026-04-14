@@ -24,5 +24,6 @@ export function head({ title, description, depth }) {
   <title>${title}</title>
   <link rel="icon" type="image/svg+xml" href="${ref('favicon.svg', depth)}" />
   <link rel="stylesheet" href="${ref('css/styles.css', depth)}" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 </head>`;
 }
