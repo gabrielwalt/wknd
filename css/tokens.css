@@ -101,7 +101,7 @@
    Responsive token overrides
 ───────────────────────────────────────── */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   :root {
     --text-5xl: 2rem;
     --text-4xl: 1.75rem;

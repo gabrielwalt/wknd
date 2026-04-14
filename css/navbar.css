@@ -124,7 +124,7 @@
   padding: var(--space-xl) 0;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 769px) {
   /* mega-open is set by JS hover-delay logic to survive the gap between
      the navbar trigger and the megamenu panel */
   .nav-megamenu-item.mega-open .nav-megamenu,
@@ -272,7 +272,7 @@
    Responsive
 ───────────────────────────────────────── */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .nav-menu {
     display: none;
     position: fixed;

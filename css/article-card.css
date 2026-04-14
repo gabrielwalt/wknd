@@ -250,7 +250,7 @@ a.featured-article-image {
    Responsive
 ───────────────────────────────────────── */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .featured-article {
     grid-template-columns: 1fr;
   }

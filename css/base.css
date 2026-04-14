@@ -311,7 +311,7 @@ h6 {
    Responsive layout overrides
 ───────────────────────────────────────── */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .grid-layout {
     grid-template-columns: 1fr;
   }
@@ -342,7 +342,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .grid-layout--2col {
     grid-template-columns: 1fr;
   }
@@ -406,7 +406,7 @@ h6 {
   min-width: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .team-profile-row {
     flex-direction: column;
     flex-wrap: wrap;
@@ -506,7 +506,7 @@ h6 {
   letter-spacing: -0.03em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .editorial-index-item {
     grid-template-columns: 3rem 1fr;
     gap: var(--space-lg);
