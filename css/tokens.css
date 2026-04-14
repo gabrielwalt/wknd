@@ -101,27 +101,12 @@
    Responsive token overrides
 ───────────────────────────────────────── */
 
-@media (max-width: 991px) {
-  :root {
-    --text-5xl: 2.5rem;
-    --text-4xl: 2rem;
-    --text-3xl: 1.5rem;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   :root {
     --text-5xl: 2rem;
     --text-4xl: 1.75rem;
     --text-3xl: 1.375rem;
     --section-gap: var(--space-xl);
-  }
-}
-
-@media (max-width: 479px) {
-  :root {
-    --text-5xl: 1.75rem;
-    --text-4xl: 1.5rem;
     --container-padding: 1rem;
   }
 }

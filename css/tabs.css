@@ -65,7 +65,7 @@
    Responsive
 ───────────────────────────────────────── */
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .tab-menu {
     overflow-x: auto;
     flex-wrap: nowrap;

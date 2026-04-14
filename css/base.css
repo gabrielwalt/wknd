@@ -311,42 +311,25 @@ h6 {
    Responsive layout overrides
 ───────────────────────────────────────── */
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
   .grid-layout.tablet-1-column {
     grid-template-columns: 1fr;
   }
 
   .grid-layout.desktop-3-column {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-layout.desktop-4-column {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Image-only 3-col grids can stay 3-wide at tablet — images scale fine */
-  .grid-layout.desktop-3-column.grid-images {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 767px) {
-  .grid-layout {
     grid-template-columns: 1fr;
   }
 
-  .grid-layout.desktop-3-column {
+  .grid-layout.desktop-4-column {
     grid-template-columns: 1fr;
   }
 
   /* Image grids also collapse to single column at mobile */
   .grid-layout.desktop-3-column.grid-images {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 479px) {
-  .grid-layout.desktop-4-column {
     grid-template-columns: 1fr;
   }
 }
@@ -359,7 +342,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .grid-layout--2col {
     grid-template-columns: 1fr;
   }
@@ -423,7 +406,7 @@ h6 {
   min-width: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .team-profile-row {
     flex-direction: column;
     flex-wrap: wrap;
@@ -523,7 +506,7 @@ h6 {
   letter-spacing: -0.03em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .editorial-index-item {
     grid-template-columns: 3rem 1fr;
     gap: var(--space-lg);

@@ -70,7 +70,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .footer-link {
     padding-block: var(--space-sm);
   }

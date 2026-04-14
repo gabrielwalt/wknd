@@ -250,13 +250,13 @@ a.featured-article-image {
    Responsive
 ───────────────────────────────────────── */
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
   .featured-article {
     grid-template-columns: 1fr;
   }
 
   .featured-article-image {
-    min-height: 14rem;
+    min-height: 11rem;
   }
 
   .featured-article-footer {
@@ -271,11 +271,5 @@ a.featured-article-image {
 
   .featured-article-footer:not(:has(.article-byline)) .button {
     align-self: flex-end;
-  }
-}
-
-@media (max-width: 767px) {
-  .featured-article-image {
-    min-height: 11rem;
   }
 }
