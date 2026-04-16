@@ -5,9 +5,9 @@
       "label": "Climbing",
       "items": [
         {
-          "href": "blog/winter-mountaineering.html",
+          "href": "/blog/winter-mountaineering.html",
           "image": {
-            "src": "images/activities/ice-climbing.jpg",
+            "src": "/images/activities/ice-climbing.jpg",
             "alt": "Winter mountaineering on steep snow slope"
           },
           "tagText": "Winter",
@@ -16,9 +16,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/patagonia-trek.html",
+          "href": "/blog/patagonia-trek.html",
           "image": {
-            "src": "images/adventures/adobestock-231698835.jpg",
+            "src": "/images/adventures/adobestock-231698835.jpg",
             "alt": "W Circuit Patagonia"
           },
           "tagText": "Expedition",
@@ -27,9 +27,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/yosemite-rock-climbing.html",
+          "href": "/blog/yosemite-rock-climbing.html",
           "image": {
-            "src": "images/activities/sport-climbing.jpg",
+            "src": "/images/activities/sport-climbing.jpg",
             "alt": "Yosemite rock climbing"
           },
           "tagText": "Climbing",
@@ -44,9 +44,9 @@
       "label": "Water",
       "items": [
         {
-          "href": "blog/wild-swimming-guide.html",
+          "href": "/blog/wild-swimming-guide.html",
           "image": {
-            "src": "images/magazine/beach-walking.jpg",
+            "src": "/images/magazine/beach-walking.jpg",
             "alt": "Wild swimming in a mountain pool"
           },
           "tagText": "Water",
@@ -55,9 +55,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/kayaking-norway.html",
+          "href": "/blog/kayaking-norway.html",
           "image": {
-            "src": "images/magazine/surfer-wave-02.jpg",
+            "src": "/images/magazine/surfer-wave-02.jpg",
             "alt": "Cold Atlantic swell, Lofoten Islands, Norway"
           },
           "tagText": "Surf",
@@ -66,9 +66,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/surfing-costa-rica.html",
+          "href": "/blog/surfing-costa-rica.html",
           "image": {
-            "src": "images/adventures/adobestock-278302117.jpeg",
+            "src": "/images/adventures/adobestock-278302117.jpeg",
             "alt": "Surfing Costa Rica"
           },
           "tagText": "Surf",
@@ -83,9 +83,9 @@
       "label": "Cycling",
       "items": [
         {
-          "href": "blog/alpine-cycling.html",
+          "href": "/blog/alpine-cycling.html",
           "image": {
-            "src": "images/adventures/adobestock-261097343.jpeg",
+            "src": "/images/adventures/adobestock-261097343.jpeg",
             "alt": "Road cyclists riding hard through the high passes"
           },
           "tagText": "Cycling",
@@ -94,9 +94,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/mountain-photography.html",
+          "href": "/blog/mountain-photography.html",
           "image": {
-            "src": "images/adventures/adobestock-277768563.jpeg",
+            "src": "/images/adventures/adobestock-277768563.jpeg",
             "alt": "Mountain photography at alpenglow"
           },
           "tagText": "Essay",
@@ -105,9 +105,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/ultralight-backpacking.html",
+          "href": "/blog/ultralight-backpacking.html",
           "image": {
-            "src": "images/adventures/adobestock-257541512.jpeg",
+            "src": "/images/adventures/adobestock-257541512.jpeg",
             "alt": "Ultralight backpacking gear"
           },
           "tagText": "Gear",
@@ -122,9 +122,9 @@
       "label": "Hiking",
       "items": [
         {
-          "href": "blog/patagonia-trek.html",
+          "href": "/blog/patagonia-trek.html",
           "image": {
-            "src": "images/adventures/adobestock-231698835.jpg",
+            "src": "/images/adventures/adobestock-231698835.jpg",
             "alt": "Patagonia W Circuit"
           },
           "tagText": "Expedition",
@@ -133,9 +133,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/ultralight-backpacking.html",
+          "href": "/blog/ultralight-backpacking.html",
           "image": {
-            "src": "images/adventures/adobestock-257541512.jpeg",
+            "src": "/images/adventures/adobestock-257541512.jpeg",
             "alt": "Ultralight backpacking gear laid out"
           },
           "tagText": "Gear",
@@ -144,9 +144,9 @@
           "headingClass": "h6-heading"
         },
         {
-          "href": "blog/desert-survival-guide.html",
+          "href": "/blog/desert-survival-guide.html",
           "image": {
-            "src": "images/adventures/adobestock-185324648.jpg",
+            "src": "/images/adventures/adobestock-185324648.jpg",
             "alt": "Desert landscape at golden hour"
           },
           "tagText": "Desert",
