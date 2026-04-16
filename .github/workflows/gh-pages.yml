@@ -15,7 +15,7 @@ jobs:
       # Custom domain (wknd-adventures.com): no path prefix
       SITE_BASE_PATH: ''
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '20'
