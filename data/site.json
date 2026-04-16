@@ -5,7 +5,7 @@
     "megamenus": [
       {
         "label": "Explore",
-        "gridClass": "nav-megamenu-grid--3",
+        "gridClass": "nav-megamenu-grid--4",
         "links": [
           {
             "href": "adventures.html",
@@ -21,6 +21,11 @@
             "href": "destinations.html",
             "title": "Destinations",
             "desc": "Wild places worth going to. Permit details, conditions, and what to expect on the ground."
+          },
+          {
+            "href": "basecamp.html",
+            "title": "Basecamp",
+            "desc": "New here? Pick an activity, find a route, and get moving — your starting point for everything."
           }
         ]
       },
@@ -108,7 +113,8 @@
           { "href": "adventures.html", "label": "Adventures" },
           { "href": "expeditions.html", "label": "Expeditions" },
           { "href": "field-notes.html", "label": "Field Notes" },
-          { "href": "destinations.html", "label": "Destinations" }
+          { "href": "destinations.html", "label": "Destinations" },
+          { "href": "basecamp.html", "label": "Basecamp" }
         ]
       },
       {
