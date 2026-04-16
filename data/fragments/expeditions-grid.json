@@ -1,9 +1,9 @@
 {
   "items": [
     {
-      "href": "/blog/patagonia-trek.html",
+      "href": "blog/patagonia-trek.html",
       "image": {
-        "src": "/images/adventures/adobestock-231698835.jpg",
+        "src": "images/adventures/adobestock-231698835.jpg",
         "alt": "Torres del Paine massif under dramatic Patagonian sky"
       },
       "tagText": "Americas",
@@ -15,9 +15,9 @@
       }
     },
     {
-      "href": "/blog/kayaking-norway.html",
+      "href": "blog/kayaking-norway.html",
       "image": {
-        "src": "/images/magazine/surfer-wave-02.jpg",
+        "src": "images/magazine/surfer-wave-02.jpg",
         "alt": "Cold Atlantic swell, Lofoten Islands, Norway"
       },
       "tagText": "Europe",
@@ -29,9 +29,9 @@
       }
     },
     {
-      "href": "/blog/alpine-cycling.html",
+      "href": "blog/alpine-cycling.html",
       "image": {
-        "src": "/images/adventures/adobestock-261097343.jpeg",
+        "src": "images/adventures/adobestock-261097343.jpeg",
         "alt": "Alpine cycling through the high passes"
       },
       "tagText": "Europe",
